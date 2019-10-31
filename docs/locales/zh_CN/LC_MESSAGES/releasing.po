@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Martin Zimmermann
+# This file is distributed under the same license as the Isso package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Isso 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-31 15:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../releasing.rst:2
+msgid "Releasing steps"
+msgstr ""
+
+#: ../../releasing.rst:4
+msgid "Run ``python3 setup.py nosetests``, ``python2 setup.py nosetests``"
+msgstr ""
+
+#: ../../releasing.rst:5
+msgid "Update version number in ``setup.py`` and ``CHANGES.rst``"
+msgstr ""
+
+#: ../../releasing.rst:6
+msgid "``git commit -m \"Preparing ${VERSION}\" setup.py CHANGES.rst``"
+msgstr ""
+
+#: ../../releasing.rst:7
+msgid "``git tag -as ${VERSION}``"
+msgstr ""
+
+#: ../../releasing.rst:8
+msgid "``make init all``"
+msgstr ""
+
+#: ../../releasing.rst:9
+msgid "``python3 setup.py sdist``"
+msgstr ""
+
+#: ../../releasing.rst:10
+msgid "``twine upload --sign dist/isso-${VERSION}.tar.gz``"
+msgstr ""
+

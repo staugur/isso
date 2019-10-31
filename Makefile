@@ -71,5 +71,13 @@ clean:
 	rm -f $(DOCS_MAN_DST) $(DOCS_CSS_DST) $(ISSO_JS_DST)
 	rm -rf $(DOCS_HTML_DST)
 
-.PHONY: clean site man init js coverage test
+gettext:
+	cd docs && sphinx-build -b gettext . _build/gettext
 
+cn:
+	cd docs && sphinx-intl update -p _build/gettext -l zh_CN
+
+site-cn:
+	cd docs && sphinx-build -E -T -D language=zh_CN -b dirhtml . _build/html_cn
+
+.PHONY: clean site man init js coverage test

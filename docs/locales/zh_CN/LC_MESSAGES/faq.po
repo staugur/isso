@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Martin Zimmermann
+# This file is distributed under the same license as the Isso package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Isso 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-31 15:02+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../faq.rst:2
+msgid "Frequently asked question"
+msgstr "常见问题"
+
+#: ../../faq.rst:5
+msgid "Why SQLite3?"
+msgstr ""
+
+#: ../../faq.rst:7
+msgid ""
+"Although partially answered on the index page, here a more complete "
+"answer: If you manage massive amounts of comments, Isso is a really bad "
+"choice. Isso is designed to be simple and easy to setup, not optimizied "
+"for high-traffic websites (use a `dedicated Disqus`_ instance then)."
+msgstr ""
+
+#: ../../faq.rst:12
+msgid "comments are not big data"
+msgstr ""
+
+#: ../../faq.rst:14
+msgid ""
+"For example, 209 threads and 778 comments in total only need 620K "
+"(kilobyte) memory. Excellent use case for SQLite."
+msgstr ""
+
