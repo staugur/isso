@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Martin Zimmermann
+# This file is distributed under the same license as the Isso package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Isso 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-01 15:08+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../contribute.rst:2
+msgid "Contribute"
+msgstr ""
+
+#: ../../contribute.rst:5
+msgid "Write some code."
+msgstr ""
+
+#: ../../contribute.rst:7
+msgid ""
+"I appreciate any help and love pull requests. Here are some things you "
+"need to respect:"
+msgstr ""
+
+#: ../../contribute.rst:10
+msgid "no hard-wired external services (e.g. Gravatar, Akismet)"
+msgstr ""
+
+#: ../../contribute.rst:11
+msgid "no support for ancient browsers (e.g. IE6-9)"
+msgstr ""
+
+#: ../../contribute.rst:13
+msgid ""
+"If you create a feature request, start a new branch. If you fix an issue,"
+" start off the *master* branch and pull request against the master. I'll "
+"cherry-pick/backport the fix onto the current legacy (maintenance) "
+"release."
+msgstr ""
+
+#: ../../contribute.rst:19
+msgid "Report issues"
+msgstr ""
+
+#: ../../contribute.rst:21
+msgid ""
+"**Disqus import fails** – if ``isso import /path/to/disqus.xml`` fails, "
+"please do *NOT* attach the raw dump file to GH:Issues. Please anonymize "
+"all IP addresses inside the ``<ipAddress>`` tag first, as second step, "
+"replace all ``<email>`` addresses with a generic one."
+msgstr ""
+
+#: ../../contribute.rst:26
+msgid ""
+"**embed.min.js-related issues** –  if you get a cryptic JavaScript error "
+"in the console, embed ``embed.dev.js`` instead of ``embed.min.js`` and "
+"create an issue with ±10 lines of code around the error."
+msgstr ""
+
+#: ../../contribute.rst:30
+msgid ""
+"**Isso-related issues** – Copy and paste traceback into a ticket and "
+"provide some details of your usage."
+msgstr ""
+
+#: ../../contribute.rst:34
+msgid "Translations"
+msgstr ""
+
+#: ../../contribute.rst:36
+msgid ""
+"Isso supports multiple languages and it is fairly easy to add new "
+"translations. You can either use the `english translation file`__ or use "
+"Transifex_. Contact me on IRC (@posativ) if you want to be the main "
+"contributor for a language."
+msgstr ""
+
+#: ../../contribute.rst:40
+msgid ""
+"You may notice some \"weird\" newlines in translations -- that's the "
+"separator for pluralforms_ in the templating engine."
+msgstr ""
+
+#: ../../contribute.rst:48
+msgid "Where I need help."
+msgstr ""
+
+#: ../../contribute.rst:50
+msgid ""
+"Isso is my first projects which involves JavaScript. If you are more "
+"experienced in JS, please take a look at the code (that does not mean, "
+"the Python code is perfect ;-). A few feature requests and issues, where "
+"I definitely need help:"
+msgstr ""
+
+#: ../../contribute.rst:55
+msgid ""
+"`Admin Web Interface <https://github.com/posativ/isso/issues/10>`_ – "
+"administration via email is cumbersome with a high amount of comments. A "
+"administration web interface should include the ability to:"
+msgstr ""
+
+#: ../../contribute.rst:59
+msgid ""
+"delete or activate comments matching a filter (e.g. name, email, ip "
+"address)"
+msgstr ""
+
+#: ../../contribute.rst:61
+msgid "close threads and remove threads completely"
+msgstr ""
+

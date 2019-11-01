@@ -1,4 +1,4 @@
-# INSTALLATION: pip install sphinx && npm install --global node-sass
+# INSTALLATION: pip install sphinx sphinx-intl && npm install --global node-sass requirejs bower jade
 
 ISSO_JS_SRC := $(shell find isso/js/app -type f) \
 	       $(shell ls isso/js/*.js | grep -vE "(min|dev)") \
@@ -26,6 +26,10 @@ DOCS_CSS_DST := docs/_static/css/site.css
 DOCS_MAN_DST := man/man1/isso.1 man/man5/isso.conf.5
 
 DOCS_HTML_DST := docs/_build/html
+
+DOCS_GETTEXT := docs/_build/gettext
+
+DOCS_HTMLCN_DST := docs/_build/html_cn
 
 RJS = r.js
 
@@ -70,14 +74,19 @@ test: $($ISSO_PY_SRC)
 clean:
 	rm -f $(DOCS_MAN_DST) $(DOCS_CSS_DST) $(ISSO_JS_DST)
 	rm -rf $(DOCS_HTML_DST)
+	rm -rf $(DOCS_GETTEXT)
+	rm -rf $(DOCS_HTMLCN_DST)
+	find docs/locales/zh_CN/LC_MESSAGES/ -name '*.mo'|xargs -i rm -f {}
 
 gettext:
-	cd docs && sphinx-build -b gettext . _build/gettext
+	sphinx-build -b gettext docs/ $(DOCS_GETTEXT)
 
 cn:
-	cd docs && sphinx-intl update -p _build/gettext -l zh_CN
+	sphinx-intl update -p $(DOCS_GETTEXT) -l zh_CN
 
-site-cn:
-	cd docs && sphinx-build -E -T -D language=zh_CN -b dirhtml . _build/html_cn
+site-cn: $(DOCS_RST_SRC) $(DOCS_CSS_DST)
+	sphinx-build -E -T -D language=zh_CN -b dirhtml docs/ $(DOCS_HTMLCN_DST)
+
+site-css: $(DOCS_CSS_DST)
 
 .PHONY: clean site man init js coverage test

@@ -1,0 +1,2080 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Martin Zimmermann
+# This file is distributed under the same license as the Isso package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Isso 0.12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-01 15:08+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../docs/configuration/client.rst:2
+msgid "Client Configuration"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:4
+msgid ""
+"You can configure the client (the JS part) with custom data attributes, "
+"preferably in the script tag which embeds the JS:"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:28
+msgid ""
+"Furthermore you can override the automatic title detection inside the "
+"embed tag, as well as the thread ID, e.g.:"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:35
+msgid ""
+"Additionally, you can override any translation string for any language by"
+" adding a ``data-isso-`` attribute that is equal to the translation key "
+"(found `here`__) with ``-text-[lang]`` appended to it. So, for example, "
+"if you want to override the english translation of the ``postbox-"
+"notification`` message, you could add:"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:40
+msgid ""
+"``data-isso-postbox-notification-text-en=\"Select to be notified of "
+"replies to your comment\"``"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:45
+msgid "data-isso"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:47
+msgid ""
+"Isso usually detects the REST API automatically, but when you serve the "
+"JS script on a different location, this may fail. Use `data-isso` to "
+"override the API location:"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:56
+msgid "data-isso-css"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:58
+msgid ""
+"Set to `false` prevents Isso from automatically appending the stylesheet."
+" Defaults to `true`."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:66
+msgid "data-isso-lang"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:68
+msgid ""
+"Override useragent's preferred language. Isso has been translated in over"
+" 12 languages. The language is configured by its `ISO 639-1 "
+"<https://en.wikipedia.org/wiki/ISO_639-1>`_ (two letter) code."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:72
+msgid ""
+"You find a list of all supported languages on `GitHub "
+"<https://github.com/posativ/isso/tree/master/isso/js/app/i18n>`_."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:76
+msgid "data-isso-reply-to-self"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:78
+msgid "Set to `true` when spam guard is configured with `reply-to-self = true`."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:81
+msgid "data-isso-require-author"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:83
+msgid "Set to `true` when spam guard is configured with `require-author = true`."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:86
+msgid "data-isso-require-email"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:88
+msgid "Set to `true` when spam guard is configured with `require-email = true`."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:91
+msgid "data-isso-reply-notifications"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:93
+msgid ""
+"Set to `true` when reply notifications is configured with `reply-"
+"notifications = true`."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:96
+msgid "data-isso-max-comments-top and data-isso-max-comments-nested"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:98
+msgid ""
+"Number of top level (or nested) comments to show by default. If some "
+"comments are not shown, an \"X Hidden\" link is shown."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:101
+msgid "Set to `\"inf\"` to show all, or `\"0\"` to hide all."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:104
+msgid "data-isso-reveal-on-click"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:106
+msgid "Number of comments to reveal on clicking the \"X Hidden\" link."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:109
+msgid "data-isso-avatar"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:111
+msgid "Enable or disable avatar generation."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:114
+msgid "data-isso-avatar-bg"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:116
+msgid "Set avatar background color. Any valid CSS color will do."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:119
+msgid "data-isso-avatar-fg"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:121
+msgid ""
+"Set avatar foreground color. Up to 8 colors are possible. The default "
+"color scheme is based in `this color palette "
+"<http://colrd.com/palette/19308/>`_. Multiple colors must be separated by"
+" space. If you use less than eight colors and not a multiple of 2, the "
+"color distribution is not even."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:127
+msgid "data-isso-gravatar"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:129
+msgid ""
+"Uses gravatar images instead of generating svg images. You have to set "
+"\"data-isso-avatar\" to **false** when you want to use this. Otherwise "
+"both the gravatar and avatar svg image will show up. Please also set "
+"option \"gravatar\" to **true** in the server configuration..."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:135
+msgid "data-isso-vote"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:137
+msgid "Enable or disable voting feature on the client side."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:140
+msgid "data-isso-vote-levels"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:142
+msgid ""
+"List of vote levels used to customize comment appearance based on score. "
+"Provide a comma-separated values (eg. `\"0,5,10,25,100\"`) or a JSON "
+"array (eg. `\"[-5,5,15]\"`)."
+msgstr ""
+
+#: ../../docs/configuration/client.rst:145
+msgid ""
+"For example, the value `\"-5,5\"` will cause each `isso-comment` to be "
+"given one of these 3 classes:"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:147
+msgid "`isso-vote-level-0` for scores lower than `-5`"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:148
+msgid "`isso-vote-level-1` for scores between `-5` and `4`"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:149
+msgid "`isso-vote-level-2` for scores of `5` and greater"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:151
+msgid ""
+"These classes can then be used to customize the appearance of comments "
+"(eg. put a star on popular comments)"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:154
+msgid "data-isso-feed"
+msgstr ""
+
+#: ../../docs/configuration/client.rst:156
+msgid ""
+"Enable or disable the addition of a link to the feed for the comment "
+"thread. The link will only be valid if the appropriate setting, in "
+"``[rss]`` section, is also enabled server-side."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:2
+msgid "Server Configuration"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:4
+msgid ""
+"The Isso configuration file is an `INI-style`__ textfile. It reads "
+"integers, booleans, strings and lists. Here's the default isso "
+"configuration: `isso.conf "
+"<https://github.com/posativ/isso/blob/master/share/isso.conf>`. A basic "
+"configuration from scratch looks like this:"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:17
+msgid ""
+"To use your configuration file with Isso, append ``-c /path/to/cfg`` to "
+"the executable or run Isso with an environment variable:"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:27
+msgid "Sections covered in this document:"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:34
+msgid "General"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:36
+msgid ""
+"In this section, you configure most comment-related options such as "
+"database path, session key and hostname. Here are the default values for "
+"this section:"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:51
+msgid "dbpath"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:50
+msgid ""
+"file location to the SQLite3 database, highly recommended to change this "
+"location to a non-temporary location!"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:55
+msgid "name"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:54
+msgid ""
+"required to dispatch :ref:`multiple websites <configure-multiple-sites>`,"
+" not used otherwise."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:73
+#: ../../docs/configuration/server.rst:210
+msgid "host"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:58
+msgid ""
+"Your website(s). If Isso is unable to connect to at least one site, "
+"you'll get a warning during startup and comments are most likely non-"
+"functional."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:61
+msgid ""
+"You'll need at least one host/website to run Isso. This is due to "
+"security reasons: Isso uses CORS_ to embed comments and to restrict "
+"comments only to your website, you have to \"whitelist\" your website(s)."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:65
+msgid ""
+"I recommend the first value to be a non-SSL website that is used as "
+"fallback if Firefox users (and only those) supress their HTTP referer "
+"completely."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:77
+msgid "max-age"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:76
+msgid ""
+"time range that allows users to edit/remove their own comments. See "
+":ref:`Appendum: Timedelta <appendum-timedelta>` for valid values."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:89
+msgid "notify"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:80
+msgid ""
+"Select notification backend(s) for new comments, separated by comma. "
+"Available backends:"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:85
+msgid "stdout"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:84
+msgid ""
+"Log to standard output. Default, if none selected. Note, this "
+"functionality is broken since a few releases."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:89
+msgid "smtp"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:88
+msgid ""
+"Send notifications via SMTP on new comments with activation (if "
+"moderated) and deletion links."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:97
+msgid "reply-notifications"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:92
+msgid "Allow users to request E-mail notifications for replies to their post."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:94
+msgid ""
+"It is highly recommended to also turn on moderation when enabling this "
+"setting, as Isso can otherwise be easily exploited for sending spam."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:97
+msgid "Do not forget to configure the client accordingly."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:100
+msgid "log-file"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:100
+msgid "Log console messages to file instead of standard out."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:107
+msgid "gravatar"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:103
+msgid ""
+"When set to ``true`` this will add the property \"gravatar_image\" "
+"containing the link to a gravatar image to every comment. If a comment "
+"does not contain an email address, gravatar will render a random icon. "
+"This is only true when using the default value for \"gravatar-url\" which"
+" contains the query string param ``d=identicon`` ..."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:113
+msgid "gravatar-url"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:110
+msgid ""
+"Url for gravatar images. The \"{}\" is where the email hash will be "
+"placed. Defaults to \"https://www.gravatar.com/avatar/{}?d=identicon\""
+msgstr ""
+
+#: ../../docs/configuration/server.rst:119
+msgid "Moderation"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:121
+msgid "Enable moderation queue and handling of comments still in moderation queue"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:132
+#: ../../docs/configuration/server.rst:251
+#: ../../docs/configuration/server.rst:371
+msgid "enabled"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:130
+msgid ""
+"enable comment moderation queue. This option only affects new comments. "
+"Comments in moderation queue are not visible to other users until you "
+"activate them."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:136
+msgid "purge-after"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:135
+msgid "remove unprocessed comments in moderation queue after given time."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:139
+msgid "Server"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:141
+msgid "HTTP server configuration."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:165
+msgid "listen"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:151
+msgid "interface to listen on. Isso supports TCP/IP and unix domain sockets:"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:160
+msgid ""
+"When ``gevent`` is available, it is automatically used for `http://` "
+"Currently, gevent can not handle http requests on unix domain socket (see"
+" `#295 <https://github.com/surfly/gevent/issues/295>`_ and `#299 "
+"<https://github.com/surfly/gevent/issues/299>`_ for details)."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:165
+msgid "Does not apply for `uWSGI`."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:171
+msgid "public-endpoint"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:168
+msgid ""
+"public URL that Isso is accessed from by end users. Should always be a "
+"http:// or https:// absolute address. If left blank, automatic detection "
+"is attempted. Normally only needs to be specified if different than the "
+"`listen` setting."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:175
+msgid "reload"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:174
+msgid ""
+"reload application, when the source code has changed. Useful for "
+"development. Only works with the internal webserver."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:179
+msgid "profile"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:178
+msgid ""
+"show 10 most time consuming function in Isso after each request. Do not "
+"use in production."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:184
+msgid "SMTP"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:186
+msgid ""
+"Isso can notify you on new comments via SMTP. In the email notification, "
+"you also can moderate (=activate or delete) comments. Don't forget to "
+"configure ``notify = smtp`` in the general section."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:203
+msgid "username"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:203
+msgid "self-explanatory, optional"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:207
+#: ../../docs/configuration/server.rst:374
+msgid "password"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:206
+msgid ""
+"self-explanatory (yes, plain text, create a dedicated account for "
+"notifications), optional."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:210
+msgid "SMTP server"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:213
+msgid "port"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:213
+msgid "SMTP port"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:220
+msgid "security"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:216
+msgid ""
+"use a secure connection to the server, possible values: *none*, "
+"*starttls* or *ssl*. Note, that there is no easy way for Python 2.7 and "
+"3.3 to implement certification validation and thus the connection is "
+"vulnerable to Man-in-the-Middle attacks. You should definitely use a "
+"dedicated SMTP account for Isso in that case."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:223
+msgid "to"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:223
+msgid "recipient address, e.g. your email address"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:226
+msgid "from"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:226
+msgid "sender address, e.g. `\"Foo Bar\" <isso@example.tld>`"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:231
+msgid "timeout"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:229
+msgid ""
+"specify a timeout in seconds for blocking operations like the connection "
+"attempt."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:234
+msgid "Guard"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:236
+msgid ""
+"Enable basic spam protection features, e.g. rate-limit per IP address "
+"(``/24`` for IPv4, ``/48`` for IPv6)."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:250
+msgid ""
+"enable guard, recommended in production. Not useful for debugging "
+"purposes."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:254
+msgid "ratelimit"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:254
+msgid "limit to N new comments per minute."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:258
+msgid "direct-reply"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:257
+msgid ""
+"how many comments directly to the thread (prevent a simple `while true; "
+"do curl ...; done`."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:265
+msgid "reply-to-self"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:261
+msgid ""
+"allow commenters to reply to their own comments when they could still "
+"edit the comment. After the editing timeframe is gone, commenters can "
+"reply to their own comments anyways."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:265
+msgid "Do not forget to configure the `client <client>`_ accordingly"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:271
+msgid "require-author"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:268
+msgid ""
+"force commenters to enter a value into the author field. No validation is"
+" performed on the provided value."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:271
+#: ../../docs/configuration/server.rst:277
+msgid "Do not forget to configure the `client <client>`_ accordingly."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:277
+msgid "require-email"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:274
+msgid ""
+"force commenters to enter a value into the email field. No validation is "
+"performed on the provided value."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:280
+msgid "Markup"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:282
+msgid ""
+"Customize markup and sanitized HTML. Currently, only Markdown (via "
+"Misaka) is supported, but new languages are relatively easy to add."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:294
+msgid "options"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:293
+msgid ""
+"`Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, all"
+" flags starting with `EXT_` can be used there, separated by comma."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:300
+msgid "allowed-elements"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:297
+msgid ""
+"Additional HTML tags to allow in the generated output, comma-separated. "
+"By default, only *a*, *blockquote*, *br*, *code*, *del*, *em*, *h1*, "
+"*h2*, *h3*, *h4*, *h5*, *h6*, *hr*, *ins*, *li*, *ol*, *p*, *pre*, "
+"*strong*, *table*, *tbody*, *td*, *th*, *thead* and *ul* are allowed."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:305
+msgid "allowed-attributes"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:303
+msgid ""
+"Additional HTML attributes (independent from elements) to allow in the "
+"generated output, comma-separated. By default, only *align* and *href* "
+"are allowed."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:307
+msgid ""
+"To allow images in comments, you just need to add ``allowed-elements = "
+"img`` and ``allowed-attributes = src``."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:311
+msgid "Hash"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:313
+msgid ""
+"Customize used hash functions to hide the actual email addresses from "
+"commenters but still be able to generate an identicon."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:325
+msgid "salt"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:323
+msgid ""
+"A salt is used to protect against rainbow tables. Isso does not make use "
+"of pepper (yet). The default value has been in use since the release of "
+"Isso and generates the same identicons for same addresses across "
+"installations."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:335
+msgid "algorithm"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:328
+msgid ""
+"Hash algorithm to use -- either from Python's `hashlib` or PBKDF2 (a "
+"computational expensive hash function)."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:331
+msgid ""
+"The actual identifier for PBKDF2 is `pbkdf2:1000:6:sha1`, which means "
+"1000 iterations, 6 bytes to generate and SHA1 as pseudo-random family "
+"used for key strengthening. Arguments have to be in that order, but can "
+"be reduced to `pbkdf2:4096` for example to override the iterations only."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:340
+msgid "RSS"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:342
+msgid ""
+"Isso can provide an Atom feed for each comment thread. Users can use them"
+" to subscribe to comments and be notified of changes. Atom feeds are "
+"enabled as soon as there is a base URL defined in this section."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:353
+msgid "base"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:353
+msgid ""
+"base URL to use to build complete URI to pages (by appending the URI from"
+" Isso)"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:356
+msgid "limit"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:356
+msgid "number of most recent comments to return for a thread"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:359
+msgid "Admin"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:361
+msgid ""
+"Isso has an optional web administration interface that can be used to "
+"moderate comments. The interface is available under ``/admin`` on your "
+"isso URL."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:371
+msgid "whether to enable the admin interface"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:374
+msgid ""
+"the plain text password to use for logging into the administration "
+"interface"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:377
+msgid "Appendum"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:387
+msgid "Timedelta"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:382
+msgid ""
+"A human-friendly representation of a time range: `1m` equals to 60 "
+"seconds. This works for years (y), weeks (w), days (d) and seconds (s), "
+"e.g. `30s` equals 30 to seconds."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:386
+msgid ""
+"You can add different types: `1m30s` equals to 90 seconds, `3h45m12s` "
+"equals to 3 hours, 45 minutes and 12 seconds (12512 seconds)."
+msgstr ""
+
+#: ../../docs/configuration/server.rst:390
+msgid "Environment variables"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:394
+msgid "Isso also support configuration through some environment variables:"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:401
+msgid "ISSO_CORS_ORIGIN"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:397
+msgid ""
+"By default, `isso` will use the `Host` or else the `Referrer` HTTP header"
+" of the request to defines a CORS `Access-Control-Allow-Origin` HTTP "
+"header in the response. This environent variable allows you to define a "
+"broader fixed value, in order for example to share a single Isso instance"
+" among serveral of your subdomains : `ISSO_CORS_ORIGIN=*.example.test`"
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:2
+msgid "Advanced integration"
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:5
+msgid "Comment counter"
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:7
+msgid ""
+"If you want to display a comment counter for a given thread, simply put a"
+" link to that comments thread anchor:"
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:14
+msgid ""
+"The *isso js client* willl replace the content of this tag with a human "
+"readable counter like *\"5 comments\"*."
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:17
+msgid ""
+"Alternatively, if guessing from `href` is not relevant, you could use a "
+"`data-isso-id` attribute on the `<a>` to indicate which thread to count "
+"for."
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:20
+msgid ""
+"Now, either include `count.min.js` if you want to show only the comment "
+"count (e.g. on an index page) or `embed.min.js` for the full comment "
+"client (see :doc:`../quickstart`); do not mix both."
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:24
+msgid ""
+"You can have as many comments counters as you want in a page, and they "
+"will be merged into a single `GET` request."
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:28
+msgid "Asynchronous comments loading"
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:30
+msgid ""
+"Isso will automatically fetch comments after `DOMContentLoaded` event. "
+"However in the case where your website is creating content dynamically "
+"(eg. via ajax), you need to re-fetch comment thread manually. Here is how"
+" you can re-fetch the comment thread:"
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:39
+msgid ""
+"It will delete all comments under the thread but not the PostBox, fetch "
+"comments with `data-isso-id` attribute of the element `section#isso-"
+"thread` (if that attribute does not exist, fallback to "
+"`window.location.pathname`), then fill comments into the thread. In other"
+" words, you should change `data-isso-id` attribute of the element "
+"`section#isso-thread` (or modify the pathname with `location.pushState`) "
+"before you can get new comments. And the thread element itself should "
+"*NOT* be touched or removed."
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:47
+msgid ""
+"If you removed the `section#isso-thread` element, just create another "
+"element with same TagName and ID in which you wish comments to be placed,"
+" then call the `init` method of `Isso`:"
+msgstr ""
+
+#: ../../docs/extras/advanced-integration.rst:55
+msgid ""
+"Then Isso will initialize the comment section and fetch comments, as if "
+"the page was loaded."
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:2
+msgid "Advanced Migration"
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:4
+msgid ""
+"In quickstart we saw you can import comments from Disqus or WordPress. "
+"But there are a many other comments system and you could be using one of "
+"them."
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:7
+msgid "Isso provides a way to import such comments, however it's up to you to to:"
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:9
+msgid "dump comments"
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:10
+msgid "fit the data to the following JSON format::"
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:31
+msgid "Example:"
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:62
+msgid ""
+"Keep in mind that isso expects to have an array, so keep the opening and "
+"ending square bracket even if you have only one article thread!"
+msgstr ""
+
+#: ../../docs/extras/advanced-migration.rst:64
+msgid "Next you can import you json dump:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:2
+msgid "API"
+msgstr ""
+
+#: ../../docs/extras/api.rst:4
+msgid "The Isso API uses HTTP and JSON as primary communication protocol."
+msgstr ""
+
+#: ../../docs/extras/api.rst:11
+msgid "JSON format"
+msgstr ""
+
+#: ../../docs/extras/api.rst:13
+msgid ""
+"When querying the API you either get a regular HTTP error, an object or "
+"list of objects representing the comment. Here's an example JSON returned"
+" from Isso:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:34
+msgid "id :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:34
+msgid "comment id (unique per website)."
+msgstr ""
+
+#: ../../docs/extras/api.rst:37
+msgid "parent :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:37
+msgid "parent id reference, may be ``null``."
+msgstr ""
+
+#: ../../docs/extras/api.rst:40
+msgid "text :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:40
+msgid "required, comment written in Markdown."
+msgstr ""
+
+#: ../../docs/extras/api.rst:45
+msgid "mode :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:43
+msgid "1 – accepted"
+msgstr ""
+
+#: ../../docs/extras/api.rst:44
+msgid "2 – in moderation queue"
+msgstr ""
+
+#: ../../docs/extras/api.rst:45
+msgid "4 – deleted, but referenced."
+msgstr ""
+
+#: ../../docs/extras/api.rst:49
+msgid "hash :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:48
+msgid ""
+"user identication, used to generate identicons. PBKDF2 from email or IP "
+"address (fallback)."
+msgstr ""
+
+#: ../../docs/extras/api.rst:52
+msgid "author :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:52
+msgid "author's name, may be ``null``."
+msgstr ""
+
+#: ../../docs/extras/api.rst:55
+msgid "website :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:55
+msgid "author's website, may be ``null``."
+msgstr ""
+
+#: ../../docs/extras/api.rst:58
+msgid "likes :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:58
+msgid "upvote count, defaults to 0."
+msgstr ""
+
+#: ../../docs/extras/api.rst:61
+msgid "dislikes :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:61
+msgid "downvote count, defaults to 0."
+msgstr ""
+
+#: ../../docs/extras/api.rst:64
+msgid "created :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:64
+msgid "time in seconds since UNIX time."
+msgstr ""
+
+#: ../../docs/extras/api.rst:68
+msgid "modified :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:67
+msgid "last modification since UNIX time, may be ``null``."
+msgstr ""
+
+#: ../../docs/extras/api.rst:71
+msgid "List comments"
+msgstr ""
+
+#: ../../docs/extras/api.rst:73
+msgid "List all publicly visible comments for thread `uri`:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:80 ../../docs/extras/api.rst:184
+#: ../../docs/extras/api.rst:198
+msgid "uri :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:80
+msgid "URI to fetch comments for, required."
+msgstr ""
+
+#: ../../docs/extras/api.rst:84
+msgid "plain :"
+msgstr ""
+
+#: ../../docs/extras/api.rst:83
+msgid "pass plain=1 to get the raw comment text, defaults to 0."
+msgstr ""
+
+#: ../../docs/extras/api.rst:87
+msgid "Create comment"
+msgstr ""
+
+#: ../../docs/extras/api.rst:89
+msgid ""
+"To create a new comment, you need to issue a POST request to ``/new`` and"
+" add the current URI (so the server can check if the location actually "
+"exists)."
+msgstr ""
+
+#: ../../docs/extras/api.rst:112
+msgid ""
+"The payload must be valid JSON. To prevent CSRF attacks, you must set the"
+" `Content-Type` to `application/json` or omit the header completely."
+msgstr ""
+
+#: ../../docs/extras/api.rst:115
+msgid ""
+"The server issues a cookie per new comment which acts as authentication "
+"token to modify or delete your own comment. The token is "
+"cryptographically signed and expires automatically after 900 seconds by "
+"default."
+msgstr ""
+
+#: ../../docs/extras/api.rst:119
+msgid ""
+"The following keys can be used to POST a new comment, all other fields "
+"are dropped or replaced with values from the server:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:123
+msgid "text"
+msgstr ""
+
+#: ../../docs/extras/api.rst:122 ../../docs/extras/api.rst:125
+#: ../../docs/extras/api.rst:129 ../../docs/extras/api.rst:134
+msgid "String"
+msgstr ""
+
+#: ../../docs/extras/api.rst:123
+msgid "Actual comment, at least three characters long, required."
+msgstr ""
+
+#: ../../docs/extras/api.rst:126
+msgid "author"
+msgstr ""
+
+#: ../../docs/extras/api.rst:126
+msgid "Comment author, optional."
+msgstr ""
+
+#: ../../docs/extras/api.rst:130
+msgid "website"
+msgstr ""
+
+#: ../../docs/extras/api.rst:129
+msgid ""
+"Commenter's website (currently no field available in the client JS "
+"though), optional."
+msgstr ""
+
+#: ../../docs/extras/api.rst:135
+msgid "email"
+msgstr ""
+
+#: ../../docs/extras/api.rst:133
+msgid ""
+"Commenter's email address (can be any arbitrary string though) used to "
+"generate the identicon. Limited to 254 characters (RFC specification), "
+"optional."
+msgstr ""
+
+#: ../../docs/extras/api.rst:139
+msgid "parent"
+msgstr ""
+
+#: ../../docs/extras/api.rst:138
+msgid "Integer"
+msgstr ""
+
+#: ../../docs/extras/api.rst:138
+msgid "Reference to parent comment, optional."
+msgstr ""
+
+#: ../../docs/extras/api.rst:142
+msgid "Edit comment"
+msgstr ""
+
+#: ../../docs/extras/api.rst:144
+msgid ""
+"When your authentication token is not yet expired, you can issue a PUT "
+"request to update `text`, `author` and `website`. After an update, you "
+"get an updated authentication token and the comment as JSON:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:154
+msgid "Delete comment"
+msgstr ""
+
+#: ../../docs/extras/api.rst:156
+msgid ""
+"You can delete your own comments when your authentication token (= "
+"cookie) is not yet expired:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:164
+msgid ""
+"Returns either `null` or a comment with an empty text value when the "
+"comment is still referenced by other comments."
+msgstr ""
+
+#: ../../docs/extras/api.rst:169
+msgid "Up- and downvote comments"
+msgstr ""
+
+#: ../../docs/extras/api.rst:171
+msgid "..."
+msgstr ""
+
+#: ../../docs/extras/api.rst:174
+msgid "Get comment count"
+msgstr ""
+
+#: ../../docs/extras/api.rst:176
+msgid "Counts all publicly visible comments for thread `uri`:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:184
+msgid "URI to count comments for, required."
+msgstr ""
+
+#: ../../docs/extras/api.rst:186
+msgid "returns an integer"
+msgstr ""
+
+#: ../../docs/extras/api.rst:189
+msgid "Get Atom feed"
+msgstr ""
+
+#: ../../docs/extras/api.rst:191
+msgid "Get an Atom feed of comments for thread `uri`:"
+msgstr ""
+
+#: ../../docs/extras/api.rst:198
+msgid "URI to get comments for, required."
+msgstr ""
+
+#: ../../docs/extras/api.rst:200
+msgid "Returns an XML document as the Atom feed."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:2
+msgid "Deployment"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:4
+msgid ""
+"Isso ships with a built-in web server, which is useful for the initial "
+"setup and may be used in production for low-traffic sites (up to 20 "
+"requests per second). Running a \"real\" WSGI server supports nice things"
+" such as UNIX domain sockets, daemonization and solid HTTP handler while "
+"being more stable, secure and web-scale than the built-in web server."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:10
+msgid "gevent_, coroutine-based network library"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:11
+msgid "uWSGI_, full-featured uWSGI server"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:12
+msgid "gunicorn_, Python WSGI HTTP Server for UNIX"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:13
+msgid "mod_wsgi_, Apache interface to WSGI"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:14
+msgid "mod_fastcgi_, Apache  interface to FastCGI"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:15
+msgid ""
+"uberspace.de, `try this guide (in german) <http://blog.posativ.org/2014"
+"/isso-und-uberspace-de/>`_"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:16
+msgid "Openshift, Isso has a one click installer"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:20
+msgid "`gevent <http://www.gevent.org/>`__"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:22
+msgid ""
+"Probably the easiest deployment method. Install with PIP (requires "
+"libevent):"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:28
+msgid ""
+"Then, just use the ``isso`` executable as usual. Gevent monkey-patches "
+"Python's standard library to work with greenlets."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:31
+msgid "To execute Isso, just use the commandline interface:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:37
+msgid ""
+"Unfortunately, gevent 0.13.2 does not support UNIX domain sockets (see "
+"`#295 <https://github.com/surfly/gevent/issues/295>`_ and `#299 "
+"<https://github.com/surfly/gevent/issues/299>`_ for details)."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:43
+msgid "`uWSGI <http://uwsgi-docs.readthedocs.org/en/latest/>`__"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:45
+msgid ""
+"Isso has special support for uWSGI, namely fast IPC caching, job spooling"
+" and delayed jobs. It is the author's choice, but not the only one. You "
+"need uWSGI 1.9 or higher, fortunately you can install it from PyPi:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:54
+msgid ""
+"For convenience, I recommend a INI-style configuration (you can also "
+"supply everything as command-line arguments):"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:72
+msgid "Then, create the spooling directory and start Isso via uWSGI:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:81
+msgid "`gunicorn <http://gunicorn.org>`__"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:83
+msgid ""
+"Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX with a "
+"pre-fork worker ported from Ruby's Unicorn project. Install gunicorn_ via"
+" PIP:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:90
+msgid "To execute Isso, use a command similar to:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:99
+msgid "`mod_wsgi <https://code.google.com/p/modwsgi/>`__"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:101
+msgid ""
+"First, create a startup script, called `isso.wsgi`. If Isso is in your "
+"system module search path, then the script is quite simple. This script "
+"is included in the isso distribution as `run.py`:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:120
+msgid ""
+"If you have installed Isso in a virtual environment, then you will have "
+"to add the path of the virtualenv to the site-specific paths of Python:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:141
+msgid ""
+"Using the aforementioned script will load system modules when available "
+"and modules from the virtualenv otherwise. Should you want the opposite "
+"behavior, where modules from the virtualenv have priority over system "
+"modules, the following script does the trick:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:176
+msgid ""
+"The last two scripts are based on those given by `mod_wsgi documentation "
+"<https://code.google.com/p/modwsgi/wiki/VirtualEnvironments>`_."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:179
+msgid "The Apache configuration will then be similar to the following:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:190
+msgid ""
+"You will need to adjust the user and group according to your Apache "
+"installation and security policy. Be also aware that the directory "
+"containing the comments database must be writable by the user or group "
+"running the WSGI daemon process: having a writable database only is not "
+"enough, since SQLite will need to create a lock file in the same "
+"directory."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:197
+msgid "`mod_fastcgi <http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html>`__"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:199
+msgid ""
+"You can use this method if your hosting provider doesn't allow you to "
+"have long running processes. If FastCGI has not yet been configured in "
+"your server, please follow these steps:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:203
+msgid ""
+"This information may be incorrect, if you have more knowledge on how to "
+"deploy Python via `mod_fastcgi`, consider extending/correcting this "
+"section."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:206
+msgid ""
+"For more information, see `Flask: Configuring Apache "
+"<http://flask.pocoo.org/docs/deploying/fastcgi/#configuring-apache>`_."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:226
+msgid ""
+"Next, to run isso as a FastCGI script you'll need to install ``flup`` "
+"with PIP:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:233
+msgid ""
+"Finally, copy'n'paste to `/var/www/isso.fcgi` (or whatever location you "
+"prefer):"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:253
+msgid "`Openshift <http://openshift.com>`__"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:254
+msgid ""
+"With `Isso Openshift Deployment Kit`_, Isso can be installed on Open "
+"Shift with just one click. Make sure you already have installed ``rhc`` "
+"(`instructions`_) and completed the setup."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:258
+msgid ""
+"Run the following, you will get an Open Shift instance installed with "
+"Isso:"
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:265
+msgid ""
+"Above step also clones Git repository of your Open Shift instance, in "
+"current directory. Make changes to the configuration file and push back "
+"to Openshift, it will be redeployed with new settings."
+msgstr ""
+
+#: ../../docs/extras/deployment.rst:269
+msgid ""
+"Visit ``http://<yourappname>-<openshift-namespace>.com/info`` to verify "
+"Isso is deployed properly and is working."
+msgstr ""
+
+#: ../../docs/index.rst:2
+msgid "Overview"
+msgstr ""
+
+#: ../../docs/index.rst:4
+msgid ""
+"Welcome to Isso's documentation. This documentation will help you get "
+"started fast. If you get any problems when using Isso, you can find the "
+"answer in troubleshooting guide or you can ask me on IRC or GitHub."
+msgstr ""
+
+#: ../../docs/index.rst:8
+msgid "Documentation overview:"
+msgstr ""
+
+#: ../../docs/index.rst:18 ../../docs/man/index.rst:5
+msgid "What's Isso?"
+msgstr ""
+
+#: ../../docs/index.rst:20
+msgid ""
+"Isso is a lightweight commenting server similar to Disqus. It allows "
+"anonymous comments, maintains identity and is simple to administrate. It "
+"uses JavaScript and cross-origin ressource sharing for easy integration "
+"into (static) websites."
+msgstr ""
+
+#: ../../docs/index.rst:25 ../../docs/man/index.rst:12
+msgid "No, I meant \"Isso\""
+msgstr ""
+
+#: ../../docs/index.rst:27 ../../docs/man/index.rst:14
+msgid ""
+"Isso is an informal, german abbreviation for \"Ich schrei sonst!\", which"
+" can roughly be translated to \"I'm yelling otherwise\". It usually ends "
+"the discussion without any further arguments."
+msgstr ""
+
+#: ../../docs/index.rst:31 ../../docs/man/index.rst:18
+msgid "In germany, Isso `is also pokémon N° 360`__."
+msgstr ""
+
+#: ../../docs/index.rst:36 ../../docs/man/index.rst:23
+msgid "What's wrong with Disqus?"
+msgstr ""
+
+#: ../../docs/index.rst:38 ../../docs/man/index.rst:25
+msgid ""
+"No anonymous comments (IP address, email and name recorded), hosted in "
+"the USA, third-party. Just like IntenseDebate, livefrye etc. When you "
+"embed Disqus, they can do anything with your readers (and probably mine "
+"Bitcoins, see the loading times)."
+msgstr ""
+
+#: ../../docs/index.rst:43
+msgid "Isso is not the first open-source commenting server:"
+msgstr ""
+
+#: ../../docs/index.rst:45
+msgid ""
+"`talkatv <https://github.com/talkatv/talkatv>`_, written in Python. "
+"Unfortunately, talkatv's (read \"talkative\") development stalled. "
+"Neither anonymous nor threaded comments."
+msgstr ""
+
+#: ../../docs/index.rst:49
+msgid ""
+"`Juvia <https://github.com/phusion/juvia>`_, written in Ruby (on Rails). "
+"No threaded comments, nice administration webinterface, but... yeah... "
+"Ruby."
+msgstr ""
+
+#: ../../docs/index.rst:52
+msgid ""
+"`Tildehash.com <http://www.tildehash.com/?article=why-im-reinventing-"
+"disqus>`_, written in PHP__ (compare to Python__). Did I forgot "
+"something?"
+msgstr ""
+
+#: ../../docs/index.rst:55
+msgid ""
+"`Unobtrusive, self-hosted comments "
+"<http://stackoverflow.com/q/2053217>`_, discussion on StackOverflow."
+msgstr ""
+
+#: ../../docs/install.rst:2 ../../docs/install.rst:101
+msgid "Installation"
+msgstr ""
+
+#: ../../docs/install.rst:4
+msgid ""
+"Isso is a web application written in Python. If pip and virtualenv mean "
+"anything to you, continue with :ref:`install-from-pypi`. If you are "
+"running Debian/Ubuntu, Gentoo, Archlinux or Fedora, you can use :ref"
+":`prebuilt-package`. If not, read the next section carefully."
+msgstr ""
+
+#: ../../docs/install.rst:16
+msgid "Interludium: Python is not PHP"
+msgstr ""
+
+#: ../../docs/install.rst:18
+msgid ""
+"If you think hosting a web application written in Python is as easy as "
+"one written in PHP, you are wrong. Unlike for PHP, many Linux "
+"distribution use Python for internal tools. Your package manager already "
+"ships several python libraries, but most likely not all required by Isso "
+"(or in an up-to-date version – looking at you, Debian!)."
+msgstr ""
+
+#: ../../docs/install.rst:24
+msgid ""
+"That's why most Python developers use the `Python Package Index`_ to get "
+"their dependencies. But the most important rule: never install *anything*"
+" from PyPi as root. Not because of malicious software, but because you "
+"*will* break your system. ``easy_install`` is one tool to mess up your "
+"system. Another package manager is ``pip``. If you ever searched for an "
+"issue with Python/pip and Stackoverflow is suggesting your ``easy_install"
+" pip`` or ``pip install --upgrade pip`` (as root of course!), you are "
+"doing it wrong. `Why you should not use Python's easy_install carelessly "
+"on Debian`_ is worth the read."
+msgstr ""
+
+#: ../../docs/install.rst:34
+msgid ""
+"Fortunately, Python has a way to install packages (both as root and as "
+"user) without interfering with your globally installed packages: "
+"`virtualenv`. Use this *always* if you are installing software "
+"unavailable in your favourite package manager."
+msgstr ""
+
+#: ../../docs/install.rst:47
+msgid ""
+"The next steps should be done as regular user, not as root (although "
+"possible but not recommended):"
+msgstr ""
+
+#: ../../docs/install.rst:55
+msgid ""
+"After calling `source`, you can now install packages from PyPi locally "
+"into this virtual environment. If you don't like Isso anymore, you just "
+"`rm -rf` the folder. Inside this virtual environment, you may also "
+"execute the example commands from above to upgrade your Python Package "
+"Manager (although it barely makes sense), it is completely independent "
+"from your global system."
+msgstr ""
+
+#: ../../docs/install.rst:61
+msgid ""
+"To use Isso installed in a virtual environment outside of the virtual "
+"environment, you just need to add */opt/isso/bin* to your :envvar:`PATH` "
+"or execute */opt/isso/bin/isso* directly. It will launch Isso from within"
+" the virtual environment."
+msgstr ""
+
+#: ../../docs/install.rst:66
+msgid ""
+"With a virtualenv active, you may now continue to :ref:`install-from-"
+"pypi`! Of course you may not need a virtualenv when you are running "
+"dedicated virtual machines or a shared host (e.g. Uberspace.de)."
+msgstr ""
+
+#: ../../docs/install.rst:77
+msgid "Install from PyPi"
+msgstr ""
+
+#: ../../docs/install.rst:80
+msgid "Requirements"
+msgstr ""
+
+#: ../../docs/install.rst:82 ../../docs/install.rst:171
+msgid "Python 2.7 or 3.4+ (+ devel headers)"
+msgstr ""
+
+#: ../../docs/install.rst:83 ../../docs/install.rst:173
+msgid "SQLite 3.3.8 or later"
+msgstr ""
+
+#: ../../docs/install.rst:84 ../../docs/install.rst:174
+msgid "a working C compiler"
+msgstr ""
+
+#: ../../docs/install.rst:86
+msgid ""
+"For Debian/Ubuntu just `copy and paste <http://thejh.net/misc/website-"
+"terminal-copy-paste>`_ to your terminal:"
+msgstr ""
+
+#: ../../docs/install.rst:93
+msgid "Similar for Fedora (and derivates):"
+msgstr ""
+
+#: ../../docs/install.rst:103
+msgid "Install Isso with `pip <http://www.pip-installer.org/en/latest/>`_:"
+msgstr ""
+
+#: ../../docs/install.rst:109
+msgid "`Don't have pip? <https://twitter.com/gardaud/status/357638468572151808>`_"
+msgstr ""
+
+#: ../../docs/install.rst:115
+msgid ""
+"For easier execution, you can symlink the executable to a location in "
+"your :envvar:`PATH`."
+msgstr ""
+
+#: ../../docs/install.rst:123
+msgid "Upgrade"
+msgstr ""
+
+#: ../../docs/install.rst:125
+msgid "To upgrade Isso, activate your virtual environment again, and run"
+msgstr ""
+
+#: ../../docs/install.rst:135
+msgid "Prebuilt Packages"
+msgstr ""
+
+#: ../../docs/install.rst:137
+msgid ""
+"Debian: https://packages.crapouillou.net/ – built from PyPi. Includes "
+"startup scripts and vhost configurations for Lighttpd, Apache and Nginx "
+"[`source <https://github.com/jgraichen/debian-isso>`__]. `#729218 "
+"<https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=729218>`_ is an ITP "
+"for Debian."
+msgstr ""
+
+#: ../../docs/install.rst:143
+msgid ""
+"Gentoo: http://eroen.eu/cgit/cgit.cgi/eroen-overlay/tree/www-"
+"apps/isso?h=isso – not yet available in Portage, but you can use the "
+"ebuild to build Isso."
+msgstr ""
+
+#: ../../docs/install.rst:146
+msgid ""
+"Arch Linux: https://aur.archlinux.org/packages/isso/ – install with "
+"`yaourt isso`."
+msgstr ""
+
+#: ../../docs/install.rst:149
+msgid ""
+"Fedora: https://copr.fedoraproject.org/coprs/jujens/isso/ — copr "
+"repository. Built from Pypi, includes a systemctl unit script."
+msgstr ""
+
+#: ../../docs/install.rst:153
+msgid "Build a Docker image"
+msgstr ""
+
+#: ../../docs/install.rst:155
+msgid ""
+"You can get a Docker image by running ``docker build . -t isso``. "
+"Assuming you have your configuration in ``/opt/isso``, you can use the "
+"following command to spawn the Docker container:"
+msgstr ""
+
+#: ../../docs/install.rst:163
+msgid "Then, you can use a reverse proxy to expose port 8080."
+msgstr ""
+
+#: ../../docs/install.rst:166
+msgid "Install from Source"
+msgstr ""
+
+#: ../../docs/install.rst:168
+msgid ""
+"If you want to hack on Isso or track down issues, there's an alternate "
+"way to set up Isso. It requires a lot more dependencies and effort:"
+msgstr ""
+
+#: ../../docs/install.rst:172
+msgid "Virtualenv"
+msgstr ""
+
+#: ../../docs/install.rst:175
+msgid "Node.js, `NPM <https://npmjs.org/>`__ and `Bower <http://bower.io/>`__"
+msgstr ""
+
+#: ../../docs/install.rst:177
+msgid "Get a fresh copy of Isso:"
+msgstr ""
+
+#: ../../docs/install.rst:184
+msgid "To create a virtual environment (recommended), run:"
+msgstr ""
+
+#: ../../docs/install.rst:191
+msgid "Install Isso and its dependencies:"
+msgstr ""
+
+#: ../../docs/install.rst:198
+msgid "Install JavaScript modules:"
+msgstr ""
+
+#: ../../docs/install.rst:205
+msgid "Integration without optimization:"
+msgstr ""
+
+#: ../../docs/install.rst:212
+msgid "Optimization:"
+msgstr ""
+
+#: ../../docs/install.rst:222
+msgid "Init scripts"
+msgstr ""
+
+#: ../../docs/install.rst:224
+msgid ""
+"Init scripts to run Isso as a service (check your distribution's "
+"documentation for your init-system; e.g. Debian uses SysVinit, Fedora "
+"uses systemd) if you don't use FastCGi or uWSGI:"
+msgstr ""
+
+#: ../../docs/install.rst:228
+msgid ""
+"systemd (Isso + Gunicorn): https://github.com/jgraichen/debian-"
+"isso/blob/master/debian/isso.service"
+msgstr ""
+
+#: ../../docs/install.rst:229
+msgid ""
+"SysVinit (Isso + Gunicorn): https://github.com/jgraichen/debian-"
+"isso/blob/master/debian/isso.init"
+msgstr ""
+
+#: ../../docs/install.rst:230
+msgid "OpenBSD: https://gist.github.com/noqqe/7397719"
+msgstr ""
+
+#: ../../docs/install.rst:231
+msgid "FreeBSD: https://gist.github.com/ckoepp/52f6f0262de04cee1b88ef4a441e276d"
+msgstr ""
+
+#: ../../docs/install.rst:232
+msgid "Supervisor: https://github.com/posativ/isso/issues/47"
+msgstr ""
+
+#: ../../docs/install.rst:234
+msgid ""
+"If you're writing your own init script, you can utilize ``start-stop-"
+"daemon`` to run Isso in the background (Isso runs in the foreground "
+"usually). Below you find a very basic SysVinit script which you can use "
+"for inspiration:"
+msgstr ""
+
+#: ../../docs/man/index.rst:2
+msgid "Isso"
+msgstr ""
+
+#: ../../docs/man/index.rst:7
+msgid ""
+"Isso is a lightweight commenting server similar to Disqus. It allows "
+"anonymous comments, maintains identity and is simple to administrate. It "
+"uses JavaScript and cross-origin ressource sharing for easy integration "
+"into static websites."
+msgstr ""
+
+#: ../../docs/man/index.rst:31
+msgid "Setup"
+msgstr ""
+
+#: ../../docs/quickstart.rst:2
+msgid "Quickstart"
+msgstr ""
+
+#: ../../docs/quickstart.rst:4
+msgid ""
+"Assuming you have successfully :doc:`installed <install>` Isso, here's a "
+"quickstart quide that covers the most common setup. Sections covered:"
+msgstr ""
+
+#: ../../docs/quickstart.rst:12
+msgid "Configuration"
+msgstr ""
+
+#: ../../docs/quickstart.rst:14
+msgid ""
+"You must provide a custom configuration to set `dbpath` (your database "
+"location) and `host` (a list of websites for CORS_). All other options "
+"have sane defaults."
+msgstr ""
+
+#: ../../docs/quickstart.rst:33
+msgid ""
+"Note, that multiple, *different* websites are **not** supported in a "
+"single configuration. To serve comments for different websites, refer to "
+":ref:`Multiple Sites <configure-multiple-sites>`."
+msgstr ""
+
+#: ../../docs/quickstart.rst:37
+msgid ""
+"The moderation is done with signed URLs sent by email or logged to "
+"stdout. By default, comments are accepted and immediately shown to other "
+"users. To enable moderation queue, add:"
+msgstr ""
+
+#: ../../docs/quickstart.rst:46
+msgid ""
+"To moderate comments, either use the activation or deletion URL in the "
+"logs or :ref:`use SMTP <configure-smtp>` to get notified of new comments,"
+" including the URLs for activation and deletion:"
+msgstr ""
+
+#: ../../docs/quickstart.rst:57
+msgid ""
+"For more options, see :doc:`server <configuration/server>` and "
+":doc:`client <configuration/client>` configuration."
+msgstr ""
+
+#: ../../docs/quickstart.rst:61
+msgid "Migration"
+msgstr ""
+
+#: ../../docs/quickstart.rst:63
+msgid ""
+"Isso provides a tool for importing comments from Disqus_ or WordPress_. "
+"You can also import comments from any other comment system, but this "
+"topic is more complex and covered in :doc:`advanced migration <extras"
+"/advanced-migration>`."
+msgstr ""
+
+#: ../../docs/quickstart.rst:67
+msgid ""
+"To export your comments from Disqus, log into Disqus, go to your website,"
+" click on *Discussions* and select the *Export* tab. You'll receive an "
+"email with your comments. Unfortunately, Disqus does not export up- and "
+"downvotes."
+msgstr ""
+
+#: ../../docs/quickstart.rst:71
+msgid ""
+"To export comments from your previous WordPress installation, go to "
+"*Tools*, export your data. It has been reported that WordPress may "
+"generate broken XML. Try to repair the file using ``xmllint`` before you "
+"continue with the import."
+msgstr ""
+
+#: ../../docs/quickstart.rst:75
+msgid "Now import the XML dump:"
+msgstr ""
+
+#: ../../docs/quickstart.rst:86
+msgid "Running Isso"
+msgstr ""
+
+#: ../../docs/quickstart.rst:88
+msgid "To run Isso, simply execute:"
+msgstr ""
+
+#: ../../docs/quickstart.rst:95
+msgid ""
+"Next, we configure Nginx_ to proxy Isso. Do not run Isso on a public "
+"interface! A popular but often error-prone (because of CORS_) setup to "
+"host Isso uses a dedicated domain such as ``comments.example.tld``."
+msgstr ""
+
+#: ../../docs/quickstart.rst:99
+msgid ""
+"Assuming both, your website and Isso are on the same server, the nginx "
+"configuration looks like this:"
+msgstr ""
+
+#: ../../docs/quickstart.rst:123
+msgid "Integration"
+msgstr ""
+
+#: ../../docs/quickstart.rst:125
+msgid "Now, you embed Isso to your website:"
+msgstr ""
+
+#: ../../docs/quickstart.rst:134
+msgid ""
+"Note, that `data-isso` is optional, but when a website includes a script "
+"using ``async`` it is no longer possible to determine the script's "
+"external URL."
+msgstr ""
+
+#: ../../docs/quickstart.rst:137
+msgid ""
+"That's it. When you open your website, you should see a commenting form. "
+"Leave a comment to see if the setup works. If not, see "
+":doc:`troubleshooting`."
+msgstr ""
+
+#: ../../docs/quickstart.rst:141
+msgid "Going Further"
+msgstr ""
+
+#: ../../docs/quickstart.rst:143
+msgid ""
+"There are several server and client configuration options uncovered in "
+"this quickstart, check out :doc:`configuration/server` and "
+":doc:`configuration/client` for more information. For further website "
+"integration, see :doc:`extras/advanced-integration`."
+msgstr ""
+
+#: ../../docs/quickstart.rst:148
+msgid ""
+"To launch Isso automatically, check the :ref:`init-scripts` section from "
+"the installation guide. A different approach to deploy a web application "
+"is written here: :doc:`Deployment of Isso <extras/deployment>`."
+msgstr ""
+
+#: ../../docs/setup/multiple-sites.rst:5
+msgid "Multiple Sites"
+msgstr ""
+
+#: ../../docs/setup/multiple-sites.rst:7
+msgid ""
+"Isso is designed to serve comments for a single website and therefore "
+"stores comments for a relative URL to support HTTP, HTTPS and even domain"
+" transfers without manual intervention. But you can chain Isso to support"
+" multiple websites on different domains."
+msgstr ""
+
+#: ../../docs/setup/multiple-sites.rst:12
+msgid ""
+"The following example uses `gunicorn <http://gunicorn.org/>`_ as WSGI "
+"server ( you can use uWSGI as well). Let's say you maintain two websites,"
+" like foo.example and other.bar:"
+msgstr ""
+
+#: ../../docs/setup/multiple-sites.rst:30
+msgid ""
+"Then you run Isso with gunicorn (separate multiple configuration files by"
+" semicolon):"
+msgstr ""
+
+#: ../../docs/setup/multiple-sites.rst:38
+msgid "In your webserver configuration, proxy Isso as usual:"
+msgstr ""
+
+#: ../../docs/setup/multiple-sites.rst:51
+msgid ""
+"When you now visit http://comments.example/, you will see your different "
+"Isso configuration separated by /`name`."
+msgstr ""
+
+#: ../../docs/setup/multiple-sites.rst:60
+msgid ""
+"Just embed the JavaScript including the new relative path, e.g. "
+"*http://comments.example/foo/js/embed.min.js*. Make sure, you don't mix "
+"the URLs on both sites as it will most likely cause CORS-related errors."
+msgstr ""
+
+#: ../../docs/setup/sub-uri.rst:2
+msgid "Sub-URI"
+msgstr ""
+
+#: ../../docs/setup/sub-uri.rst:4
+msgid ""
+"You can run Isso on the same domain as your website, which circumvents "
+"issues originating from CORS_. Also, privacy-protecting browser addons "
+"such as `Request Policy`_ wont block comments."
+msgstr ""
+
+#: ../../docs/setup/sub-uri.rst:25
+msgid ""
+"Now, the website integration is just as described in :doc:`../quickstart`"
+" but with a different location."
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:2
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:5
+msgid "For uberspace users"
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:6
+msgid ""
+"Some uberspace users experienced problems with isso and they solved their"
+" issue by adding `DirectoryIndex disabled` as the first line in the "
+"`.htaccess` file for the domain the isso server is running on."
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:11
+msgid "pkg_ressources.DistributionNotFound"
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:13
+msgid ""
+"This is usually caused by messing up the system's Python with newer "
+"packages from PyPi (e.g. by executing `easy_install --upgrade pip` as "
+"root) and is not related to Isso at all."
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:17
+msgid ""
+"Install Isso in a virtual environment as described in :ref:`install-"
+"interludium`. Alternatively, you can use `pip install --user` to install "
+"Isso into the user's home."
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:22
+msgid "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff"
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:24
+msgid ""
+"Likely an issue with your environment, check you set your preferred file "
+"encoding either in :envvar:`LANG`, :envvar:`LANGUAGE`, :envvar:`LC_ALL` "
+"or :envvar:`LC_CTYPE`:"
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:32
+msgid ""
+"If none of the mentioned variables is set, the interaction with Isso will"
+" likely fail (unable to print non-ascii characters to stdout/err, unable "
+"to parse configuration file with non-ascii characters and to forth)."
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:37
+msgid "The web console shows 404 Not Found responses"
+msgstr ""
+
+#: ../../docs/troubleshooting.rst:39
+msgid "That's fine. Isso returns \"404 Not Found\" to indicate \"No comments\"."
+msgstr ""
+

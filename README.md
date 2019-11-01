@@ -7,4 +7,4 @@ Python and JavaScript. It aims to be a drop-in replacement for
 
 ![Isso in Action](http://posativ.org/~tmp/isso-sample.png)
 
-See [posativ.org/isso](http://posativ.org/isso/) for more details.
+See [isso-cn.rtfd.vip](https://isso-cn.rtfd.vip) for more details.
