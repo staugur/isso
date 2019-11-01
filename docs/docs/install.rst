@@ -199,7 +199,7 @@ Install JavaScript modules:
 
 .. code-block:: sh
 
-    ~> npm install -g bower //or: yarn global add bower
+    ~> npm install -g bower # or `yarn global add bower`
     ~> make init
 
 Integration without optimization:
@@ -213,7 +213,7 @@ Optimization:
 
 .. code-block:: sh
 
-    ~> npm install -g requirejs uglify-js jade //or: yarn global add requirejs uglify-js jade
+    ~> npm install -g requirejs uglify-js jade # or `yarn global add requirejs uglify-js jade`
     ~> make js
 
 .. _init-scripts:
