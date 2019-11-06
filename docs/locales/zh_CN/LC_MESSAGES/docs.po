@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Isso 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-31 15:02+0800\n"
+"POT-Creation-Date: 2019-11-06 09:57+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,9 +25,7 @@ msgstr ""
 msgid ""
 "You can configure the client (the JS part) with custom data attributes, "
 "preferably in the script tag which embeds the JS:"
-msgstr ""
-"您可以使用自定义数据属性来配置客户端（JS部分），"
-"最好在嵌入JS的脚本标签中："
+msgstr "您可以使用自定义数据属性来配置客户端（JS部分），最好在嵌入JS的脚本标签中："
 
 #: ../../docs/configuration/client.rst:28
 msgid ""
@@ -43,9 +41,8 @@ msgid ""
 "if you want to override the english translation of the ``postbox-"
 "notification`` message, you could add:"
 msgstr ""
-"此外，您可以通过添加 ``data-isso-`` 属性来覆盖任何语言的任何翻译字符串，该属性"
-"等于附加了 ``-text-[lang]`` 的翻译键（在 `here`__ 找到）。因此，例如，如果要"
-"覆盖 ``postbox-notification`` 消息的英文翻译，可以添加："
+"此外，您可以通过添加 ``data-isso-`` 属性来覆盖任何语言的任何翻译字符串，该属性等于附加了 ``-text-[lang]`` "
+"的翻译键（在 `here`__ 找到）。因此，例如，如果要覆盖 ``postbox-notification`` 消息的英文翻译，可以添加："
 
 #: ../../docs/configuration/client.rst:40
 msgid ""
@@ -62,9 +59,7 @@ msgid ""
 "Isso usually detects the REST API automatically, but when you serve the "
 "JS script on a different location, this may fail. Use `data-isso` to "
 "override the API location:"
-msgstr ""
-"Isso通常会自动检测REST API，但是当您在其他位置提供JS脚本时，这可能会失败。"
-"使用 `data-isso` 覆盖API位置："
+msgstr "Isso通常会自动检测REST API，但是当您在其他位置提供JS脚本时，这可能会失败。使用 `data-isso` 覆盖API位置："
 
 #: ../../docs/configuration/client.rst:56
 msgid "data-isso-css"
@@ -86,16 +81,16 @@ msgid ""
 " 12 languages. The language is configured by its `ISO 639-1 "
 "<https://en.wikipedia.org/wiki/ISO_639-1>`_ (two letter) code."
 msgstr ""
-"覆盖用户代理的首选语言。 Isso已被翻译成12多种语言。 该语言由"
-" `ISO 639-1（两个字母） <https://en.wikipedia.org/wiki/ISO_639-1>`_ 代码配置。"
+"覆盖用户代理的首选语言。 Isso已被翻译成12多种语言。 该语言由 `ISO 639-1（两个字母） "
+"<https://en.wikipedia.org/wiki/ISO_639-1>`_ 代码配置。"
 
 #: ../../docs/configuration/client.rst:72
 msgid ""
 "You find a list of all supported languages on `GitHub "
 "<https://github.com/posativ/isso/tree/master/isso/js/app/i18n>`_."
 msgstr ""
-"您可以在"
-" `GitHub <https://github.com/posativ/isso/tree/master/isso/js/app/i18n>`_ "
+"您可以在 `GitHub "
+"<https://github.com/posativ/isso/tree/master/isso/js/app/i18n>`_ "
 "上找到所有受支持语言的列表。"
 
 #: ../../docs/configuration/client.rst:76
@@ -140,8 +135,7 @@ msgstr ""
 msgid ""
 "Number of top level (or nested) comments to show by default. If some "
 "comments are not shown, an \"X Hidden\" link is shown."
-msgstr ""
-"默认显示的顶级（或嵌套）评论数。 如果未显示某些评论，则会显示 \"X Hidden\" 链接。"
+msgstr "默认显示的顶级（或嵌套）评论数。 如果未显示某些评论，则会显示 \"X Hidden\" 链接。"
 
 #: ../../docs/configuration/client.rst:101
 msgid "Set to `\"inf\"` to show all, or `\"0\"` to hide all."
@@ -183,8 +177,8 @@ msgid ""
 " space. If you use less than eight colors and not a multiple of 2, the "
 "color distribution is not even."
 msgstr ""
-"设置头像前景色。最多可以有8种颜色。默认配色方案基于 `此调色板 <http://colrd.com/palette/19308/>`_ 。"
-"多种颜色必须用空格隔开。如果使用的颜色少于八种，而不是2的倍数，则颜色分布不均匀。"
+"设置头像前景色。最多可以有8种颜色。默认配色方案基于 `此调色板 <http://colrd.com/palette/19308/>`_ "
+"。多种颜色必须用空格隔开。如果使用的颜色少于八种，而不是2的倍数，则颜色分布不均匀。"
 
 #: ../../docs/configuration/client.rst:127
 msgid "data-isso-gravatar"
@@ -197,7 +191,9 @@ msgid ""
 "both the gravatar and avatar svg image will show up. Please also set "
 "option \"gravatar\" to **true** in the server configuration..."
 msgstr ""
-"使用gravatar头像而不是生成svg头像。要使用此功能，必须将 \"data-isso-avatar\" 设置为 **false** 。否则，将显示gravatar和avatar的svg头像（显示双头像）。另外，还请在服务器配置中将选项 \"gravatar\" 设置为 **true** 。"
+"使用gravatar头像而不是生成svg头像。要使用此功能，必须将 \"data-isso-avatar\" 设置为 **false** "
+"。否则，将显示gravatar和avatar的svg头像（显示双头像）。另外，还请在服务器配置中将选项 \"gravatar\" 设置为 "
+"**true** 。"
 
 #: ../../docs/configuration/client.rst:135
 msgid "data-isso-vote"
@@ -216,8 +212,9 @@ msgid ""
 "List of vote levels used to customize comment appearance based on score. "
 "Provide a comma-separated values (eg. `\"0,5,10,25,100\"`) or a JSON "
 "array (eg. `\"[-5,5,15]\"`)."
-msgstr "用于根据评分自定义评论外观的投票级别列表。提供逗号分隔的值（例如 `\"0,5,10,25,100\"` ）"
-"或JSON数组（例如 `\"[-5,5,15]\"` ）。"
+msgstr ""
+"用于根据评分自定义评论外观的投票级别列表。提供逗号分隔的值（例如 `\"0,5,10,25,100\"` ）或JSON数组（例如 "
+"`\"[-5,5,15]\"` ）。"
 
 #: ../../docs/configuration/client.rst:145
 msgid ""
@@ -252,8 +249,7 @@ msgid ""
 "Enable or disable the addition of a link to the feed for the comment "
 "thread. The link will only be valid if the appropriate setting, in "
 "``[rss]`` section, is also enabled server-side."
-msgstr "启用或禁用向评论feed中添加链接。"
-"仅当在服务器端也启用了 ``[rss]`` 部分中的适当设置时，该链接才有效。"
+msgstr "启用或禁用向评论feed中添加链接。仅当在服务器端也启用了 ``[rss]`` 部分中的适当设置时，该链接才有效。"
 
 #: ../../docs/configuration/server.rst:2
 msgid "Server Configuration"
@@ -267,17 +263,15 @@ msgid ""
 "<https://github.com/posativ/isso/blob/master/share/isso.conf>`. A basic "
 "configuration from scratch looks like this:"
 msgstr ""
-"Isso配置文件是 `INI-style`__ 文本文件。它读取整数，布尔值，字符串和列表。"
-"这是默认的isso配置： `isso.conf <https://github.com/posativ/isso/blob/master/share/isso.conf>` 。"
-"从头开始的基本配置如下所示："
+"Isso配置文件是 `INI-style`__ 文本文件。它读取整数，布尔值，字符串和列表。这是默认的isso配置： `isso.conf "
+"<https://github.com/posativ/isso/blob/master/share/isso.conf>` "
+"。从头开始的基本配置如下所示："
 
 #: ../../docs/configuration/server.rst:17
 msgid ""
 "To use your configuration file with Isso, append ``-c /path/to/cfg`` to "
 "the executable or run Isso with an environment variable:"
-msgstr ""
-"要将配置文件与Isso一起使用，请将 ``-c /path/to/cfg`` 附加到可执行文件"
-"或使用环境变量运行Isso："
+msgstr "要将配置文件与Isso一起使用，请将 ``-c /path/to/cfg`` 附加到可执行文件或使用环境变量运行Isso："
 
 #: ../../docs/configuration/server.rst:27
 msgid "Sections covered in this document:"
@@ -292,9 +286,7 @@ msgid ""
 "In this section, you configure most comment-related options such as "
 "database path, session key and hostname. Here are the default values for "
 "this section:"
-msgstr ""
-"在本节中，您将配置大多数与评论相关的选项，例如数据库路径、会话密钥和主机名。"
-"这是此部分的默认值："
+msgstr "在本节中，您将配置大多数与评论相关的选项，例如数据库路径、会话密钥和主机名。这是此部分的默认值："
 
 #: ../../docs/configuration/server.rst:51
 msgid "dbpath"
@@ -334,16 +326,15 @@ msgid ""
 "security reasons: Isso uses CORS_ to embed comments and to restrict "
 "comments only to your website, you have to \"whitelist\" your website(s)."
 msgstr ""
-"您至少需要一个主机/网站才能运行Isso。这是出于安全原因：Isso使用 CORS_ 嵌入评论"
-"并限制仅您的网站才能评论，您必须设置网站 \"白名单\" 。"
+"您至少需要一个主机/网站才能运行Isso。这是出于安全原因：Isso使用 CORS_ 嵌入评论并限制仅您的网站才能评论，您必须设置网站 "
+"\"白名单\" 。"
 
 #: ../../docs/configuration/server.rst:65
 msgid ""
 "I recommend the first value to be a non-SSL website that is used as "
 "fallback if Firefox users (and only those) supress their HTTP referer "
 "completely."
-msgstr ""
-"我建议第一个值是一个非SSL的网站，如果Firefox用户（并且只有这些用户）完全限制了他们的HTTP referer，那么该网站可以作为备用。"
+msgstr "我建议第一个值是一个非SSL的网站，如果Firefox用户（并且只有这些用户）完全限制了他们的HTTP referer，那么该网站可以作为备用。"
 
 #: ../../docs/configuration/server.rst:77
 msgid "max-age"
@@ -354,7 +345,8 @@ msgid ""
 "time range that allows users to edit/remove their own comments. See "
 ":ref:`Appendum: Timedelta <appendum-timedelta>` for valid values."
 msgstr ""
-"允许用户编辑/删除自己评论的时间范围。有效值请参见附录 :ref:`Appendum: Timedelta <appendum-timedelta>` 。"
+"允许用户编辑/删除自己评论的时间范围。有效值请参见附录 :ref:`Appendum: Timedelta <appendum-"
+"timedelta>` 。"
 
 #: ../../docs/configuration/server.rst:89
 msgid "notify"
@@ -424,9 +416,9 @@ msgid ""
 "This is only true when using the default value for \"gravatar-url\" which"
 " contains the query string param ``d=identicon`` ..."
 msgstr ""
-"当设置为 ``true`` 时，这将向每个评论添加包含链接到gravatar图像的属性"
-" \"gravatar_image\" 。如果评论不包含电子邮件地址，则gravatar将呈现一个随机图标。"
-"仅当使用 \"gravatar-url\" 默认值（包含查询字符串参数 ``d=identicon`` ）时，这才是正确的。"
+"当设置为 ``true`` 时，这将向每个评论添加包含链接到gravatar图像的属性 \"gravatar_image\" "
+"。如果评论不包含电子邮件地址，则gravatar将呈现一个随机图标。仅当使用 \"gravatar-url\" 默认值（包含查询字符串参数 "
+"``d=identicon`` ）时，这才是正确的。"
 
 #: ../../docs/configuration/server.rst:113
 msgid "gravatar-url"
@@ -437,8 +429,8 @@ msgid ""
 "Url for gravatar images. The \"{}\" is where the email hash will be "
 "placed. Defaults to \"https://www.gravatar.com/avatar/{}?d=identicon\""
 msgstr ""
-"gravatar图像的网址。 \"{}\" 是放置电子邮件哈希的位置。默认为"
-" \"https://www.gravatar.com/avatar/{}?d=identicon\""
+"gravatar图像的网址。 \"{}\" 是放置电子邮件哈希的位置。默认为 "
+"\"https://www.gravatar.com/avatar/{}?d=identicon\""
 
 #: ../../docs/configuration/server.rst:119
 msgid "Moderation"
@@ -459,8 +451,7 @@ msgid ""
 "enable comment moderation queue. This option only affects new comments. "
 "Comments in moderation queue are not visible to other users until you "
 "activate them."
-msgstr "启用评论审核队列。此选项仅影响新评论。"
-"除非激活它们，否则其他用户看不到审核队列中的评论。"
+msgstr "启用评论审核队列。此选项仅影响新评论。除非激活它们，否则其他用户看不到审核队列中的评论。"
 
 #: ../../docs/configuration/server.rst:136
 msgid "purge-after"
@@ -493,9 +484,10 @@ msgid ""
 " `#295 <https://github.com/surfly/gevent/issues/295>`_ and `#299 "
 "<https://github.com/surfly/gevent/issues/299>`_ for details)."
 msgstr ""
-"当 ``gevent`` 可用时，它将自动用于 `http://` 。当前，gevent无法处理unix域套接字"
-"上的http请求（有关详细信息，请参阅 `#295 <https://github.com/surfly/gevent/issues/295>`_ 和"
-" `#299 <https://github.com/surfly/gevent/issues/299>`_ ）。"
+"当 ``gevent`` 可用时，它将自动用于 `http://` "
+"。当前，gevent无法处理unix域套接字上的http请求（有关详细信息，请参阅 `#295 "
+"<https://github.com/surfly/gevent/issues/295>`_ 和 `#299 "
+"<https://github.com/surfly/gevent/issues/299>`_ ）。"
 
 #: ../../docs/configuration/server.rst:165
 msgid "Does not apply for `uWSGI`."
@@ -511,8 +503,9 @@ msgid ""
 "http:// or https:// absolute address. If left blank, automatic detection "
 "is attempted. Normally only needs to be specified if different than the "
 "`listen` setting."
-msgstr "最终用户可以访问Isso的公共URL。应始终为 http:// 或 https:// 的绝对地址。"
-"如果留空，则尝试自动检测。通常，仅当与 `listen` 设置不同时才需要指定。"
+msgstr ""
+"最终用户可以访问Isso的公共URL。应始终为 http:// 或 https:// 的绝对地址。如果留空，则尝试自动检测。通常，仅当与 "
+"`listen` 设置不同时才需要指定。"
 
 #: ../../docs/configuration/server.rst:175
 msgid "reload"
@@ -544,8 +537,8 @@ msgid ""
 "you also can moderate (=activate or delete) comments. Don't forget to "
 "configure ``notify = smtp`` in the general section."
 msgstr ""
-"Isso可以在有新评论时使用SMTP发送通知。在邮件通知中，您还可以审核（=激活或删除）评论。"
-"不要忘记在 general 部分中配置 ``notify = smtp`` 。"
+"Isso可以在有新评论时使用SMTP发送通知。在邮件通知中，您还可以审核（=激活或删除）评论。不要忘记在 general 部分中配置 "
+"``notify = smtp`` 。"
 
 #: ../../docs/configuration/server.rst:203
 msgid "username"
@@ -590,9 +583,8 @@ msgid ""
 "vulnerable to Man-in-the-Middle attacks. You should definitely use a "
 "dedicated SMTP account for Isso in that case."
 msgstr ""
-"安全连接到服务器，允许的值： *none* ，*starttls* 或 *ssl* 。请注意，"
-"Python 2.7和3.3没有实现认证验证的简便方法，因此该连接容易受到中间人攻击。"
-"在这种情况下，您绝对应该为Isso使用专用的SMTP帐户。"
+"安全连接到服务器，允许的值： *none* ，*starttls* 或 *ssl* 。请注意，Python "
+"2.7和3.3没有实现认证验证的简便方法，因此该连接容易受到中间人攻击。在这种情况下，您绝对应该为Isso使用专用的SMTP帐户。"
 
 #: ../../docs/configuration/server.rst:223
 msgid "to"
@@ -712,8 +704,9 @@ msgstr ""
 msgid ""
 "`Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, all"
 " flags starting with `EXT_` can be used there, separated by comma."
-msgstr "`Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, "
-"所有以 `EXT_` 开头的标志都可以在此处使用，以逗号（英文）分隔。"
+msgstr ""
+"`Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, 所有以"
+" `EXT_` 开头的标志都可以在此处使用，以逗号（英文）分隔。"
 
 #: ../../docs/configuration/server.rst:300
 msgid "allowed-elements"
@@ -725,10 +718,10 @@ msgid ""
 "By default, only *a*, *blockquote*, *br*, *code*, *del*, *em*, *h1*, "
 "*h2*, *h3*, *h4*, *h5*, *h6*, *hr*, *ins*, *li*, *ol*, *p*, *pre*, "
 "*strong*, *table*, *tbody*, *td*, *th*, *thead* and *ul* are allowed."
-msgstr "允许在生成输出内容中使用的其他HTML标记，以逗号分隔。默认情况下，只有"
-" *a*, *blockquote*, *br*, *code*, *del*, *em*, *h1*,"
-" *h2*, *h3*, *h4*, *h5*, *h6*, *hr*, *ins*, *li*, *ol*, *p*, *pre*, "
-"*strong*, *table*, *tbody*, *td*, *th*, *thead* 和 *ul* 被允许。"
+msgstr ""
+"允许在生成输出内容中使用的其他HTML标记，以逗号分隔。默认情况下，只有 *a*, *blockquote*, *br*, *code*, "
+"*del*, *em*, *h1*, *h2*, *h3*, *h4*, *h5*, *h6*, *hr*, *ins*, *li*, *ol*,"
+" *p*, *pre*, *strong*, *table*, *tbody*, *td*, *th*, *thead* 和 *ul* 被允许。"
 
 #: ../../docs/configuration/server.rst:305
 msgid "allowed-attributes"
@@ -739,16 +732,15 @@ msgid ""
 "Additional HTML attributes (independent from elements) to allow in the "
 "generated output, comma-separated. By default, only *align* and *href* "
 "are allowed."
-msgstr ""
-"允许在生成输出内容中使用的额外HTML属性（独立于元素），以逗号分隔。默认情况下，只有"
-" *align* 和 *href* 被允许。"
+msgstr "允许在生成输出内容中使用的额外HTML属性（独立于元素），以逗号分隔。默认情况下，只有 *align* 和 *href* 被允许。"
 
 #: ../../docs/configuration/server.rst:307
 msgid ""
 "To allow images in comments, you just need to add ``allowed-elements = "
 "img`` and ``allowed-attributes = src``."
-msgstr "要允许在评论中显示图片，您只需添加 ``allowed-elements = img`` 和"
-" ``allowed-attributes = src`` 。"
+msgstr ""
+"要允许在评论中显示图片，您只需添加 ``allowed-elements = img`` 和 ``allowed-attributes = "
+"src`` 。"
 
 #: ../../docs/configuration/server.rst:311
 msgid "Hash"
@@ -758,8 +750,7 @@ msgstr ""
 msgid ""
 "Customize used hash functions to hide the actual email addresses from "
 "commenters but still be able to generate an identicon."
-msgstr ""
-"自定义使用的哈希函数以隐藏来自评论的实际邮件地址，但仍然能够生成一个标识图标。"
+msgstr "自定义使用的哈希函数以隐藏来自评论的实际邮件地址，但仍然能够生成一个标识图标。"
 
 #: ../../docs/configuration/server.rst:325
 msgid "salt"
@@ -771,8 +762,7 @@ msgid ""
 "of pepper (yet). The default value has been in use since the release of "
 "Isso and generates the same identicons for same addresses across "
 "installations."
-msgstr "加盐用来防御彩虹表。Isso还没有使用pepper（大概是机器人之类的）。"
-"自Isso发行以来，该默认值一直在使用，并且会在安装过程中为相同的地址生成相同的标识。"
+msgstr "加盐用来防御彩虹表。Isso还没有使用pepper（大概是机器人之类的）。自Isso发行以来，该默认值一直在使用，并且会在安装过程中为相同的地址生成相同的标识。"
 
 #: ../../docs/configuration/server.rst:335
 msgid "algorithm"
@@ -790,9 +780,10 @@ msgid ""
 "1000 iterations, 6 bytes to generate and SHA1 as pseudo-random family "
 "used for key strengthening. Arguments have to be in that order, but can "
 "be reduced to `pbkdf2:4096` for example to override the iterations only."
-msgstr "PBKDF2的实际标识符是 `pbkdf2:1000:6:sha1` ，这意味着1000次迭代，"
-"要生成6个字节，sha1是用于密钥增强的伪随机家族。参数必须按此顺序排列，"
-"但可以缩减为 `pbkdf2:4096` ，例如仅覆盖迭代。"
+msgstr ""
+"PBKDF2的实际标识符是 `pbkdf2:1000:6:sha1` "
+"，这意味着1000次迭代，要生成6个字节，sha1是用于密钥增强的伪随机家族。参数必须按此顺序排列，但可以缩减为 `pbkdf2:4096` "
+"，例如仅覆盖迭代。"
 
 #: ../../docs/configuration/server.rst:340
 msgid "RSS"
@@ -803,8 +794,7 @@ msgid ""
 "Isso can provide an Atom feed for each comment thread. Users can use them"
 " to subscribe to comments and be notified of changes. Atom feeds are "
 "enabled as soon as there is a base URL defined in this section."
-msgstr "Isso可以为每个评论主题帖提供一个Atom摘要。用户可以使用它们订阅评论并"
-"收到更改通知。一旦在此部分中定义了基本URL，就会启用Atom功能。"
+msgstr "Isso可以为每个评论主题帖提供一个Atom摘要。用户可以使用它们订阅评论并收到更改通知。一旦在此部分中定义了基本URL，就会启用Atom功能。"
 
 #: ../../docs/configuration/server.rst:353
 msgid "base"
@@ -833,8 +823,7 @@ msgid ""
 "Isso has an optional web administration interface that can be used to "
 "moderate comments. The interface is available under ``/admin`` on your "
 "isso URL."
-msgstr "Isso具有可选的Web管理界面，可用于审核评论。"
-"该接口位于Isso URL上的 ``/admin`` 下。"
+msgstr "Isso具有可选的Web管理界面，可用于审核评论。该接口位于Isso URL上的 ``/admin`` 下。"
 
 #: ../../docs/configuration/server.rst:371
 msgid "whether to enable the admin interface"
@@ -859,8 +848,7 @@ msgid ""
 "A human-friendly representation of a time range: `1m` equals to 60 "
 "seconds. This works for years (y), weeks (w), days (d) and seconds (s), "
 "e.g. `30s` equals 30 to seconds."
-msgstr "时间范围的人性化表示形式： `1m` 等于60秒。这适用于年（y），周（w），天（d）"
-"和秒（s），例如 `30s` 等于30秒。"
+msgstr "时间范围的人性化表示形式： `1m` 等于60秒。这适用于年（y），周（w），天（d）和秒（s），例如 `30s` 等于30秒。"
 
 #: ../../docs/configuration/server.rst:386
 msgid ""
@@ -887,9 +875,11 @@ msgid ""
 "header in the response. This environent variable allows you to define a "
 "broader fixed value, in order for example to share a single Isso instance"
 " among serveral of your subdomains : `ISSO_CORS_ORIGIN=*.example.test`"
-msgstr "默认情况下， `isso` 将使用 `Host` 或HTTP请求头的 `Referrer` 字段在响应中定义CORS `Access-Control-Allow-Origin` 的HTTP标头。"
-"此环境变量使您可以定义一个较大的固定值，例如方便在您子域的服务器之间共享单个Isso实例："
-" `ISSO_CORS_ORIGIN=*.example.test`"
+msgstr ""
+"默认情况下， `isso` 将使用 `Host` 或HTTP请求头的 `Referrer` 字段在响应中定义CORS `Access-"
+"Control-Allow-Origin` "
+"的HTTP标头。此环境变量使您可以定义一个较大的固定值，例如方便在您子域的服务器之间共享单个Isso实例： "
+"`ISSO_CORS_ORIGIN=*.example.test`"
 
 #: ../../docs/extras/advanced-integration.rst:2
 msgid "Advanced integration"
@@ -1518,19 +1508,18 @@ msgstr ""
 
 #: ../../docs/index.rst:2
 msgid "Overview"
-msgstr "概述"
+msgstr ""
 
 #: ../../docs/index.rst:4
 msgid ""
 "Welcome to Isso's documentation. This documentation will help you get "
 "started fast. If you get any problems when using Isso, you can find the "
 "answer in troubleshooting guide or you can ask me on IRC or GitHub."
-msgstr "欢迎使用Isso文档，本文档将帮助您快速入门。如果在使用Isso时遇到任何问题，"
-"可以在故障排除指南中找到答案，也可以在IRC或GitHub上问我。"
+msgstr "欢迎使用Isso文档，本文档将帮助您快速入门。如果在使用Isso时遇到任何问题，可以在故障排除指南中找到答案，也可以在IRC或GitHub上问我。"
 
 #: ../../docs/index.rst:8
 msgid "Documentation overview:"
-msgstr ""
+msgstr "文档概述："
 
 #: ../../docs/index.rst:18 ../../docs/man/index.rst:5
 msgid "What's Isso?"
@@ -1542,7 +1531,7 @@ msgid ""
 "anonymous comments, maintains identity and is simple to administrate. It "
 "uses JavaScript and cross-origin ressource sharing for easy integration "
 "into (static) websites."
-msgstr ""
+msgstr "Isso是类似于Disqus的轻量级评论服务器。它允许匿名评论，保持身份并且易于管理。它使用JavaScript和跨域资源共享来轻松集成到（静态）网站。"
 
 #: ../../docs/index.rst:25 ../../docs/man/index.rst:12
 msgid "No, I meant \"Isso\""
@@ -1554,10 +1543,12 @@ msgid ""
 " can roughly be translated to \"I'm yelling otherwise\". It usually ends "
 "the discussion without any further arguments."
 msgstr ""
+"Isso是德语中 \"Ich schrei sonst!\" 的非正式缩写，可以粗略地翻译为 "
+"\"我在大喊大叫\"。它通常在没有进一步争论的情况下结束讨论。"
 
 #: ../../docs/index.rst:31 ../../docs/man/index.rst:18
 msgid "In germany, Isso `is also pokémon N° 360`__."
-msgstr ""
+msgstr "在德语里，Isso也是 `pokémon N° 360`__ 。"
 
 #: ../../docs/index.rst:36 ../../docs/man/index.rst:23
 msgid "What's wrong with Disqus?"
@@ -1569,11 +1560,11 @@ msgid ""
 "the USA, third-party. Just like IntenseDebate, livefrye etc. When you "
 "embed Disqus, they can do anything with your readers (and probably mine "
 "Bitcoins, see the loading times)."
-msgstr ""
+msgstr "在美国没有第三方托管的匿名评论（记录IP地址，电子邮件和姓名），就像IntenseDebate、livefrye等。当您嵌入Disqus时，它们可以对您的读者执行任何操作（并且可能是挖矿比特币，请参阅加载时间）"
 
 #: ../../docs/index.rst:43
 msgid "Isso is not the first open-source commenting server:"
-msgstr ""
+msgstr "Isso不是第一个开放源代码评论服务器："
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -1581,6 +1572,8 @@ msgid ""
 "Unfortunately, talkatv's (read \"talkative\") development stalled. "
 "Neither anonymous nor threaded comments."
 msgstr ""
+"`talkatv <https://github.com/talkatv/talkatv>`_ "
+"，用Python编写。不幸的是，talkatv（阅读为 \"talkative\" ）的发展停滞了。既没有匿名评论也没有评论主题贴。"
 
 #: ../../docs/index.rst:49
 msgid ""
@@ -1588,6 +1581,8 @@ msgid ""
 "No threaded comments, nice administration webinterface, but... yeah... "
 "Ruby."
 msgstr ""
+"`Juvia <https://github.com/phusion/juvia>`_ "
+"，用Ruby编写（Rails）。没有评论主题，不错的管理Web界面，但是……是的，Ruby。"
 
 #: ../../docs/index.rst:52
 msgid ""
@@ -1595,12 +1590,16 @@ msgid ""
 "disqus>`_, written in PHP__ (compare to Python__). Did I forgot "
 "something?"
 msgstr ""
+"`Tildehash.com <http://www.tildehash.com/?article=why-im-reinventing-"
+"disqus>`_ ，用 PHP__ 编写（与 Python__ 比较）。我忘了什么吗？"
 
 #: ../../docs/index.rst:55
 msgid ""
 "`Unobtrusive, self-hosted comments "
 "<http://stackoverflow.com/q/2053217>`_, discussion on StackOverflow."
 msgstr ""
+"`Unobtrusive, self-hosted comments <http://stackoverflow.com/q/2053217>`_"
+" ，在StackOverflow上讨论。"
 
 #: ../../docs/install.rst:2 ../../docs/install.rst:101
 msgid "Installation"
@@ -1613,6 +1612,10 @@ msgid ""
 "running Debian/Ubuntu, Gentoo, Archlinux or Fedora, you can use :ref"
 ":`prebuilt-package`. If not, read the next section carefully."
 msgstr ""
+"Isso是一个用Python编写的Web应用程序。如果pip和virtualenv对您来说没有任何意义，"
+"请继续从Pypi安装(:ref:`install-from-pypi`)。如果您正在运行Debian/Ubuntu、"
+"Gentoo、Archlinux或Fedora，则可以使用预编译软件包(:ref:`prebuilt-package`)。"
+"如果没有，请仔细阅读下一节。"
 
 #: ../../docs/install.rst:16
 msgid "Interludium: Python is not PHP"
@@ -1625,7 +1628,7 @@ msgid ""
 "distribution use Python for internal tools. Your package manager already "
 "ships several python libraries, but most likely not all required by Isso "
 "(or in an up-to-date version – looking at you, Debian!)."
-msgstr ""
+msgstr "如果您认为托管用Python编写的Web应用程序与使用PHP编写的Web应用程序一样容易，那您就错了。与PHP不同，许多Linux发行版都使用Python作为内部工具。您的软件包管理器已经提供了几个python库，但是Isso可能并不需要全部。"
 
 #: ../../docs/install.rst:24
 msgid ""
@@ -1639,6 +1642,12 @@ msgid ""
 "doing it wrong. `Why you should not use Python's easy_install carelessly "
 "on Debian`_ is worth the read."
 msgstr ""
+"这就是为什么大多数Python开发人员都使用 `Python Package Index`_ "
+"来获取其依赖项的原因。但最重要的规则是：切勿以root身份从PyPi安装 *任何内容* 。不是因为恶意软件，而是因为您 *将* 破坏系统。"
+" ``easy_install`` 是（管理）使您的系统混乱的一种工具，另一个包管理器是 ``pip`` 。"
+"如果您曾经搜索过Python/pip的问题，Stackoverflow则建议您使用 ``easy_install pip`` 或"
+" ``pip install --upgrade pip（作为root！）`` ，那么您做错了。"
+" `Why you should not use Python's easy_install carelessly on Debian`_ 值得一读。"
 
 #: ../../docs/install.rst:34
 msgid ""
@@ -1647,12 +1656,14 @@ msgid ""
 "`virtualenv`. Use this *always* if you are installing software "
 "unavailable in your favourite package manager."
 msgstr ""
+"幸运的是，Python提供了一种安装软件包（以root身份和以普通用户身份）而不干扰您全局安装的软件包的方法： `virtualenv` "
+"。如果您要安装自己喜欢的软件包管理器中没有的软件，请 *始终* 使用此方法。"
 
 #: ../../docs/install.rst:47
 msgid ""
 "The next steps should be done as regular user, not as root (although "
 "possible but not recommended):"
-msgstr ""
+msgstr "后续步骤应以普通用户而非root用户的身份进行（虽然可以，但不建议）："
 
 #: ../../docs/install.rst:55
 msgid ""
@@ -1663,6 +1674,8 @@ msgid ""
 "Manager (although it barely makes sense), it is completely independent "
 "from your global system."
 msgstr ""
+"调用 `source` 之后，您现在可以从PyPi安装软件包到该虚拟环境中。如果您不再喜欢Isso，则只需 `rm -rf` "
+"该文件夹（/opt/isso）。在此虚拟环境中，您还可以执行上方示例命令以升级Python软件包管理器（pip），它完全独立于全局系统。"
 
 #: ../../docs/install.rst:61
 msgid ""
@@ -1671,13 +1684,15 @@ msgid ""
 "or execute */opt/isso/bin/isso* directly. It will launch Isso from within"
 " the virtual environment."
 msgstr ""
+"要在虚拟环境外使用安装到虚拟环境里的Isso，只需要将 */opt/isso/bin* 添加到 :envvar:`PATH` "
+"环境变量中，或直接执行 */opt/isso/bin/isso* 。它会从虚拟环境中启动Isso。"
 
 #: ../../docs/install.rst:66
 msgid ""
 "With a virtualenv active, you may now continue to :ref:`install-from-"
-"pypi`! Of course you may not need a virtualenv when you are running "
+"pypi`. Of course you may not need a virtualenv when you are running "
 "dedicated virtual machines or a shared host (e.g. Uberspace.de)."
-msgstr ""
+msgstr "在激活virtualenv的情况下，您现在可以继续从PyPi安装(:ref:`install-from-pypi`)！当然，在运行专用虚拟机或共享主机（例如Uberspace.de）时，您可能不需要virtualenv。"
 
 #: ../../docs/install.rst:77
 msgid "Install from PyPi"
@@ -1685,7 +1700,7 @@ msgstr ""
 
 #: ../../docs/install.rst:80
 msgid "Requirements"
-msgstr ""
+msgstr "要求"
 
 #: ../../docs/install.rst:82 ../../docs/install.rst:171
 msgid "Python 2.7 or 3.4+ (+ devel headers)"
@@ -1697,39 +1712,40 @@ msgstr ""
 
 #: ../../docs/install.rst:84 ../../docs/install.rst:174
 msgid "a working C compiler"
-msgstr ""
+msgstr "C编译器"
 
 #: ../../docs/install.rst:86
 msgid ""
 "For Debian/Ubuntu just `copy and paste <http://thejh.net/misc/website-"
 "terminal-copy-paste>`_ to your terminal:"
-msgstr ""
+msgstr "对于Debian/Ubuntu，"
+"只需 `复制并粘贴 <http://thejh.net/misc/website-terminal-copy-paste>`_ 到您的终端："
 
 #: ../../docs/install.rst:93
 msgid "Similar for Fedora (and derivates):"
-msgstr ""
+msgstr "与Fedora（及其衍生产品）类似："
 
 #: ../../docs/install.rst:103
 msgid "Install Isso with `pip <http://www.pip-installer.org/en/latest/>`_:"
-msgstr ""
+msgstr "用 `pip <http://www.pip-installer.org/en/latest/>`_ 安装Isso："
 
 #: ../../docs/install.rst:109
 msgid "`Don't have pip? <https://twitter.com/gardaud/status/357638468572151808>`_"
-msgstr ""
+msgstr " `没有pip？ <https://twitter.com/gardaud/status/357638468572151808>`_ "
 
 #: ../../docs/install.rst:115
 msgid ""
 "For easier execution, you can symlink the executable to a location in "
 "your :envvar:`PATH`."
-msgstr ""
+msgstr "为了更容易执行，您可以将可执行文件符号链接到 :envvar:`PATH` 中的某个位置。"
 
 #: ../../docs/install.rst:123
 msgid "Upgrade"
-msgstr ""
+msgstr "升级"
 
 #: ../../docs/install.rst:125
 msgid "To upgrade Isso, activate your virtual environment again, and run"
-msgstr ""
+msgstr "要升级Isso，请再次激活您的虚拟环境，然后运行"
 
 #: ../../docs/install.rst:135
 msgid "Prebuilt Packages"
@@ -1772,11 +1788,12 @@ msgid ""
 "You can get a Docker image by running ``docker build . -t isso``. "
 "Assuming you have your configuration in ``/opt/isso``, you can use the "
 "following command to spawn the Docker container:"
-msgstr ""
+msgstr "您可以通过运行 ``docker build . -t isso`` 生成Docker镜像。"
+"假设您在 ``/opt/isso`` 中进行了配置，则可以使用以下命令生成Docker容器："
 
 #: ../../docs/install.rst:163
 msgid "Then, you can use a reverse proxy to expose port 8080."
-msgstr ""
+msgstr "然后，您可以使用反向代理来公开8080端口。"
 
 #: ../../docs/install.rst:166
 msgid "Install from Source"
@@ -1786,7 +1803,7 @@ msgstr ""
 msgid ""
 "If you want to hack on Isso or track down issues, there's an alternate "
 "way to set up Isso. It requires a lot more dependencies and effort:"
-msgstr ""
+msgstr "如果您想破解Isso或查找问题，可以使用另一种方法来设置Isso。它需要更多的依赖和精力："
 
 #: ../../docs/install.rst:172
 msgid "Virtualenv"
@@ -1798,70 +1815,72 @@ msgstr ""
 
 #: ../../docs/install.rst:177
 msgid "Get a fresh copy of Isso:"
-msgstr ""
+msgstr "取得Isso的新副本："
 
 #: ../../docs/install.rst:184
 msgid "To create a virtual environment (recommended), run:"
-msgstr ""
+msgstr "要创建虚拟环境（推荐），请运行："
 
 #: ../../docs/install.rst:191
 msgid "Install Isso and its dependencies:"
-msgstr ""
+msgstr "安装Isso及其依赖项："
 
 #: ../../docs/install.rst:198
 msgid "Install JavaScript modules:"
-msgstr ""
+msgstr "安装JavaScript模块："
 
-#: ../../docs/install.rst:204
+#: ../../docs/install.rst:205
 msgid "Integration without optimization:"
-msgstr ""
+msgstr "未优化下的集成："
 
-#: ../../docs/install.rst:211
+#: ../../docs/install.rst:212
 msgid "Optimization:"
-msgstr ""
+msgstr "优化："
 
-#: ../../docs/install.rst:221
+#: ../../docs/install.rst:222
 msgid "Init scripts"
 msgstr ""
 
-#: ../../docs/install.rst:223
+#: ../../docs/install.rst:224
 msgid ""
 "Init scripts to run Isso as a service (check your distribution's "
 "documentation for your init-system; e.g. Debian uses SysVinit, Fedora "
 "uses systemd) if you don't use FastCGi or uWSGI:"
-msgstr ""
+msgstr "如果您不使用FastCGi或uWSGI，那么可以用Init scripts将Isso作为服务运行（检查您的发行版文档以了解您的init-system，例如Debian使用SysVinit、Fedora使用systemd）："
 
-#: ../../docs/install.rst:227
+#: ../../docs/install.rst:228
 msgid ""
 "systemd (Isso + Gunicorn): https://github.com/jgraichen/debian-"
 "isso/blob/master/debian/isso.service"
 msgstr ""
 
-#: ../../docs/install.rst:228
+#: ../../docs/install.rst:229
 msgid ""
 "SysVinit (Isso + Gunicorn): https://github.com/jgraichen/debian-"
 "isso/blob/master/debian/isso.init"
 msgstr ""
 
-#: ../../docs/install.rst:229
+#: ../../docs/install.rst:230
 msgid "OpenBSD: https://gist.github.com/noqqe/7397719"
 msgstr ""
 
-#: ../../docs/install.rst:230
+#: ../../docs/install.rst:231
 msgid "FreeBSD: https://gist.github.com/ckoepp/52f6f0262de04cee1b88ef4a441e276d"
 msgstr ""
 
-#: ../../docs/install.rst:231
+#: ../../docs/install.rst:232
 msgid "Supervisor: https://github.com/posativ/isso/issues/47"
 msgstr ""
 
-#: ../../docs/install.rst:233
+#: ../../docs/install.rst:234
 msgid ""
 "If you're writing your own init script, you can utilize ``start-stop-"
 "daemon`` to run Isso in the background (Isso runs in the foreground "
 "usually). Below you find a very basic SysVinit script which you can use "
 "for inspiration:"
-msgstr ""
+msgstr "如果您要编写自己的初始化脚本，则可以利用 ``start-stop-daemon`` 在后台运行"
+"Isso（Isso通常在前台运行）。在下面，您可以找到一个非常基本的SysVinit脚本，"
+"可以将其用作启发："
 
 #: ../../docs/man/index.rst:2
 msgid "Isso"
@@ -1873,7 +1892,7 @@ msgid ""
 "anonymous comments, maintains identity and is simple to administrate. It "
 "uses JavaScript and cross-origin ressource sharing for easy integration "
 "into static websites."
-msgstr ""
+msgstr "Isso是类似于Disqus的轻量级评论服务器。它允许匿名评论，保持身份并且易于管理。它使用JavaScript和跨域资源共享，以便轻松集成到静态网站中。"
 
 #: ../../docs/man/index.rst:31
 msgid "Setup"
@@ -1887,7 +1906,7 @@ msgstr ""
 msgid ""
 "Assuming you have successfully :doc:`installed <install>` Isso, here's a "
 "quickstart quide that covers the most common setup. Sections covered:"
-msgstr ""
+msgstr "假设您已经成功 :doc:`安装了 <install>` Isso，下面是一个快速入门指南，其中介绍了最常见的设置。涵盖的部分："
 
 #: ../../docs/quickstart.rst:12
 msgid "Configuration"
@@ -1898,34 +1917,37 @@ msgid ""
 "You must provide a custom configuration to set `dbpath` (your database "
 "location) and `host` (a list of websites for CORS_). All other options "
 "have sane defaults."
-msgstr ""
+msgstr "您必须提供一个自定义配置来设置 `dbpath` （数据库位置）和 `host` （ CORS_ 的网站列表）。所有其他选项均具有默认值。"
 
 #: ../../docs/quickstart.rst:33
 msgid ""
 "Note, that multiple, *different* websites are **not** supported in a "
 "single configuration. To serve comments for different websites, refer to "
 ":ref:`Multiple Sites <configure-multiple-sites>`."
-msgstr ""
+msgstr "请注意，单个配置 **不** 支持多个 *不同* 的网站。要为不同的网站提供评论，"
+"请参考 :ref:`Multiple Sites <configure-multiple-sites>` 。"
 
 #: ../../docs/quickstart.rst:37
 msgid ""
 "The moderation is done with signed URLs sent by email or logged to "
 "stdout. By default, comments are accepted and immediately shown to other "
 "users. To enable moderation queue, add:"
-msgstr ""
+msgstr "审核是通过发送邮件或标准输出上的签名URL进行完成的。"
+"默认情况下，评论立即有效并显示给其他用户。要启用审核队列，请添加："
 
 #: ../../docs/quickstart.rst:46
 msgid ""
 "To moderate comments, either use the activation or deletion URL in the "
 "logs or :ref:`use SMTP <configure-smtp>` to get notified of new comments,"
 " including the URLs for activation and deletion:"
-msgstr ""
+msgstr "要审核评论，要么使用日志中activation、deletion URL，"
+"要么 :ref:`使用SMTP <configure-smtp>` 来获取新评论的通知，包括用于激活和删除的URL（activation、deletion URL）："
 
 #: ../../docs/quickstart.rst:57
 msgid ""
 "For more options, see :doc:`server <configuration/server>` and "
 ":doc:`client <configuration/client>` configuration."
-msgstr ""
+msgstr "有关更多选项，请参阅 :doc:`服务端 <configuration/server>` 和 :doc:`客户端 <configuration/client>` 配置。"
 
 #: ../../docs/quickstart.rst:61
 msgid "Migration"
@@ -1937,7 +1959,7 @@ msgid ""
 "You can also import comments from any other comment system, but this "
 "topic is more complex and covered in :doc:`advanced migration <extras"
 "/advanced-migration>`."
-msgstr ""
+msgstr "Isso提供了用于从 Disqus_ 或 WordPress_ 导入评论的工具。您也可以从任何其他评论系统导入评论，但是这个话题更加复杂， :doc:`高级迁移 <extras/advanced-migration>` 中也涉及到。"
 
 #: ../../docs/quickstart.rst:67
 msgid ""
@@ -1946,6 +1968,8 @@ msgid ""
 "email with your comments. Unfortunately, Disqus does not export up- and "
 "downvotes."
 msgstr ""
+"要从Disqus导出评论，请登录Disqus，转到您的网站，单击 *Discussions* ，然后选择"
+" *Export* 选项卡。您会收到一封包含评论的电子邮件。不幸的是，Disqus不会导出投票。"
 
 #: ../../docs/quickstart.rst:71
 msgid ""
@@ -1953,11 +1977,12 @@ msgid ""
 "*Tools*, export your data. It has been reported that WordPress may "
 "generate broken XML. Try to repair the file using ``xmllint`` before you "
 "continue with the import."
-msgstr ""
+msgstr "要从以前的WordPress安装中导出评论，请转到 *Tools* ，然后导出数据。"
+"据说，WordPress可能会生成损坏的XML。在继续导入之前，尝试使用 ``xmllint`` 修复文件。"
 
 #: ../../docs/quickstart.rst:75
 msgid "Now import the XML dump:"
-msgstr ""
+msgstr "现在导入XML转储："
 
 #: ../../docs/quickstart.rst:86
 msgid "Running Isso"
@@ -1965,20 +1990,22 @@ msgstr ""
 
 #: ../../docs/quickstart.rst:88
 msgid "To run Isso, simply execute:"
-msgstr ""
+msgstr "要运行Isso，只需执行以下命令："
 
 #: ../../docs/quickstart.rst:95
 msgid ""
 "Next, we configure Nginx_ to proxy Isso. Do not run Isso on a public "
 "interface! A popular but often error-prone (because of CORS_) setup to "
 "host Isso uses a dedicated domain such as ``comments.example.tld``."
-msgstr ""
+msgstr "接下来，我们配置 Nginx_ 来代理Isso服务。不要在公共界面运行Isso！"
+"托管Isso的一种流行但经常容易出错（因为CORS_ ）的设置是使用了专用域，例如"
+" ``comment.example.tld`` 。"
 
 #: ../../docs/quickstart.rst:99
 msgid ""
 "Assuming both, your website and Isso are on the same server, the nginx "
 "configuration looks like this:"
-msgstr ""
+msgstr "假设您的网站和Isso都在同一台服务器上，则nginx配置如下所示："
 
 #: ../../docs/quickstart.rst:123
 msgid "Integration"
@@ -1986,25 +2013,28 @@ msgstr ""
 
 #: ../../docs/quickstart.rst:125
 msgid "Now, you embed Isso to your website:"
-msgstr ""
+msgstr "现在，将Isso嵌入到您的网站中："
 
 #: ../../docs/quickstart.rst:134
 msgid ""
 "Note, that `data-isso` is optional, but when a website includes a script "
 "using ``async`` it is no longer possible to determine the script's "
 "external URL."
-msgstr ""
+msgstr "请注意， `data-isso` 是可选的，但是当网站使用 ``异步`` 引用脚本时，将无法"
+"再确定脚本的外部URL。"
 
 #: ../../docs/quickstart.rst:137
 msgid ""
 "That's it. When you open your website, you should see a commenting form. "
 "Leave a comment to see if the setup works. If not, see "
 ":doc:`troubleshooting`."
-msgstr ""
+msgstr "是的。"
+"当您打开网站时，您应该看到一个评论表单。"
+"发表评论以查看设置是否可行。如果不是，请参阅故障排除(:doc:`troubleshooting`)。"
 
 #: ../../docs/quickstart.rst:141
 msgid "Going Further"
-msgstr ""
+msgstr "进阶"
 
 #: ../../docs/quickstart.rst:143
 msgid ""
@@ -2012,14 +2042,14 @@ msgid ""
 "this quickstart, check out :doc:`configuration/server` and "
 ":doc:`configuration/client` for more information. For further website "
 "integration, see :doc:`extras/advanced-integration`."
-msgstr ""
+msgstr "在快速入门中发现了多个服务器和客户端配置选项，请查看服务器配置(:doc:`configuration/server`)和客户端配置(:doc:`configuration/client`)以获取更多信息。有关进一步的网站集成，请参阅高级集成(:doc:`extras/advanced-integration`)。"
 
 #: ../../docs/quickstart.rst:148
 msgid ""
 "To launch Isso automatically, check the :ref:`init-scripts` section from "
 "the installation guide. A different approach to deploy a web application "
 "is written here: :doc:`Deployment of Isso <extras/deployment>`."
-msgstr ""
+msgstr "要自动启动Isso，请检查安装指南中的 :ref:`init-scripts` 部分。此处编写了另一种部署Web应用程序的方法： :doc:`Deployment of Isso <extras/deployment>` 。"
 
 #: ../../docs/setup/multiple-sites.rst:5
 msgid "Multiple Sites"
@@ -2031,30 +2061,30 @@ msgid ""
 "stores comments for a relative URL to support HTTP, HTTPS and even domain"
 " transfers without manual intervention. But you can chain Isso to support"
 " multiple websites on different domains."
-msgstr ""
+msgstr "Isso旨在为单个网站提供评论，因此可以存储相对URL的评论，以支持HTTP、HTTPS甚至域传输，而无需人工干预。但是您可以链接Isso以支持不同域上的多个网站。"
 
 #: ../../docs/setup/multiple-sites.rst:12
 msgid ""
 "The following example uses `gunicorn <http://gunicorn.org/>`_ as WSGI "
 "server ( you can use uWSGI as well). Let's say you maintain two websites,"
 " like foo.example and other.bar:"
-msgstr ""
+msgstr "以下示例将 `gunicorn <http://gunicorn.org/>`_ 用作WSGI服务器（您也可以使用uWSGI）。假设您维护两个网站，例如foo.example和other.bar："
 
 #: ../../docs/setup/multiple-sites.rst:30
 msgid ""
 "Then you run Isso with gunicorn (separate multiple configuration files by"
 " semicolon):"
-msgstr ""
+msgstr "然后，您用gunicorn运行Isso（用分号分隔多个配置文件）："
 
 #: ../../docs/setup/multiple-sites.rst:38
 msgid "In your webserver configuration, proxy Isso as usual:"
-msgstr ""
+msgstr "在您的Web服务器配置中，照常代理Isso："
 
 #: ../../docs/setup/multiple-sites.rst:51
 msgid ""
 "When you now visit http://comments.example/, you will see your different "
 "Isso configuration separated by /`name`."
-msgstr ""
+msgstr "现在，当您访问http://comments.example/时，您会看到不同的Isso配置，以 /`name` 分隔。"
 
 #: ../../docs/setup/multiple-sites.rst:60
 msgid ""
@@ -2062,6 +2092,8 @@ msgid ""
 "*http://comments.example/foo/js/embed.min.js*. Make sure, you don't mix "
 "the URLs on both sites as it will most likely cause CORS-related errors."
 msgstr ""
+"只需嵌入包含新的相对路径的JavaScript，例如 *http://comments.example/foo/js/embed.min.js* 。"
+"确保不要在两个站点上混合使用URL，因为这很可能会导致与CORS相关的错误。"
 
 #: ../../docs/setup/sub-uri.rst:2
 msgid "Sub-URI"
@@ -2072,13 +2104,14 @@ msgid ""
 "You can run Isso on the same domain as your website, which circumvents "
 "issues originating from CORS_. Also, privacy-protecting browser addons "
 "such as `Request Policy`_ wont block comments."
-msgstr ""
+msgstr "您可以在网站的同一个域中运行Isso，从而避免了源于 CORS_ 的问题。"
+"而且，诸如请求策略(`Request Policy`_)之类的保护隐私的浏览器插件不会阻止评论。"
 
 #: ../../docs/setup/sub-uri.rst:25
 msgid ""
 "Now, the website integration is just as described in :doc:`../quickstart`"
 " but with a different location."
-msgstr ""
+msgstr "现在，网站集成与快速入门(:doc:`../quickstart`)中所述的相同，但是位置不同。"
 
 #: ../../docs/troubleshooting.rst:2
 msgid "Troubleshooting"
@@ -2093,7 +2126,7 @@ msgid ""
 "Some uberspace users experienced problems with isso and they solved their"
 " issue by adding `DirectoryIndex disabled` as the first line in the "
 "`.htaccess` file for the domain the isso server is running on."
-msgstr ""
+msgstr "一些uberspace用户遇到了isso问题，解决方法是在运行Isso的服务器的 `.htaccess` 文件第一行添加 `DirectoryIndex disabled` "
 
 #: ../../docs/troubleshooting.rst:11
 msgid "pkg_ressources.DistributionNotFound"
@@ -2104,14 +2137,15 @@ msgid ""
 "This is usually caused by messing up the system's Python with newer "
 "packages from PyPi (e.g. by executing `easy_install --upgrade pip` as "
 "root) and is not related to Isso at all."
-msgstr ""
+msgstr "这通常是由于将系统的Python与来自PyPi的较新软件包搞混了（例如，通过以root用户身份执行easy_install --upgrade pip），而与Isso无关。"
 
 #: ../../docs/troubleshooting.rst:17
 msgid ""
 "Install Isso in a virtual environment as described in :ref:`install-"
 "interludium`. Alternatively, you can use `pip install --user` to install "
 "Isso into the user's home."
-msgstr ""
+msgstr "正如 :ref:`install-interludium` 所述， 在虚拟环境中安装Isso。"
+"或者，您可以使用 `pip install --user` 将Isso安装到用户的家目录中。"
 
 #: ../../docs/troubleshooting.rst:22
 msgid "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff"
@@ -2122,14 +2156,14 @@ msgid ""
 "Likely an issue with your environment, check you set your preferred file "
 "encoding either in :envvar:`LANG`, :envvar:`LANGUAGE`, :envvar:`LC_ALL` "
 "or :envvar:`LC_CTYPE`:"
-msgstr ""
+msgstr "您的环境可能存在问题，请检查是否在 :envvar:`LANG`, :envvar:`LANGUAGE`, :envvar:`LC_ALL` 或 :envvar:`LC_CTYPE` 中设置了首选文件编码："
 
 #: ../../docs/troubleshooting.rst:32
 msgid ""
 "If none of the mentioned variables is set, the interaction with Isso will"
 " likely fail (unable to print non-ascii characters to stdout/err, unable "
 "to parse configuration file with non-ascii characters and to forth)."
-msgstr ""
+msgstr "如果未设置任何提及的变量，则与Isso的交互可能会失败（无法将非ascii字符打印到stdout/err，无法解析非ascii字符的配置文件）。"
 
 #: ../../docs/troubleshooting.rst:37
 msgid "The web console shows 404 Not Found responses"
@@ -2137,5 +2171,5 @@ msgstr ""
 
 #: ../../docs/troubleshooting.rst:39
 msgid "That's fine. Isso returns \"404 Not Found\" to indicate \"No comments\"."
-msgstr ""
+msgstr "没关系。Isso返回 \"404 Not Found\" 表明 \"没有评论\"。"
 

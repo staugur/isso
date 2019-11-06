@@ -82,7 +82,7 @@ gettext:
 	sphinx-build -b gettext docs/ $(DOCS_GETTEXT)
 
 cn:
-	sphinx-intl update -p $(DOCS_GETTEXT) -l zh_CN
+	sphinx-intl update -p $(DOCS_GETTEXT) -l zh_CN -d docs/locales
 
 site-cn: $(DOCS_RST_SRC) $(DOCS_CSS_DST)
 	sphinx-build -E -T -D language=zh_CN -b dirhtml docs/ $(DOCS_HTMLCN_DST)

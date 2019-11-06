@@ -63,7 +63,7 @@ environment, you just need to add */opt/isso/bin* to your :envvar:`PATH` or
 execute */opt/isso/bin/isso* directly. It will launch Isso from within the
 virtual environment.
 
-With a virtualenv active, you may now continue to :ref:`install-from-pypi`!
+With a virtualenv active, you may now continue to :ref:`install-from-pypi`.
 Of course you may not need a virtualenv when you are running dedicated virtual
 machines or a shared host (e.g. Uberspace.de).
 
