@@ -9,7 +9,7 @@ Python and JavaScript. It aims to be a drop-in replacement for
 
 See [isso-cn.rtfd.vip](https://isso-cn.rtfd.vip) for more details.
 
-![](https://open.saintic.com/rtfd/badge/isso-cn)
+[![](https://open.saintic.com/rtfd/badge/isso-cn)](https://isso-cn.rtfd.vip)
 
 > **温馨提示：**
 >

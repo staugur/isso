@@ -1301,6 +1301,9 @@ msgid ""
 " such as UNIX domain sockets, daemonization and solid HTTP handler while "
 "being more stable, secure and web-scale than the built-in web server."
 msgstr ""
+"Isso附带了一个内置的web服务器，这对于初始设置非常有用，并且可以用于低流量站点的生产"
+"环境（最多每秒20个请求）。运行一个\"真正的\"WSGI服务器支持一些不错的东西，比如"
+"UNIX域套接字、守护和可靠的HTTP处理程序，同时比内置的web服务器更稳定、更安全和更具web规模。"
 
 #: ../../docs/extras/deployment.rst:10
 msgid "gevent_, coroutine-based network library"
@@ -1340,24 +1343,27 @@ msgstr ""
 msgid ""
 "Probably the easiest deployment method. Install with PIP (requires "
 "libevent):"
-msgstr ""
+msgstr "可能是最简单的部署方法。使用PIP安装（需要libevent）："
 
 #: ../../docs/extras/deployment.rst:28
 msgid ""
 "Then, just use the ``isso`` executable as usual. Gevent monkey-patches "
 "Python's standard library to work with greenlets."
-msgstr ""
+msgstr "然后，像往常一样使用 ``isso`` 可执行文件。"
+"Gevent Monkey修补了Python的标准库以使用greenlets。"
 
 #: ../../docs/extras/deployment.rst:31
 msgid "To execute Isso, just use the commandline interface:"
-msgstr ""
+msgstr "要执行Isso，只需使用命令行界面："
 
 #: ../../docs/extras/deployment.rst:37
 msgid ""
 "Unfortunately, gevent 0.13.2 does not support UNIX domain sockets (see "
 "`#295 <https://github.com/surfly/gevent/issues/295>`_ and `#299 "
 "<https://github.com/surfly/gevent/issues/299>`_ for details)."
-msgstr ""
+msgstr "不幸的是，gevent 0.13.2不支持UNIX域套接字（有关详细信息，请参见"
+" `#295 <https://github.com/surfly/gevent/issues/295>`_ 和"
+" `#299 <https://github.com/surfly/gevent/issues/299>`_ ）。"
 
 #: ../../docs/extras/deployment.rst:43
 msgid "`uWSGI <http://uwsgi-docs.readthedocs.org/en/latest/>`__"
@@ -1368,17 +1374,17 @@ msgid ""
 "Isso has special support for uWSGI, namely fast IPC caching, job spooling"
 " and delayed jobs. It is the author's choice, but not the only one. You "
 "need uWSGI 1.9 or higher, fortunately you can install it from PyPi:"
-msgstr ""
+msgstr "Isso对uWSGI具有特殊的支持，即快速IPC缓存(fast IPC caching)，作业假脱机(job spooling)和延迟作业(delayed jobs)。这是作者的选择，但不是唯一的选择。您需要uWSGI 1.9或更高版本，幸运的是，您可以从PyPi安装它："
 
 #: ../../docs/extras/deployment.rst:54
 msgid ""
 "For convenience, I recommend a INI-style configuration (you can also "
 "supply everything as command-line arguments):"
-msgstr ""
+msgstr "为了方便起见，我建议使用INI样式的配置（您还可以将所有内容作为命令行参数提供）："
 
 #: ../../docs/extras/deployment.rst:72
 msgid "Then, create the spooling directory and start Isso via uWSGI:"
-msgstr ""
+msgstr "然后，创建假脱机目录并通过uWSGI启动Isso："
 
 #: ../../docs/extras/deployment.rst:81
 msgid "`gunicorn <http://gunicorn.org>`__"
@@ -1389,11 +1395,11 @@ msgid ""
 "Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX with a "
 "pre-fork worker ported from Ruby's Unicorn project. Install gunicorn_ via"
 " PIP:"
-msgstr ""
+msgstr "Gunicorn,'Gree Unicorn', 是一个用于Unix具有pre-fork工作模型的Python WSGI HTTP服务器，移植于Ruby的Unicorn项目。通过PIP安装 gunicorn_ ："
 
 #: ../../docs/extras/deployment.rst:90
 msgid "To execute Isso, use a command similar to:"
-msgstr ""
+msgstr "要执行Isso，请使用类似于以下命令："
 
 #: ../../docs/extras/deployment.rst:99
 msgid "`mod_wsgi <https://code.google.com/p/modwsgi/>`__"
@@ -1404,13 +1410,14 @@ msgid ""
 "First, create a startup script, called `isso.wsgi`. If Isso is in your "
 "system module search path, then the script is quite simple. This script "
 "is included in the isso distribution as `run.py`:"
-msgstr ""
+msgstr "首先，创建一个名为 `isso.wsgi` 的启动脚本。如果Isso在您的系统模块搜索路径中，"
+"则脚本非常简单。此脚本作为 `run.py` 包含在isso发行版中："
 
 #: ../../docs/extras/deployment.rst:120
 msgid ""
 "If you have installed Isso in a virtual environment, then you will have "
 "to add the path of the virtualenv to the site-specific paths of Python:"
-msgstr ""
+msgstr "如果在虚拟环境中安装了Isso，则必须将virtualenv的路径添加到特定于站点的Python路径中："
 
 #: ../../docs/extras/deployment.rst:141
 msgid ""
@@ -1418,17 +1425,17 @@ msgid ""
 "and modules from the virtualenv otherwise. Should you want the opposite "
 "behavior, where modules from the virtualenv have priority over system "
 "modules, the following script does the trick:"
-msgstr ""
+msgstr "使用上述脚本将在可用时加载系统模块，并从virtualenv加载模块。如果您想要相反的行为，即virtualenv中的模块优先于系统模块，则以下脚本可以解决问题："
 
 #: ../../docs/extras/deployment.rst:176
 msgid ""
 "The last two scripts are based on those given by `mod_wsgi documentation "
 "<https://code.google.com/p/modwsgi/wiki/VirtualEnvironments>`_."
-msgstr ""
+msgstr "最后两个脚本基于 `mod_wsgi文档 <https://code.google.com/p/modwsgi/wiki/VirtualEnvironments>`_ 给出的。"
 
 #: ../../docs/extras/deployment.rst:179
 msgid "The Apache configuration will then be similar to the following:"
-msgstr ""
+msgstr "Apache的配置将类似于以下内容："
 
 #: ../../docs/extras/deployment.rst:190
 msgid ""
@@ -1439,6 +1446,9 @@ msgid ""
 "enough, since SQLite will need to create a lock file in the same "
 "directory."
 msgstr ""
+"您将需要根据Apache的安装情况和安全策略来调整用户和组。还应注意，包含评论数据库的目录"
+"必须由运行WSGI守护进程的用户或组可写：仅拥有可写数据库是不够的，因为SQLite将需要在"
+"同一目录中创建锁定文件。"
 
 #: ../../docs/extras/deployment.rst:197
 msgid "`mod_fastcgi <http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html>`__"
@@ -1449,32 +1459,33 @@ msgid ""
 "You can use this method if your hosting provider doesn't allow you to "
 "have long running processes. If FastCGI has not yet been configured in "
 "your server, please follow these steps:"
-msgstr ""
+msgstr "如果您的托管服务提供商不允许您运行长时间的进程，则可以使用此方法。"
+"如果尚未在服务器中配置FastCGI，请按照以下步骤操作："
 
 #: ../../docs/extras/deployment.rst:203
 msgid ""
 "This information may be incorrect, if you have more knowledge on how to "
 "deploy Python via `mod_fastcgi`, consider extending/correcting this "
 "section."
-msgstr ""
+msgstr "如果您对如何通过 `mod_fastcgi` 部署Python有更多的了解，那么此信息可能是错误的，请考虑扩展/更正此部分。"
 
 #: ../../docs/extras/deployment.rst:206
 msgid ""
 "For more information, see `Flask: Configuring Apache "
 "<http://flask.pocoo.org/docs/deploying/fastcgi/#configuring-apache>`_."
-msgstr ""
+msgstr "有关更多信息，请参见 `Flask: Configuring Apache <http://flask.pocoo.org/docs/deploying/fastcgi/#configuring-apache>`_ 。"
 
 #: ../../docs/extras/deployment.rst:226
 msgid ""
 "Next, to run isso as a FastCGI script you'll need to install ``flup`` "
 "with PIP:"
-msgstr ""
+msgstr "接下来，要将isso作为FastCGI脚本运行，您需要使用PIP安装 ``flup`` ："
 
 #: ../../docs/extras/deployment.rst:233
 msgid ""
 "Finally, copy'n'paste to `/var/www/isso.fcgi` (or whatever location you "
 "prefer):"
-msgstr ""
+msgstr "最后，复制并粘贴到 `/var/www/isso.fcgi` （或您喜欢的任何位置）："
 
 #: ../../docs/extras/deployment.rst:253
 msgid "`Openshift <http://openshift.com>`__"
@@ -1485,26 +1496,26 @@ msgid ""
 "With `Isso Openshift Deployment Kit`_, Isso can be installed on Open "
 "Shift with just one click. Make sure you already have installed ``rhc`` "
 "(`instructions`_) and completed the setup."
-msgstr ""
+msgstr "使用 `Isso Openshift Deployment Kit`_ 只需单击一下即可将Isso安装在Open Shift上。确保您已经安装了rhc（说明：`instructions`_ ）并完成设置。"
 
 #: ../../docs/extras/deployment.rst:258
 msgid ""
 "Run the following, you will get an Open Shift instance installed with "
 "Isso:"
-msgstr ""
+msgstr "运行以下命令，您将获得一个随Isso安装的Open Shift实例："
 
 #: ../../docs/extras/deployment.rst:265
 msgid ""
 "Above step also clones Git repository of your Open Shift instance, in "
 "current directory. Make changes to the configuration file and push back "
 "to Openshift, it will be redeployed with new settings."
-msgstr ""
+msgstr "上面的步骤还将在当前目录中克隆Open Shift实例的Git存储库。更改配置文件并推回Openshift，它将使用新设置重新部署。"
 
 #: ../../docs/extras/deployment.rst:269
 msgid ""
 "Visit ``http://<yourappname>-<openshift-namespace>.com/info`` to verify "
 "Isso is deployed properly and is working."
-msgstr ""
+msgstr "访问 ``http://<yourappname>-<openshift-namespace>.com/info`` 以验证Isso是否已正确部署并正常工作。"
 
 #: ../../docs/index.rst:2
 msgid "Overview"
