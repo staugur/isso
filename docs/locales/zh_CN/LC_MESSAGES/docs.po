@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Isso 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 09:57+0800\n"
+"POT-Creation-Date: 2019-11-13 10:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1300,10 +1300,7 @@ msgid ""
 "requests per second). Running a \"real\" WSGI server supports nice things"
 " such as UNIX domain sockets, daemonization and solid HTTP handler while "
 "being more stable, secure and web-scale than the built-in web server."
-msgstr ""
-"Isso附带了一个内置的web服务器，这对于初始设置非常有用，并且可以用于低流量站点的生产"
-"环境（最多每秒20个请求）。运行一个\"真正的\"WSGI服务器支持一些不错的东西，比如"
-"UNIX域套接字、守护和可靠的HTTP处理程序，同时比内置的web服务器更稳定、更安全和更具web规模。"
+msgstr "Isso附带了一个内置的web服务器，这对于初始设置非常有用，并且可以用于低流量站点的生产环境（最多每秒20个请求）。运行一个\"真正的\"WSGI服务器支持一些不错的东西，比如UNIX域套接字、守护和可靠的HTTP处理程序，同时比内置的web服务器更稳定、更安全和更具web规模。"
 
 #: ../../docs/extras/deployment.rst:10
 msgid "gevent_, coroutine-based network library"
@@ -1349,8 +1346,7 @@ msgstr "可能是最简单的部署方法。使用PIP安装（需要libevent）�
 msgid ""
 "Then, just use the ``isso`` executable as usual. Gevent monkey-patches "
 "Python's standard library to work with greenlets."
-msgstr "然后，像往常一样使用 ``isso`` 可执行文件。"
-"Gevent Monkey修补了Python的标准库以使用greenlets。"
+msgstr "然后，像往常一样使用 ``isso`` 可执行文件。Gevent Monkey修补了Python的标准库以使用greenlets。"
 
 #: ../../docs/extras/deployment.rst:31
 msgid "To execute Isso, just use the commandline interface:"
@@ -1361,9 +1357,10 @@ msgid ""
 "Unfortunately, gevent 0.13.2 does not support UNIX domain sockets (see "
 "`#295 <https://github.com/surfly/gevent/issues/295>`_ and `#299 "
 "<https://github.com/surfly/gevent/issues/299>`_ for details)."
-msgstr "不幸的是，gevent 0.13.2不支持UNIX域套接字（有关详细信息，请参见"
-" `#295 <https://github.com/surfly/gevent/issues/295>`_ 和"
-" `#299 <https://github.com/surfly/gevent/issues/299>`_ ）。"
+msgstr ""
+"不幸的是，gevent 0.13.2不支持UNIX域套接字（有关详细信息，请参见 `#295 "
+"<https://github.com/surfly/gevent/issues/295>`_ 和 `#299 "
+"<https://github.com/surfly/gevent/issues/299>`_ ）。"
 
 #: ../../docs/extras/deployment.rst:43
 msgid "`uWSGI <http://uwsgi-docs.readthedocs.org/en/latest/>`__"
@@ -1374,7 +1371,10 @@ msgid ""
 "Isso has special support for uWSGI, namely fast IPC caching, job spooling"
 " and delayed jobs. It is the author's choice, but not the only one. You "
 "need uWSGI 1.9 or higher, fortunately you can install it from PyPi:"
-msgstr "Isso对uWSGI具有特殊的支持，即快速IPC缓存(fast IPC caching)，作业假脱机(job spooling)和延迟作业(delayed jobs)。这是作者的选择，但不是唯一的选择。您需要uWSGI 1.9或更高版本，幸运的是，您可以从PyPi安装它："
+msgstr ""
+"Isso对uWSGI具有特殊的支持，即快速IPC缓存(fast IPC caching)，作业假脱机(job "
+"spooling)和延迟作业(delayed jobs)。这是作者的选择，但不是唯一的选择。您需要uWSGI "
+"1.9或更高版本，幸运的是，您可以从PyPi安装它："
 
 #: ../../docs/extras/deployment.rst:54
 msgid ""
@@ -1395,7 +1395,9 @@ msgid ""
 "Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX with a "
 "pre-fork worker ported from Ruby's Unicorn project. Install gunicorn_ via"
 " PIP:"
-msgstr "Gunicorn,'Gree Unicorn', 是一个用于Unix具有pre-fork工作模型的Python WSGI HTTP服务器，移植于Ruby的Unicorn项目。通过PIP安装 gunicorn_ ："
+msgstr ""
+"Gunicorn,'Gree Unicorn', 是一个用于Unix具有pre-fork工作模型的Python WSGI "
+"HTTP服务器，移植于Ruby的Unicorn项目。通过PIP安装 gunicorn_ ："
 
 #: ../../docs/extras/deployment.rst:90
 msgid "To execute Isso, use a command similar to:"
@@ -1410,8 +1412,9 @@ msgid ""
 "First, create a startup script, called `isso.wsgi`. If Isso is in your "
 "system module search path, then the script is quite simple. This script "
 "is included in the isso distribution as `run.py`:"
-msgstr "首先，创建一个名为 `isso.wsgi` 的启动脚本。如果Isso在您的系统模块搜索路径中，"
-"则脚本非常简单。此脚本作为 `run.py` 包含在isso发行版中："
+msgstr ""
+"首先，创建一个名为 `isso.wsgi` 的启动脚本。如果Isso在您的系统模块搜索路径中，则脚本非常简单。此脚本作为 `run.py` "
+"包含在isso发行版中："
 
 #: ../../docs/extras/deployment.rst:120
 msgid ""
@@ -1431,7 +1434,9 @@ msgstr "使用上述脚本将在可用时加载系统模块，并从virtualenv�
 msgid ""
 "The last two scripts are based on those given by `mod_wsgi documentation "
 "<https://code.google.com/p/modwsgi/wiki/VirtualEnvironments>`_."
-msgstr "最后两个脚本基于 `mod_wsgi文档 <https://code.google.com/p/modwsgi/wiki/VirtualEnvironments>`_ 给出的。"
+msgstr ""
+"最后两个脚本基于 `mod_wsgi文档 "
+"<https://code.google.com/p/modwsgi/wiki/VirtualEnvironments>`_ 给出的。"
 
 #: ../../docs/extras/deployment.rst:179
 msgid "The Apache configuration will then be similar to the following:"
@@ -1445,10 +1450,7 @@ msgid ""
 "running the WSGI daemon process: having a writable database only is not "
 "enough, since SQLite will need to create a lock file in the same "
 "directory."
-msgstr ""
-"您将需要根据Apache的安装情况和安全策略来调整用户和组。还应注意，包含评论数据库的目录"
-"必须由运行WSGI守护进程的用户或组可写：仅拥有可写数据库是不够的，因为SQLite将需要在"
-"同一目录中创建锁定文件。"
+msgstr "您将需要根据Apache的安装情况和安全策略来调整用户和组。还应注意，包含评论数据库的目录必须由运行WSGI守护进程的用户或组可写：仅拥有可写数据库是不够的，因为SQLite将需要在同一目录中创建锁定文件。"
 
 #: ../../docs/extras/deployment.rst:197
 msgid "`mod_fastcgi <http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html>`__"
@@ -1459,8 +1461,7 @@ msgid ""
 "You can use this method if your hosting provider doesn't allow you to "
 "have long running processes. If FastCGI has not yet been configured in "
 "your server, please follow these steps:"
-msgstr "如果您的托管服务提供商不允许您运行长时间的进程，则可以使用此方法。"
-"如果尚未在服务器中配置FastCGI，请按照以下步骤操作："
+msgstr "如果您的托管服务提供商不允许您运行长时间的进程，则可以使用此方法。如果尚未在服务器中配置FastCGI，请按照以下步骤操作："
 
 #: ../../docs/extras/deployment.rst:203
 msgid ""
@@ -1473,7 +1474,9 @@ msgstr "如果您对如何通过 `mod_fastcgi` 部署Python有更多的了解，
 msgid ""
 "For more information, see `Flask: Configuring Apache "
 "<http://flask.pocoo.org/docs/deploying/fastcgi/#configuring-apache>`_."
-msgstr "有关更多信息，请参见 `Flask: Configuring Apache <http://flask.pocoo.org/docs/deploying/fastcgi/#configuring-apache>`_ 。"
+msgstr ""
+"有关更多信息，请参见 `Flask: Configuring Apache "
+"<http://flask.pocoo.org/docs/deploying/fastcgi/#configuring-apache>`_ 。"
 
 #: ../../docs/extras/deployment.rst:226
 msgid ""
@@ -1496,7 +1499,9 @@ msgid ""
 "With `Isso Openshift Deployment Kit`_, Isso can be installed on Open "
 "Shift with just one click. Make sure you already have installed ``rhc`` "
 "(`instructions`_) and completed the setup."
-msgstr "使用 `Isso Openshift Deployment Kit`_ 只需单击一下即可将Isso安装在Open Shift上。确保您已经安装了rhc（说明：`instructions`_ ）并完成设置。"
+msgstr ""
+"使用 `Isso Openshift Deployment Kit`_ 只需单击一下即可将Isso安装在Open "
+"Shift上。确保您已经安装了rhc（说明：`instructions`_ ）并完成设置。"
 
 #: ../../docs/extras/deployment.rst:258
 msgid ""
@@ -1515,7 +1520,9 @@ msgstr "上面的步骤还将在当前目录中克隆Open Shift实例的Git存�
 msgid ""
 "Visit ``http://<yourappname>-<openshift-namespace>.com/info`` to verify "
 "Isso is deployed properly and is working."
-msgstr "访问 ``http://<yourappname>-<openshift-namespace>.com/info`` 以验证Isso是否已正确部署并正常工作。"
+msgstr ""
+"访问 ``http://<yourappname>-<openshift-namespace>.com/info`` "
+"以验证Isso是否已正确部署并正常工作。"
 
 #: ../../docs/index.rst:2
 msgid "Overview"
@@ -1623,10 +1630,10 @@ msgid ""
 "running Debian/Ubuntu, Gentoo, Archlinux or Fedora, you can use :ref"
 ":`prebuilt-package`. If not, read the next section carefully."
 msgstr ""
-"Isso是一个用Python编写的Web应用程序。如果pip和virtualenv对您来说没有任何意义，"
-"请继续从Pypi安装(:ref:`install-from-pypi`)。如果您正在运行Debian/Ubuntu、"
-"Gentoo、Archlinux或Fedora，则可以使用预编译软件包(:ref:`prebuilt-package`)。"
-"如果没有，请仔细阅读下一节。"
+"Isso是一个用Python编写的Web应用程序。如果pip和virtualenv对您来说没有任何意义，请继续从Pypi安装(:ref"
+":`install-from-"
+"pypi`)。如果您正在运行Debian/Ubuntu、Gentoo、Archlinux或Fedora，则可以使用预编译软件包(:ref"
+":`prebuilt-package`)。如果没有，请仔细阅读下一节。"
 
 #: ../../docs/install.rst:16
 msgid "Interludium: Python is not PHP"
@@ -1654,11 +1661,11 @@ msgid ""
 "on Debian`_ is worth the read."
 msgstr ""
 "这就是为什么大多数Python开发人员都使用 `Python Package Index`_ "
-"来获取其依赖项的原因。但最重要的规则是：切勿以root身份从PyPi安装 *任何内容* 。不是因为恶意软件，而是因为您 *将* 破坏系统。"
-" ``easy_install`` 是（管理）使您的系统混乱的一种工具，另一个包管理器是 ``pip`` 。"
-"如果您曾经搜索过Python/pip的问题，Stackoverflow则建议您使用 ``easy_install pip`` 或"
-" ``pip install --upgrade pip（作为root！）`` ，那么您做错了。"
-" `Why you should not use Python's easy_install carelessly on Debian`_ 值得一读。"
+"来获取其依赖项的原因。但最重要的规则是：切勿以root身份从PyPi安装 *任何内容* 。不是因为恶意软件，而是因为您 *将* 破坏系统。 "
+"``easy_install`` 是（管理）使您的系统混乱的一种工具，另一个包管理器是 ``pip`` "
+"。如果您曾经搜索过Python/pip的问题，Stackoverflow则建议您使用 ``easy_install pip`` 或 ``pip "
+"install --upgrade pip（作为root！）`` ，那么您做错了。 `Why you should not use "
+"Python's easy_install carelessly on Debian`_ 值得一读。"
 
 #: ../../docs/install.rst:34
 msgid ""
@@ -1703,7 +1710,9 @@ msgid ""
 "With a virtualenv active, you may now continue to :ref:`install-from-"
 "pypi`. Of course you may not need a virtualenv when you are running "
 "dedicated virtual machines or a shared host (e.g. Uberspace.de)."
-msgstr "在激活virtualenv的情况下，您现在可以继续从PyPi安装(:ref:`install-from-pypi`)！当然，在运行专用虚拟机或共享主机（例如Uberspace.de）时，您可能不需要virtualenv。"
+msgstr ""
+"在激活virtualenv的情况下，您现在可以继续从PyPi安装(:ref:`install-from-"
+"pypi`)！当然，在运行专用虚拟机或共享主机（例如Uberspace.de）时，您可能不需要virtualenv。"
 
 #: ../../docs/install.rst:77
 msgid "Install from PyPi"
@@ -1713,15 +1722,15 @@ msgstr ""
 msgid "Requirements"
 msgstr "要求"
 
-#: ../../docs/install.rst:82 ../../docs/install.rst:171
+#: ../../docs/install.rst:82 ../../docs/install.rst:167
 msgid "Python 2.7 or 3.4+ (+ devel headers)"
 msgstr ""
 
-#: ../../docs/install.rst:83 ../../docs/install.rst:173
+#: ../../docs/install.rst:83 ../../docs/install.rst:169
 msgid "SQLite 3.3.8 or later"
 msgstr ""
 
-#: ../../docs/install.rst:84 ../../docs/install.rst:174
+#: ../../docs/install.rst:84 ../../docs/install.rst:170
 msgid "a working C compiler"
 msgstr "C编译器"
 
@@ -1729,8 +1738,9 @@ msgstr "C编译器"
 msgid ""
 "For Debian/Ubuntu just `copy and paste <http://thejh.net/misc/website-"
 "terminal-copy-paste>`_ to your terminal:"
-msgstr "对于Debian/Ubuntu，"
-"只需 `复制并粘贴 <http://thejh.net/misc/website-terminal-copy-paste>`_ 到您的终端："
+msgstr ""
+"对于Debian/Ubuntu，只需 `复制并粘贴 <http://thejh.net/misc/website-terminal-copy-"
+"paste>`_ 到您的终端："
 
 #: ../../docs/install.rst:93
 msgid "Similar for Fedora (and derivates):"
@@ -1763,135 +1773,133 @@ msgid "Prebuilt Packages"
 msgstr ""
 
 #: ../../docs/install.rst:137
-msgid ""
-"Debian: https://packages.crapouillou.net/ – built from PyPi. Includes "
-"startup scripts and vhost configurations for Lighttpd, Apache and Nginx "
-"[`source <https://github.com/jgraichen/debian-isso>`__]. `#729218 "
-"<https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=729218>`_ is an ITP "
-"for Debian."
+msgid "Debian (since Buster): https://packages.debian.org/search?keywords=isso"
 msgstr ""
 
-#: ../../docs/install.rst:143
+#: ../../docs/install.rst:139
 msgid ""
 "Gentoo: http://eroen.eu/cgit/cgit.cgi/eroen-overlay/tree/www-"
 "apps/isso?h=isso – not yet available in Portage, but you can use the "
 "ebuild to build Isso."
 msgstr ""
 
-#: ../../docs/install.rst:146
+#: ../../docs/install.rst:142
 msgid ""
 "Arch Linux: https://aur.archlinux.org/packages/isso/ – install with "
 "`yaourt isso`."
 msgstr ""
 
-#: ../../docs/install.rst:149
+#: ../../docs/install.rst:145
 msgid ""
 "Fedora: https://copr.fedoraproject.org/coprs/jujens/isso/ — copr "
 "repository. Built from Pypi, includes a systemctl unit script."
 msgstr ""
 
-#: ../../docs/install.rst:153
+#: ../../docs/install.rst:149
 msgid "Build a Docker image"
 msgstr ""
 
-#: ../../docs/install.rst:155
+#: ../../docs/install.rst:151
 msgid ""
 "You can get a Docker image by running ``docker build . -t isso``. "
 "Assuming you have your configuration in ``/opt/isso``, you can use the "
 "following command to spawn the Docker container:"
-msgstr "您可以通过运行 ``docker build . -t isso`` 生成Docker镜像。"
-"假设您在 ``/opt/isso`` 中进行了配置，则可以使用以下命令生成Docker容器："
+msgstr ""
+"您可以通过运行 ``docker build . -t isso`` 生成Docker镜像。假设您在 ``/opt/isso`` "
+"中进行了配置，则可以使用以下命令生成Docker容器："
 
-#: ../../docs/install.rst:163
+#: ../../docs/install.rst:159
 msgid "Then, you can use a reverse proxy to expose port 8080."
 msgstr "然后，您可以使用反向代理来公开8080端口。"
 
-#: ../../docs/install.rst:166
+#: ../../docs/install.rst:162
 msgid "Install from Source"
 msgstr ""
 
-#: ../../docs/install.rst:168
+#: ../../docs/install.rst:164
 msgid ""
 "If you want to hack on Isso or track down issues, there's an alternate "
 "way to set up Isso. It requires a lot more dependencies and effort:"
 msgstr "如果您想破解Isso或查找问题，可以使用另一种方法来设置Isso。它需要更多的依赖和精力："
 
-#: ../../docs/install.rst:172
+#: ../../docs/install.rst:168
 msgid "Virtualenv"
 msgstr ""
 
-#: ../../docs/install.rst:175
+#: ../../docs/install.rst:171
 msgid "Node.js, `NPM <https://npmjs.org/>`__ and `Bower <http://bower.io/>`__"
 msgstr ""
 
-#: ../../docs/install.rst:177
+#: ../../docs/install.rst:173
 msgid "Get a fresh copy of Isso:"
 msgstr "取得Isso的新副本："
 
-#: ../../docs/install.rst:184
+#: ../../docs/install.rst:180
 msgid "To create a virtual environment (recommended), run:"
 msgstr "要创建虚拟环境（推荐），请运行："
 
-#: ../../docs/install.rst:191
+#: ../../docs/install.rst:187
 msgid "Install Isso and its dependencies:"
 msgstr "安装Isso及其依赖项："
 
-#: ../../docs/install.rst:198
+#: ../../docs/install.rst:194
 msgid "Install JavaScript modules:"
 msgstr "安装JavaScript模块："
 
-#: ../../docs/install.rst:205
+#: ../../docs/install.rst:201
 msgid "Integration without optimization:"
 msgstr "未优化下的集成："
 
-#: ../../docs/install.rst:212
+#: ../../docs/install.rst:208
 msgid "Optimization:"
 msgstr "优化："
 
-#: ../../docs/install.rst:222
+#: ../../docs/install.rst:218
 msgid "Init scripts"
 msgstr ""
 
-#: ../../docs/install.rst:224
+#: ../../docs/install.rst:220
 msgid ""
 "Init scripts to run Isso as a service (check your distribution's "
 "documentation for your init-system; e.g. Debian uses SysVinit, Fedora "
 "uses systemd) if you don't use FastCGi or uWSGI:"
-msgstr "如果您不使用FastCGi或uWSGI，那么可以用Init scripts将Isso作为服务运行（检查您的发行版文档以了解您的init-system，例如Debian使用SysVinit、Fedora使用systemd）："
+msgstr ""
+"如果您不使用FastCGi或uWSGI，那么可以用Init scripts将Isso作为服务运行（检查您的发行版文档以了解您的init-"
+"system，例如Debian使用SysVinit、Fedora使用systemd）："
 
-#: ../../docs/install.rst:228
+#: ../../docs/install.rst:224
 msgid ""
 "systemd (Isso + Gunicorn): https://github.com/jgraichen/debian-"
 "isso/blob/master/debian/isso.service"
 msgstr ""
 
-#: ../../docs/install.rst:229
+#: ../../docs/install.rst:225
 msgid ""
 "SysVinit (Isso + Gunicorn): https://github.com/jgraichen/debian-"
 "isso/blob/master/debian/isso.init"
 msgstr ""
 
-#: ../../docs/install.rst:230
+#: ../../docs/install.rst:226
 msgid "OpenBSD: https://gist.github.com/noqqe/7397719"
 msgstr ""
 
-#: ../../docs/install.rst:231
+#: ../../docs/install.rst:227
 msgid "FreeBSD: https://gist.github.com/ckoepp/52f6f0262de04cee1b88ef4a441e276d"
 msgstr ""
 
-#: ../../docs/install.rst:232
+#: ../../docs/install.rst:228
 msgid "Supervisor: https://github.com/posativ/isso/issues/47"
 msgstr ""
 
-#: ../../docs/install.rst:234
+#: ../../docs/install.rst:230
 msgid ""
 "If you're writing your own init script, you can utilize ``start-stop-"
 "daemon`` to run Isso in the background (Isso runs in the foreground "
 "usually). Below you find a very basic SysVinit script which you can use "
 "for inspiration:"
-msgstr "如果您要编写自己的初始化脚本，则可以利用 ``start-stop-daemon`` 在后台运行"
-"Isso（Isso通常在前台运行）。在下面，您可以找到一个非常基本的SysVinit脚本，"
-"可以将其用作启发："
+msgstr ""
+"如果您要编写自己的初始化脚本，则可以利用 ``start-stop-daemon`` "
+"在后台运行Isso（Isso通常在前台运行）。在下面，您可以找到一个非常基本的SysVinit脚本，可以将其用作启发："
 
 #: ../../docs/man/index.rst:2
 msgid "Isso"
@@ -1935,30 +1943,33 @@ msgid ""
 "Note, that multiple, *different* websites are **not** supported in a "
 "single configuration. To serve comments for different websites, refer to "
 ":ref:`Multiple Sites <configure-multiple-sites>`."
-msgstr "请注意，单个配置 **不** 支持多个 *不同* 的网站。要为不同的网站提供评论，"
-"请参考 :ref:`Multiple Sites <configure-multiple-sites>` 。"
+msgstr ""
+"请注意，单个配置 **不** 支持多个 *不同* 的网站。要为不同的网站提供评论，请参考 :ref:`Multiple Sites "
+"<configure-multiple-sites>` 。"
 
 #: ../../docs/quickstart.rst:37
 msgid ""
 "The moderation is done with signed URLs sent by email or logged to "
 "stdout. By default, comments are accepted and immediately shown to other "
 "users. To enable moderation queue, add:"
-msgstr "审核是通过发送邮件或标准输出上的签名URL进行完成的。"
-"默认情况下，评论立即有效并显示给其他用户。要启用审核队列，请添加："
+msgstr "审核是通过发送邮件或标准输出上的签名URL进行完成的。默认情况下，评论立即有效并显示给其他用户。要启用审核队列，请添加："
 
 #: ../../docs/quickstart.rst:46
 msgid ""
 "To moderate comments, either use the activation or deletion URL in the "
 "logs or :ref:`use SMTP <configure-smtp>` to get notified of new comments,"
 " including the URLs for activation and deletion:"
-msgstr "要审核评论，要么使用日志中activation、deletion URL，"
-"要么 :ref:`使用SMTP <configure-smtp>` 来获取新评论的通知，包括用于激活和删除的URL（activation、deletion URL）："
+msgstr ""
+"要审核评论，要么使用日志中activation、deletion URL，要么 :ref:`使用SMTP <configure-smtp>` "
+"来获取新评论的通知，包括用于激活和删除的URL（activation、deletion URL）："
 
 #: ../../docs/quickstart.rst:57
 msgid ""
 "For more options, see :doc:`server <configuration/server>` and "
 ":doc:`client <configuration/client>` configuration."
-msgstr "有关更多选项，请参阅 :doc:`服务端 <configuration/server>` 和 :doc:`客户端 <configuration/client>` 配置。"
+msgstr ""
+"有关更多选项，请参阅 :doc:`服务端 <configuration/server>` 和 :doc:`客户端 "
+"<configuration/client>` 配置。"
 
 #: ../../docs/quickstart.rst:61
 msgid "Migration"
@@ -1970,7 +1981,9 @@ msgid ""
 "You can also import comments from any other comment system, but this "
 "topic is more complex and covered in :doc:`advanced migration <extras"
 "/advanced-migration>`."
-msgstr "Isso提供了用于从 Disqus_ 或 WordPress_ 导入评论的工具。您也可以从任何其他评论系统导入评论，但是这个话题更加复杂， :doc:`高级迁移 <extras/advanced-migration>` 中也涉及到。"
+msgstr ""
+"Isso提供了用于从 Disqus_ 或 WordPress_ 导入评论的工具。您也可以从任何其他评论系统导入评论，但是这个话题更加复杂， "
+":doc:`高级迁移 <extras/advanced-migration>` 中也涉及到。"
 
 #: ../../docs/quickstart.rst:67
 msgid ""
@@ -1979,8 +1992,8 @@ msgid ""
 "email with your comments. Unfortunately, Disqus does not export up- and "
 "downvotes."
 msgstr ""
-"要从Disqus导出评论，请登录Disqus，转到您的网站，单击 *Discussions* ，然后选择"
-" *Export* 选项卡。您会收到一封包含评论的电子邮件。不幸的是，Disqus不会导出投票。"
+"要从Disqus导出评论，请登录Disqus，转到您的网站，单击 *Discussions* ，然后选择 *Export* "
+"选项卡。您会收到一封包含评论的电子邮件。不幸的是，Disqus不会导出投票。"
 
 #: ../../docs/quickstart.rst:71
 msgid ""
@@ -1988,8 +2001,9 @@ msgid ""
 "*Tools*, export your data. It has been reported that WordPress may "
 "generate broken XML. Try to repair the file using ``xmllint`` before you "
 "continue with the import."
-msgstr "要从以前的WordPress安装中导出评论，请转到 *Tools* ，然后导出数据。"
-"据说，WordPress可能会生成损坏的XML。在继续导入之前，尝试使用 ``xmllint`` 修复文件。"
+msgstr ""
+"要从以前的WordPress安装中导出评论，请转到 *Tools* "
+"，然后导出数据。据说，WordPress可能会生成损坏的XML。在继续导入之前，尝试使用 ``xmllint`` 修复文件。"
 
 #: ../../docs/quickstart.rst:75
 msgid "Now import the XML dump:"
@@ -2008,9 +2022,9 @@ msgid ""
 "Next, we configure Nginx_ to proxy Isso. Do not run Isso on a public "
 "interface! A popular but often error-prone (because of CORS_) setup to "
 "host Isso uses a dedicated domain such as ``comments.example.tld``."
-msgstr "接下来，我们配置 Nginx_ 来代理Isso服务。不要在公共界面运行Isso！"
-"托管Isso的一种流行但经常容易出错（因为CORS_ ）的设置是使用了专用域，例如"
-" ``comment.example.tld`` 。"
+msgstr ""
+"接下来，我们配置 Nginx_ 来代理Isso服务。不要在公共界面运行Isso！托管Isso的一种流行但经常容易出错（因为CORS_ "
+"）的设置是使用了专用域，例如 ``comment.example.tld`` 。"
 
 #: ../../docs/quickstart.rst:99
 msgid ""
@@ -2031,17 +2045,14 @@ msgid ""
 "Note, that `data-isso` is optional, but when a website includes a script "
 "using ``async`` it is no longer possible to determine the script's "
 "external URL."
-msgstr "请注意， `data-isso` 是可选的，但是当网站使用 ``异步`` 引用脚本时，将无法"
-"再确定脚本的外部URL。"
+msgstr "请注意， `data-isso` 是可选的，但是当网站使用 ``异步`` 引用脚本时，将无法再确定脚本的外部URL。"
 
 #: ../../docs/quickstart.rst:137
 msgid ""
 "That's it. When you open your website, you should see a commenting form. "
 "Leave a comment to see if the setup works. If not, see "
 ":doc:`troubleshooting`."
-msgstr "是的。"
-"当您打开网站时，您应该看到一个评论表单。"
-"发表评论以查看设置是否可行。如果不是，请参阅故障排除(:doc:`troubleshooting`)。"
+msgstr "是的。当您打开网站时，您应该看到一个评论表单。发表评论以查看设置是否可行。如果不是，请参阅故障排除(:doc:`troubleshooting`)。"
 
 #: ../../docs/quickstart.rst:141
 msgid "Going Further"
@@ -2053,14 +2064,18 @@ msgid ""
 "this quickstart, check out :doc:`configuration/server` and "
 ":doc:`configuration/client` for more information. For further website "
 "integration, see :doc:`extras/advanced-integration`."
-msgstr "在快速入门中发现了多个服务器和客户端配置选项，请查看服务器配置(:doc:`configuration/server`)和客户端配置(:doc:`configuration/client`)以获取更多信息。有关进一步的网站集成，请参阅高级集成(:doc:`extras/advanced-integration`)。"
+msgstr ""
+"在快速入门中发现了多个服务器和客户端配置选项，请查看服务器配置(:doc:`configuration/server`)和客户端配置(:doc:`configuration/client`)以获取更多信息。有关进一步的网站集成，请参阅高级集成(:doc:`extras"
+"/advanced-integration`)。"
 
 #: ../../docs/quickstart.rst:148
 msgid ""
 "To launch Isso automatically, check the :ref:`init-scripts` section from "
 "the installation guide. A different approach to deploy a web application "
 "is written here: :doc:`Deployment of Isso <extras/deployment>`."
-msgstr "要自动启动Isso，请检查安装指南中的 :ref:`init-scripts` 部分。此处编写了另一种部署Web应用程序的方法： :doc:`Deployment of Isso <extras/deployment>` 。"
+msgstr ""
+"要自动启动Isso，请检查安装指南中的 :ref:`init-scripts` 部分。此处编写了另一种部署Web应用程序的方法： "
+":doc:`Deployment of Isso <extras/deployment>` 。"
 
 #: ../../docs/setup/multiple-sites.rst:5
 msgid "Multiple Sites"
@@ -2079,7 +2094,9 @@ msgid ""
 "The following example uses `gunicorn <http://gunicorn.org/>`_ as WSGI "
 "server ( you can use uWSGI as well). Let's say you maintain two websites,"
 " like foo.example and other.bar:"
-msgstr "以下示例将 `gunicorn <http://gunicorn.org/>`_ 用作WSGI服务器（您也可以使用uWSGI）。假设您维护两个网站，例如foo.example和other.bar："
+msgstr ""
+"以下示例将 `gunicorn <http://gunicorn.org/>`_ "
+"用作WSGI服务器（您也可以使用uWSGI）。假设您维护两个网站，例如foo.example和other.bar："
 
 #: ../../docs/setup/multiple-sites.rst:30
 msgid ""
@@ -2103,8 +2120,8 @@ msgid ""
 "*http://comments.example/foo/js/embed.min.js*. Make sure, you don't mix "
 "the URLs on both sites as it will most likely cause CORS-related errors."
 msgstr ""
-"只需嵌入包含新的相对路径的JavaScript，例如 *http://comments.example/foo/js/embed.min.js* 。"
-"确保不要在两个站点上混合使用URL，因为这很可能会导致与CORS相关的错误。"
+"只需嵌入包含新的相对路径的JavaScript，例如 *http://comments.example/foo/js/embed.min.js* "
+"。确保不要在两个站点上混合使用URL，因为这很可能会导致与CORS相关的错误。"
 
 #: ../../docs/setup/sub-uri.rst:2
 msgid "Sub-URI"
@@ -2115,8 +2132,9 @@ msgid ""
 "You can run Isso on the same domain as your website, which circumvents "
 "issues originating from CORS_. Also, privacy-protecting browser addons "
 "such as `Request Policy`_ wont block comments."
-msgstr "您可以在网站的同一个域中运行Isso，从而避免了源于 CORS_ 的问题。"
-"而且，诸如请求策略(`Request Policy`_)之类的保护隐私的浏览器插件不会阻止评论。"
+msgstr ""
+"您可以在网站的同一个域中运行Isso，从而避免了源于 CORS_ 的问题。而且，诸如请求策略(`Request "
+"Policy`_)之类的保护隐私的浏览器插件不会阻止评论。"
 
 #: ../../docs/setup/sub-uri.rst:25
 msgid ""
@@ -2137,7 +2155,9 @@ msgid ""
 "Some uberspace users experienced problems with isso and they solved their"
 " issue by adding `DirectoryIndex disabled` as the first line in the "
 "`.htaccess` file for the domain the isso server is running on."
-msgstr "一些uberspace用户遇到了isso问题，解决方法是在运行Isso的服务器的 `.htaccess` 文件第一行添加 `DirectoryIndex disabled` "
+msgstr ""
+"一些uberspace用户遇到了isso问题，解决方法是在运行Isso的服务器的 `.htaccess` 文件第一行添加 "
+"`DirectoryIndex disabled` "
 
 #: ../../docs/troubleshooting.rst:11
 msgid "pkg_ressources.DistributionNotFound"
@@ -2148,15 +2168,18 @@ msgid ""
 "This is usually caused by messing up the system's Python with newer "
 "packages from PyPi (e.g. by executing `easy_install --upgrade pip` as "
 "root) and is not related to Isso at all."
-msgstr "这通常是由于将系统的Python与来自PyPi的较新软件包搞混了（例如，通过以root用户身份执行easy_install --upgrade pip），而与Isso无关。"
+msgstr ""
+"这通常是由于将系统的Python与来自PyPi的较新软件包搞混了（例如，通过以root用户身份执行easy_install --upgrade "
+"pip），而与Isso无关。"
 
 #: ../../docs/troubleshooting.rst:17
 msgid ""
 "Install Isso in a virtual environment as described in :ref:`install-"
 "interludium`. Alternatively, you can use `pip install --user` to install "
 "Isso into the user's home."
-msgstr "正如 :ref:`install-interludium` 所述， 在虚拟环境中安装Isso。"
-"或者，您可以使用 `pip install --user` 将Isso安装到用户的家目录中。"
+msgstr ""
+"正如 :ref:`install-interludium` 所述， 在虚拟环境中安装Isso。或者，您可以使用 `pip install "
+"--user` 将Isso安装到用户的家目录中。"
 
 #: ../../docs/troubleshooting.rst:22
 msgid "UnicodeDecodeError: 'ascii' codec can't decode byte 0xff"
@@ -2167,7 +2190,9 @@ msgid ""
 "Likely an issue with your environment, check you set your preferred file "
 "encoding either in :envvar:`LANG`, :envvar:`LANGUAGE`, :envvar:`LC_ALL` "
 "or :envvar:`LC_CTYPE`:"
-msgstr "您的环境可能存在问题，请检查是否在 :envvar:`LANG`, :envvar:`LANGUAGE`, :envvar:`LC_ALL` 或 :envvar:`LC_CTYPE` 中设置了首选文件编码："
+msgstr ""
+"您的环境可能存在问题，请检查是否在 :envvar:`LANG`, :envvar:`LANGUAGE`, :envvar:`LC_ALL` 或 "
+":envvar:`LC_CTYPE` 中设置了首选文件编码："
 
 #: ../../docs/troubleshooting.rst:32
 msgid ""
@@ -2183,4 +2208,14 @@ msgstr ""
 #: ../../docs/troubleshooting.rst:39
 msgid "That's fine. Isso returns \"404 Not Found\" to indicate \"No comments\"."
 msgstr "没关系。Isso返回 \"404 Not Found\" 表明 \"没有评论\"。"
+
+#~ msgid ""
+#~ "Debian: https://packages.crapouillou.net/ – built"
+#~ " from PyPi. Includes startup scripts "
+#~ "and vhost configurations for Lighttpd, "
+#~ "Apache and Nginx [`source "
+#~ "<https://github.com/jgraichen/debian-isso>`__]. `#729218"
+#~ " <https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=729218>`_"
+#~ " is an ITP for Debian."
+#~ msgstr ""
 
