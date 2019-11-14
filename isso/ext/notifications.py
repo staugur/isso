@@ -29,11 +29,14 @@ except ImportError:
 
 from isso.compat import PY2K
 from isso import local
+from isso.utils.http import curl
 
 if PY2K:
     from thread import start_new_thread
+    from urllib import urlencode
 else:
     from _thread import start_new_thread
+    from urllib.parse import urlencode
 
 
 class SMTPConnection(object):
@@ -233,3 +236,95 @@ class Stdout(object):
 
     def _activate_comment(self, thread, comment):
         logger.info("comment %(id)s activated" % thread)
+
+
+class Wechat(object):
+
+    def __init__(self, isso):
+
+        self.isso = isso
+        self.conf = isso.conf.section("wechat")
+        self.public_endpoint = isso.conf.get("server", "public-endpoint") or local("host")
+        self.admin_notify = any((n in ("wechat", "WECHAT")) for n in isso.conf.getlist("general", "notify"))
+        self.moderated = isso.conf.getboolean("moderation", "enabled")
+
+    def __iter__(self):
+        yield "comments.new:after-save", self.notify_new
+
+    def format(self, thread, comment):
+
+        md = []
+
+        author = comment["author"] or "Anonymous"
+        if comment["email"]:
+            author += " <%s>" % comment["email"]
+
+        md.append(author + " wrote:\n")
+        md.append("\n")
+        md.append(comment["text"] + "\n")
+        md.append("\n")
+
+        if comment["website"]:
+            md.append("User's URL: %s\n" % comment["website"])
+        md.append("IP address: %s\n" % comment["remote_addr"])
+
+        view_uri = local("origin") + thread["uri"] + "#isso-%i" % comment["id"]
+        if not self.moderated:
+            md.append("Link to comment: %s\n" % view_uri)
+            md.append("\n")
+            md.append("---\n")
+
+        uri = self.public_endpoint + "/id/%i" % comment["id"]
+        key = self.isso.sign(comment["id"])
+        delete_uri = uri + "/delete/" + key
+        activate_uri = uri + "/activate/" + key
+        if not self.moderated:
+            md.append("Delete comment: %s\n" % delete_uri)
+            if comment["mode"] == 2:
+                md.append("Activate comment: %s\n" % activate_uri)
+
+        rv = "\n".join(md)
+        if self.moderated:
+            return dict(rv=rv, v=view_uri, d=delete_uri, a=activate_uri)
+        else:
+            return rv
+
+    def notify_new(self, thread, comment):
+        if self.admin_notify:
+            body = self.format(thread, comment)
+            self.sendmsg(thread["title"], body)
+
+    def sendmsg(self, title, body):
+        if self.moderated:
+            TA_view = body["v"]
+            TA_delete = body["d"]
+            TA_activate = body["a"]
+            body = body["rv"]
+        if PY2K:
+            title = title.encode("utf-8")
+            body = body.encode("utf-8")
+        if self.moderated:
+            # Need to review comments, use the TalkAdmin interface.
+            host = "http://sc.ftqq.com"
+            path = "/webhook/%s?%s" % (self.conf.get("takey"), urlencode(dict(
+                TA_action_on=1,
+                TA_title=title,
+                TA_content=body,
+                TA_view=TA_view,
+                TA_delete=TA_delete,
+                TA_activate=TA_activate
+            )))
+        else:
+            host = "https://sc.ftqq.com"
+            path = "/%s.send?%s" % (self.conf.get("sckey"), urlencode(dict(
+                text=title, desp=body
+            )))
+        with curl("POST", host, path, 5) as resp:
+            if resp:
+                try:
+                    result = json.loads(resp.read())
+                except (TypeError, ValueError, json.decoder.JSONDecodeError):
+                    logger.error("Illegal response structure, request error.")
+                else:
+                    if result.get("errno") != 0:
+                        logger.warn(result)

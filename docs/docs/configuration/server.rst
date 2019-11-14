@@ -114,6 +114,7 @@ gravatar-url
 
 .. _CORS: https://developer.mozilla.org/en/docs/HTTP/Access_control_CORS
 
+.. _configure-moderation:
 
 Moderation
 ----------
@@ -229,6 +230,70 @@ timeout
     specify a timeout in seconds for blocking operations like the
     connection attempt.
 
+.. _configure-wechat:
+
+Wechat
+------
+
+Isso可以在有新评论时通过微信通知您（依靠 `Server酱 <http://sc.ftqq.com>`_ 的服务）。在微信通知中，您还可以审核（=激活或删除）
+评论。不要忘记在服务端INI文件的 ``general`` 中配置 ``notify = wechat`` 。
+
+.. code-block:: ini
+
+    [wechat]
+    sckey = Server酱发送消息的SCKEY
+    takey = Server酱TalkAdmin服务提供的WebHook回调地址的Key
+
+sckey
+    「Server酱」，英文名「ServerChan」，是一款「程序员」和「服务器」之间的
+    通信软件。
+
+    要使用Server酱发送消息，您需要有一个密钥。申请方法为：
+        1. 打开：使用浏览器打开 `Server酱官网 <http://sc.ftqq.com>`_
+        2. 登入：使用GitHub登入，在「发送消息」页面，就能看到您的 **SCKEY**
+        3. 绑定：在「微信推送」页面，扫码关注公众号「方糖」的同时即可完成绑定。后面新消息就会推送到此公众号，当然只有您自己才能收到。
+
+takey
+    同样是由Server酱提供的另一款服务：TalkAdmin，它提供两个类型的命令，其
+    文档是（大概看一眼有所了解）：http://sc.ftqq.com/5.version，在这里用的
+    是下行命令。
+
+    在Isso中，您需要在TalkAdmin页面添加命令，如图示：
+        |talkadmin_new|
+
+    - 交互界面模板的HTML代码是：
+        .. code-block:: html
+
+            <a href="{{$TA_activate}}" class="btn btn-primary font-white">通过 </a> &nbsp; | &nbsp;
+            <a href="{{$TA_delete}}" class="btn btn-danger font-white">拒绝</a> &nbsp; | &nbsp;
+            <a href="{{$TA_view}}" class="btn btn-info font-white">查看</a>
+
+        参照此代码一般不用更改，代码中以 `TA_` 开头的变量绝对不要更改，
+        其他样式参考官方文档编写。
+
+    - 交互界面自定义CSS，可根据模板中代码调整样式，如：
+        .. code-block:: css
+
+            a.font-white {color:white!important}
+
+    - 命令正则、WebHook地址不需要填。
+
+    保存后，Server酱会自动生成WebHook地址，类似于 ``http://sc.ftqq.com/webhook/xxx``，
+    这个末尾的xxx，就是Isso需要的 **takey** ！
+
+.. note::
+
+    以上两个key不需要同时提供！
+
+    - 当 :ref:`审核功能 <configure-moderation>` 开启时，Isso会使用TalkAdmin服务，此时需要takey。
+        有新评论时，调用Server酱向微信公众号「方糖」推送消息，绑定的微信收
+        到消息，其内容包含评论页面标题、详细内容、IP等，另外还有三个按钮，
+        分别是通过（激活）、拒绝（删除）、查看，用来审核新评论。
+
+    - 当 :ref:`审核功能 <configure-moderation>` 未开启时，Isso仅使用Server酱发送消息，此时需要sckey。
+        有新评论时，Server酱向微信公众号推送消息，内容与邮件提醒的类似。
+
+.. |talkadmin_new| image:: /_static/talkadmin.png
 
 Guard
 -----
