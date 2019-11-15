@@ -323,7 +323,7 @@ class Wechat(object):
             if resp:
                 try:
                     result = json.loads(resp.read())
-                except (TypeError, ValueError, json.decoder.JSONDecodeError):
+                except (TypeError, ValueError):
                     logger.error("Illegal response structure, request error.")
                 else:
                     if result.get("errno") != 0:

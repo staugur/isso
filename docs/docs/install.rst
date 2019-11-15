@@ -104,13 +104,13 @@ Install Isso with `pip <http://www.pip-installer.org/en/latest/>`_:
 
 .. code-block:: sh
 
-    ~> pip install isso
+    ~> pip install isso  # 安装国内增强版：pip install isso-cn
 
 `Don't have pip? <https://twitter.com/gardaud/status/357638468572151808>`_
 
 .. code-block:: sh
 
-    ~> easy_install isso  # cross your fingers
+    ~> easy_install isso  # cross your fingers; or easy_install isso-cn
 
 For easier execution, you can symlink the executable to a location in your
 :envvar:`PATH`.
@@ -127,7 +127,7 @@ To upgrade Isso, activate your virtual environment again, and run
 .. code-block:: sh
 
     ~> source /opt/isso/bin/activate  # optional
-    ~> pip install --upgrade isso
+    ~> pip install --upgrade isso # 更新国内增强版：pip install -U isso-cn
 
 .. _prebuilt-package:
 
@@ -174,7 +174,7 @@ Get a fresh copy of Isso:
 
 .. code-block:: sh
 
-    ~> git clone https://github.com/posativ/isso.git
+    ~> git clone https://github.com/posativ/isso.git # 国内版：git clone https://github.com/staugur/isso-cn.git isso
     ~> cd isso/
 
 To create a virtual environment (recommended), run:

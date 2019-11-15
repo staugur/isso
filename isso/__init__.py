@@ -27,8 +27,8 @@
 
 from __future__ import print_function, unicode_literals
 
-import pkg_resources
-dist = pkg_resources.get_distribution("isso")
+from isso.utils import IssoDist
+dist = IssoDist()
 
 # check if exectuable is `isso` and gevent is available
 import sys

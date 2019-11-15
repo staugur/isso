@@ -2,9 +2,6 @@
 
 from __future__ import unicode_literals
 
-import pkg_resources
-dist = pkg_resources.get_distribution("isso")
-
 import json
 
 from werkzeug.wrappers import Response
@@ -13,6 +10,8 @@ from werkzeug.exceptions import BadRequest
 
 from isso import local
 from isso.compat import text_type as str
+from isso.utils import IssoDist
+dist = IssoDist()
 
 
 class requires:

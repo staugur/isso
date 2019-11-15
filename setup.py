@@ -2,6 +2,8 @@
 # -*- encoding: utf-8 -*-
 
 import sys
+import io
+import unittest
 
 from setuptools import setup, find_packages
 
@@ -13,17 +15,32 @@ if sys.version_info < (2, 7):
 elif (3, 0) <= sys.version_info < (3, 4):
     raise SystemExit("Python 3 versions < 3.4 are not supported.")
 
+
+def _get_readme():
+    with io.open('README.md', 'rt', encoding='utf8') as f:
+        return f.read()
+
+
+def test_suite():
+    test_loader = unittest.TestLoader()
+    test_suite = test_loader.discover('isso/tests', pattern='test_*.py')
+    return test_suite
+
+
 setup(
-    name='isso',
-    version='0.12.3dev0',
+    name='isso-cn',
+    version='0.13.0-rc1',
     author='Martin Zimmermann',
     author_email='info@posativ.org',
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    url='https://github.com/posativ/isso/',
+    url='https://github.com/staugur/isso-cn/',
     license='MIT',
     description='lightweight Disqus alternative',
+    test_suite='setup.test_suite',
+    long_description=_get_readme(),
+    long_description_content_type="text/markdown",
     classifiers=[
         "Development Status :: 4 - Beta",
         "Topic :: Internet",

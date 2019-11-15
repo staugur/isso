@@ -238,6 +238,22 @@ Wechat
 Isso可以在有新评论时通过微信通知您（依靠 `Server酱 <http://sc.ftqq.com>`_ 的服务）。在微信通知中，您还可以审核（=激活或删除）
 评论。不要忘记在服务端INI文件的 ``general`` 中配置 ``notify = wechat`` 。
 
+.. note::
+
+    这不是原Isso的功能，而是 `staugur/isso-cn <https://github.com/staugur/isso-cn>`_ 专门为国内用户新增的功能。
+
+    所以需要安装新的Isso-cn，参考 :ref:`安装一节 <install-from-pypi>` ，从
+    源码安装大致步骤如下：
+
+    .. code-block:: bash
+
+        # git clone https://github.com/staugur/isso-cn.git && cd isso-cn
+        # npm install -g node-sass requirejs bower jade # or `yarn global add`
+        # make init js
+        # pip install .
+
+服务端INI配置文件示例：
+
 .. code-block:: ini
 
     [wechat]

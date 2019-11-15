@@ -142,3 +142,29 @@ class XMLResponse(Response):
         kwargs["content_type"] = "text/xml"
         super(XMLResponse, self).__init__(
             obj, *args, **kwargs)
+
+
+class IssoDist(object):
+
+    def __init__(self):
+        self._is_cn = False
+        try:
+            self._is_cn = True
+            self.dist = pkg_resources.get_distribution("isso-cn")
+        except pkg_resources.DistributionNotFound:
+            self.dist = pkg_resources.get_distribution("isso")
+
+    @property
+    def version(self):
+        return self.dist.version
+
+    @property
+    def location(self):
+        return self.dist.location
+
+    @property
+    def project_name(self):
+        if self._is_cn:
+            return "isso"
+        else:
+            return self.dist.project_name

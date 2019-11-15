@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Isso 0.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-14 16:15+0800\n"
+"POT-Creation-Date: 2019-11-15 10:18+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -441,8 +441,8 @@ msgid "Enable moderation queue and handling of comments still in moderation queu
 msgstr "启用审核队列并处理仍在审核队列中的评论"
 
 #: ../../docs/configuration/server.rst:133
-#: ../../docs/configuration/server.rst:316
-#: ../../docs/configuration/server.rst:436
+#: ../../docs/configuration/server.rst:332
+#: ../../docs/configuration/server.rst:452
 msgid "enabled"
 msgstr ""
 
@@ -549,7 +549,7 @@ msgid "self-explanatory, optional"
 msgstr "不言而喻，邮箱账号，可选。"
 
 #: ../../docs/configuration/server.rst:208
-#: ../../docs/configuration/server.rst:439
+#: ../../docs/configuration/server.rst:455
 msgid "password"
 msgstr ""
 
@@ -623,181 +623,195 @@ msgid ""
 "wechat`` 。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:254
+#: ../../docs/configuration/server.rst:243
+msgid ""
+"这不是原Isso的功能，而是 `staugur/isso-cn <https://github.com/staugur/isso-cn>`_ "
+"专门为国内用户新增的功能。"
+msgstr ""
+
+#: ../../docs/configuration/server.rst:245
+msgid "所以需要安装新的Isso-cn，参考 :ref:`安装一节 <install-from-pypi>` ，从 源码安装大致步骤如下："
+msgstr ""
+
+#: ../../docs/configuration/server.rst:255
+msgid "服务端INI配置文件示例："
+msgstr ""
+
+#: ../../docs/configuration/server.rst:270
 msgid "sckey"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:248
+#: ../../docs/configuration/server.rst:264
 msgid "「Server酱」，英文名「ServerChan」，是一款「程序员」和「服务器」之间的 通信软件。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:254
+#: ../../docs/configuration/server.rst:270
 msgid "要使用Server酱发送消息，您需要有一个密钥。申请方法为："
 msgstr ""
 
-#: ../../docs/configuration/server.rst:252
+#: ../../docs/configuration/server.rst:268
 msgid "打开：使用浏览器打开 `Server酱官网 <http://sc.ftqq.com>`_"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:253
+#: ../../docs/configuration/server.rst:269
 msgid "登入：使用GitHub登入，在「发送消息」页面，就能看到您的 **SCKEY**"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:254
+#: ../../docs/configuration/server.rst:270
 msgid "绑定：在「微信推送」页面，扫码关注公众号「方糖」的同时即可完成绑定。后面新消息就会推送到此公众号，当然只有您自己才能收到。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:282
+#: ../../docs/configuration/server.rst:298
 msgid "takey"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:257
+#: ../../docs/configuration/server.rst:273
 msgid ""
 "同样是由Server酱提供的另一款服务：TalkAdmin，它提供两个类型的命令，其 "
 "文档是（大概看一眼有所了解）：http://sc.ftqq.com/5.version，在这里用的 是下行命令。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:262
+#: ../../docs/configuration/server.rst:278
 msgid "在Isso中，您需要在TalkAdmin页面添加命令，如图示："
 msgstr ""
 
-#: ../../docs/configuration/server.rst:262
+#: ../../docs/configuration/server.rst:278
 msgid "|talkadmin_new|"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:272
+#: ../../docs/configuration/server.rst:288
 msgid "交互界面模板的HTML代码是："
 msgstr ""
 
-#: ../../docs/configuration/server.rst:271
+#: ../../docs/configuration/server.rst:287
 msgid "参照此代码一般不用更改，代码中以 `TA_` 开头的变量绝对不要更改， 其他样式参考官方文档编写。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:277
+#: ../../docs/configuration/server.rst:293
 msgid "交互界面自定义CSS，可根据模板中代码调整样式，如："
 msgstr ""
 
-#: ../../docs/configuration/server.rst:279
+#: ../../docs/configuration/server.rst:295
 msgid "命令正则、WebHook地址不需要填。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:281
+#: ../../docs/configuration/server.rst:297
 msgid ""
 "保存后，Server酱会自动生成WebHook地址，类似于 ``http://sc.ftqq.com/webhook/xxx``， "
 "这个末尾的xxx，就是Isso需要的 **takey** ！"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:286
+#: ../../docs/configuration/server.rst:302
 msgid "以上两个key不需要同时提供！"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:291
+#: ../../docs/configuration/server.rst:307
 msgid "当 :ref:`审核功能 <configure-moderation>` 开启时，Isso会使用TalkAdmin服务，此时需要takey。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:289
+#: ../../docs/configuration/server.rst:305
 msgid ""
 "有新评论时，调用Server酱向微信公众号「方糖」推送消息，绑定的微信收 到消息，其内容包含评论页面标题、详细内容、IP等，另外还有三个按钮， "
 "分别是通过（激活）、拒绝（删除）、查看，用来审核新评论。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:293
+#: ../../docs/configuration/server.rst:309
 msgid "当 :ref:`审核功能 <configure-moderation>` 未开启时，Isso仅使用Server酱发送消息，此时需要sckey。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:294
+#: ../../docs/configuration/server.rst:310
 msgid "有新评论时，Server酱向微信公众号推送消息，内容与邮件提醒的类似。"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:299
+#: ../../docs/configuration/server.rst:315
 msgid "Guard"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:301
+#: ../../docs/configuration/server.rst:317
 msgid ""
 "Enable basic spam protection features, e.g. rate-limit per IP address "
 "(``/24`` for IPv4, ``/48`` for IPv6)."
 msgstr "启用基本的垃圾邮件防护功能"
 
-#: ../../docs/configuration/server.rst:315
+#: ../../docs/configuration/server.rst:331
 msgid ""
 "enable guard, recommended in production. Not useful for debugging "
 "purposes."
 msgstr "启用功能，在生产中建议使用。对于调试没有用。"
 
-#: ../../docs/configuration/server.rst:319
+#: ../../docs/configuration/server.rst:335
 msgid "ratelimit"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:319
+#: ../../docs/configuration/server.rst:335
 msgid "limit to N new comments per minute."
 msgstr "限制每分钟最多N条新评论。"
 
-#: ../../docs/configuration/server.rst:323
+#: ../../docs/configuration/server.rst:339
 msgid "direct-reply"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:322
+#: ../../docs/configuration/server.rst:338
 msgid ""
 "how many comments directly to the thread (prevent a simple `while true; "
 "do curl ...; done`."
 msgstr "有多少条评论直接发送给主题贴（预防简单的 `while true; do curl ...; done` ）"
 
-#: ../../docs/configuration/server.rst:330
+#: ../../docs/configuration/server.rst:346
 msgid "reply-to-self"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:326
+#: ../../docs/configuration/server.rst:342
 msgid ""
 "allow commenters to reply to their own comments when they could still "
 "edit the comment. After the editing timeframe is gone, commenters can "
 "reply to their own comments anyways."
 msgstr "允许评论者在仍可以编辑评论时回复自己的评论。且，编辑时间段结束后，评论者仍然可以回复自己的评论。"
 
-#: ../../docs/configuration/server.rst:330
+#: ../../docs/configuration/server.rst:346
 msgid "Do not forget to configure the `client <client>`_ accordingly"
 msgstr "不要忘记配置相应的 `客户端 <client>`_"
 
-#: ../../docs/configuration/server.rst:336
+#: ../../docs/configuration/server.rst:352
 msgid "require-author"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:333
+#: ../../docs/configuration/server.rst:349
 msgid ""
 "force commenters to enter a value into the author field. No validation is"
 " performed on the provided value."
 msgstr "强制评论者在名字字段中输入值。不对提供的值执行验证。"
 
-#: ../../docs/configuration/server.rst:336
-#: ../../docs/configuration/server.rst:342
+#: ../../docs/configuration/server.rst:352
+#: ../../docs/configuration/server.rst:358
 msgid "Do not forget to configure the `client <client>`_ accordingly."
 msgstr "不要忘记配置相应的 `客户端 <client>`_"
 
-#: ../../docs/configuration/server.rst:342
+#: ../../docs/configuration/server.rst:358
 msgid "require-email"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:339
+#: ../../docs/configuration/server.rst:355
 msgid ""
 "force commenters to enter a value into the email field. No validation is "
 "performed on the provided value."
 msgstr "强制评论者在邮件字段中输入值。不对提供的值执行验证。"
 
-#: ../../docs/configuration/server.rst:345
+#: ../../docs/configuration/server.rst:361
 msgid "Markup"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:347
+#: ../../docs/configuration/server.rst:363
 msgid ""
 "Customize markup and sanitized HTML. Currently, only Markdown (via "
 "Misaka) is supported, but new languages are relatively easy to add."
 msgstr "自定义标记并清理HTML。当前，仅支持Markdown（通过Misaka），但是相对而言，添加新语言相对容易。"
 
-#: ../../docs/configuration/server.rst:359
+#: ../../docs/configuration/server.rst:375
 msgid "options"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:358
+#: ../../docs/configuration/server.rst:374
 msgid ""
 "`Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, all"
 " flags starting with `EXT_` can be used there, separated by comma."
@@ -805,11 +819,11 @@ msgstr ""
 "`Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, 所有以"
 " `EXT_` 开头的标志都可以在此处使用，以逗号（英文）分隔。"
 
-#: ../../docs/configuration/server.rst:365
+#: ../../docs/configuration/server.rst:381
 msgid "allowed-elements"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:362
+#: ../../docs/configuration/server.rst:378
 msgid ""
 "Additional HTML tags to allow in the generated output, comma-separated. "
 "By default, only *a*, *blockquote*, *br*, *code*, *del*, *em*, *h1*, "
@@ -820,18 +834,18 @@ msgstr ""
 "*del*, *em*, *h1*, *h2*, *h3*, *h4*, *h5*, *h6*, *hr*, *ins*, *li*, *ol*,"
 " *p*, *pre*, *strong*, *table*, *tbody*, *td*, *th*, *thead* 和 *ul* 被允许。"
 
-#: ../../docs/configuration/server.rst:370
+#: ../../docs/configuration/server.rst:386
 msgid "allowed-attributes"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:368
+#: ../../docs/configuration/server.rst:384
 msgid ""
 "Additional HTML attributes (independent from elements) to allow in the "
 "generated output, comma-separated. By default, only *align* and *href* "
 "are allowed."
 msgstr "允许在生成输出内容中使用的额外HTML属性（独立于元素），以逗号分隔。默认情况下，只有 *align* 和 *href* 被允许。"
 
-#: ../../docs/configuration/server.rst:372
+#: ../../docs/configuration/server.rst:388
 msgid ""
 "To allow images in comments, you just need to add ``allowed-elements = "
 "img`` and ``allowed-attributes = src``."
@@ -839,21 +853,21 @@ msgstr ""
 "要允许在评论中显示图片，您只需添加 ``allowed-elements = img`` 和 ``allowed-attributes = "
 "src`` 。"
 
-#: ../../docs/configuration/server.rst:376
+#: ../../docs/configuration/server.rst:392
 msgid "Hash"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:378
+#: ../../docs/configuration/server.rst:394
 msgid ""
 "Customize used hash functions to hide the actual email addresses from "
 "commenters but still be able to generate an identicon."
 msgstr "自定义使用的哈希函数以隐藏来自评论的实际邮件地址，但仍然能够生成一个标识图标。"
 
-#: ../../docs/configuration/server.rst:390
+#: ../../docs/configuration/server.rst:406
 msgid "salt"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:388
+#: ../../docs/configuration/server.rst:404
 msgid ""
 "A salt is used to protect against rainbow tables. Isso does not make use "
 "of pepper (yet). The default value has been in use since the release of "
@@ -861,17 +875,17 @@ msgid ""
 "installations."
 msgstr "加盐用来防御彩虹表。Isso还没有使用pepper（大概是机器人之类的）。自Isso发行以来，该默认值一直在使用，并且会在安装过程中为相同的地址生成相同的标识。"
 
-#: ../../docs/configuration/server.rst:400
+#: ../../docs/configuration/server.rst:416
 msgid "algorithm"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:393
+#: ../../docs/configuration/server.rst:409
 msgid ""
 "Hash algorithm to use -- either from Python's `hashlib` or PBKDF2 (a "
 "computational expensive hash function)."
 msgstr "要使用的哈希算法-来自Python的 `hashlib` 或 `PBKDF2` （一种计算量大的哈希函数）。"
 
-#: ../../docs/configuration/server.rst:396
+#: ../../docs/configuration/server.rst:412
 msgid ""
 "The actual identifier for PBKDF2 is `pbkdf2:1000:6:sha1`, which means "
 "1000 iterations, 6 bytes to generate and SHA1 as pseudo-random family "
@@ -882,90 +896,90 @@ msgstr ""
 "，这意味着1000次迭代，要生成6个字节，sha1是用于密钥增强的伪随机家族。参数必须按此顺序排列，但可以缩减为 `pbkdf2:4096` "
 "，例如仅覆盖迭代。"
 
-#: ../../docs/configuration/server.rst:405
+#: ../../docs/configuration/server.rst:421
 msgid "RSS"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:407
+#: ../../docs/configuration/server.rst:423
 msgid ""
 "Isso can provide an Atom feed for each comment thread. Users can use them"
 " to subscribe to comments and be notified of changes. Atom feeds are "
 "enabled as soon as there is a base URL defined in this section."
 msgstr "Isso可以为每个评论主题帖提供一个Atom摘要。用户可以使用它们订阅评论并收到更改通知。一旦在此部分中定义了基本URL，就会启用Atom功能。"
 
-#: ../../docs/configuration/server.rst:418
+#: ../../docs/configuration/server.rst:434
 msgid "base"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:418
+#: ../../docs/configuration/server.rst:434
 msgid ""
 "base URL to use to build complete URI to pages (by appending the URI from"
 " Isso)"
 msgstr "用于在页面上构建完整URI的基本URL（通过从Isso附加URI）"
 
-#: ../../docs/configuration/server.rst:421
+#: ../../docs/configuration/server.rst:437
 msgid "limit"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:421
+#: ../../docs/configuration/server.rst:437
 msgid "number of most recent comments to return for a thread"
 msgstr "要返回主题的最新评论数"
 
-#: ../../docs/configuration/server.rst:424
+#: ../../docs/configuration/server.rst:440
 msgid "Admin"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:426
+#: ../../docs/configuration/server.rst:442
 msgid ""
 "Isso has an optional web administration interface that can be used to "
 "moderate comments. The interface is available under ``/admin`` on your "
 "isso URL."
 msgstr "Isso具有可选的Web管理界面，可用于审核评论。该接口位于Isso URL上的 ``/admin`` 下。"
 
-#: ../../docs/configuration/server.rst:436
+#: ../../docs/configuration/server.rst:452
 msgid "whether to enable the admin interface"
 msgstr "是否启用管理界面"
 
-#: ../../docs/configuration/server.rst:439
+#: ../../docs/configuration/server.rst:455
 msgid ""
 "the plain text password to use for logging into the administration "
 "interface"
 msgstr "用于登录管理界面的纯文本密码"
 
-#: ../../docs/configuration/server.rst:442
+#: ../../docs/configuration/server.rst:458
 msgid "Appendum"
 msgstr "Appendum（附录）"
 
-#: ../../docs/configuration/server.rst:452
+#: ../../docs/configuration/server.rst:468
 msgid "Timedelta"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:447
+#: ../../docs/configuration/server.rst:463
 msgid ""
 "A human-friendly representation of a time range: `1m` equals to 60 "
 "seconds. This works for years (y), weeks (w), days (d) and seconds (s), "
 "e.g. `30s` equals 30 to seconds."
 msgstr "时间范围的人性化表示形式： `1m` 等于60秒。这适用于年（y），周（w），天（d）和秒（s），例如 `30s` 等于30秒。"
 
-#: ../../docs/configuration/server.rst:451
+#: ../../docs/configuration/server.rst:467
 msgid ""
 "You can add different types: `1m30s` equals to 90 seconds, `3h45m12s` "
 "equals to 3 hours, 45 minutes and 12 seconds (12512 seconds)."
 msgstr "您可以添加不同的类型： `1m30s` 等于90秒， `3h45m12s` 等于3小时45分钟12秒（12512秒）。"
 
-#: ../../docs/configuration/server.rst:455
+#: ../../docs/configuration/server.rst:471
 msgid "Environment variables"
 msgstr "Environment variables（环境变量）"
 
-#: ../../docs/configuration/server.rst:459
+#: ../../docs/configuration/server.rst:475
 msgid "Isso also support configuration through some environment variables:"
 msgstr "Isso还通过一些环境变量支持配置："
 
-#: ../../docs/configuration/server.rst:466
+#: ../../docs/configuration/server.rst:482
 msgid "ISSO_CORS_ORIGIN"
 msgstr ""
 
-#: ../../docs/configuration/server.rst:462
+#: ../../docs/configuration/server.rst:478
 msgid ""
 "By default, `isso` will use the `Host` or else the `Referrer` HTTP header"
 " of the request to defines a CORS `Access-Control-Allow-Origin` HTTP "
@@ -990,13 +1004,13 @@ msgstr ""
 msgid ""
 "If you want to display a comment counter for a given thread, simply put a"
 " link to that comments thread anchor:"
-msgstr ""
+msgstr "如果要显示评论数，只需在该评论锚点放一个链接："
 
 #: ../../docs/extras/advanced-integration.rst:14
 msgid ""
 "The *isso js client* willl replace the content of this tag with a human "
 "readable counter like *\"5 comments\"*."
-msgstr ""
+msgstr "*Isso js客户端* 将用人类可读的计数器（例如 *\"5条评论\"* ）替换此标签的内容。"
 
 #: ../../docs/extras/advanced-integration.rst:17
 msgid ""
@@ -1004,6 +1018,8 @@ msgid ""
 "`data-isso-id` attribute on the `<a>` to indicate which thread to count "
 "for."
 msgstr ""
+"另外，如果从 `href` 猜测不到相关主题，则可以在 `<a>` 上使用 `data-isso-id`"
+" 属性来指示要计数的评论帖。"
 
 #: ../../docs/extras/advanced-integration.rst:20
 msgid ""
@@ -1011,12 +1027,14 @@ msgid ""
 "count (e.g. on an index page) or `embed.min.js` for the full comment "
 "client (see :doc:`../quickstart`); do not mix both."
 msgstr ""
+"现在，如果您只想显示评论计数（例如在索引页面上），要么引入 `count.min.js`"
+" ，要么引入完整评论客户端 `embed.min.js` （请参阅 :doc:`快速入门 <../quickstart>` ）；不要混合使用这两种方法。"
 
 #: ../../docs/extras/advanced-integration.rst:24
 msgid ""
 "You can have as many comments counters as you want in a page, and they "
 "will be merged into a single `GET` request."
-msgstr ""
+msgstr "可以在一个页面中拥有任意数量的评论计数器，它们将被合并到单个 `GET` 请求中。"
 
 #: ../../docs/extras/advanced-integration.rst:28
 msgid "Asynchronous comments loading"
@@ -1029,6 +1047,9 @@ msgid ""
 "(eg. via ajax), you need to re-fetch comment thread manually. Here is how"
 " you can re-fetch the comment thread:"
 msgstr ""
+"Isso将在 `DOMContentLoaded` 事件后自动获取评论。但是，如果您的网站正在动态"
+"创建内容（例如：通过ajax），则需要手动重新获取评论数据。您可以通过以下"
+"方法重新获取："
 
 #: ../../docs/extras/advanced-integration.rst:39
 msgid ""
@@ -1041,6 +1062,12 @@ msgid ""
 "before you can get new comments. And the thread element itself should "
 "*NOT* be touched or removed."
 msgstr ""
+"它将删除页面下的所有评论，而不是PostBox，通过元素 `section#isso-thread`"
+" （如果该属性不存在，则退回到 `window.location.pathname` ）的"
+" `data-isso-id` 属性获取评论，然后填充评论。"
+"换句话说，在获取新评论之前，应更改元素 `section#isso-thread` 的"
+" `data-isso-id` 属性（或使用 `location.pushState` 修改路径名）。"
+"并且评论元素本身 *不* 应被触碰或移除。"
 
 #: ../../docs/extras/advanced-integration.rst:47
 msgid ""
@@ -1048,12 +1075,14 @@ msgid ""
 "element with same TagName and ID in which you wish comments to be placed,"
 " then call the `init` method of `Isso`:"
 msgstr ""
+"如果删除了 `section#isso-thread` 元素，则只需创建另一个具有相同TagName和ID"
+"的元素即可在其中放置评论，然后调用 `Isso` 的 `init` 方法：
 
 #: ../../docs/extras/advanced-integration.rst:55
 msgid ""
 "Then Isso will initialize the comment section and fetch comments, as if "
 "the page was loaded."
-msgstr ""
+msgstr "然后，Isso将初始化评论部分并获取数据，就像加载页面一样。"
 
 #: ../../docs/extras/advanced-migration.rst:2
 msgid "Advanced Migration"
@@ -1859,7 +1888,7 @@ msgstr "为了更容易执行，您可以将可执行文件符号链接到 :envv
 
 #: ../../docs/install.rst:123
 msgid "Upgrade"
-msgstr "升级"
+msgstr ""
 
 #: ../../docs/install.rst:125
 msgid "To upgrade Isso, activate your virtual environment again, and run"

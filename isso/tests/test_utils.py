@@ -31,6 +31,10 @@ class TestUtils(unittest.TestCase):
         for (addr, anonymized) in examples:
             self.assertEqual(utils.anonymize(addr), anonymized)
 
+    def test_dist(self):
+        dist = utils.IssoDist()
+        self.assertEqual(dist.project_name, "isso")
+
 
 class TestParse(unittest.TestCase):
 

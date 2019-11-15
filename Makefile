@@ -76,6 +76,7 @@ clean:
 	rm -rf $(DOCS_HTML_DST)
 	rm -rf $(DOCS_GETTEXT)
 	rm -rf $(DOCS_HTMLCN_DST)
+	rm -rf build/ dist/ *.egg-info/
 	find docs/locales/zh_CN/LC_MESSAGES/ -name '*.mo'|xargs -i rm -f {}
 
 gettext:
@@ -88,5 +89,16 @@ site-cn: $(DOCS_RST_SRC) $(DOCS_CSS_DST)
 	sphinx-build -E -T -D language=zh_CN -b dirhtml docs/ $(DOCS_HTMLCN_DST)
 
 site-css: $(DOCS_CSS_DST)
+
+dev: $(ISSO_JS_DST)
+	pip install .
+
+publish-test: $(ISSO_JS_DST)
+	python setup.py sdist bdist_wheel && twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	rm -rf build/ dist/ *.egg-info/
+
+publish-release: $(ISSO_JS_DST)
+	python setup.py sdist bdist_wheel && twine upload dist/*
+	rm -rf build/ dist/ *.egg-info/
 
 .PHONY: clean site man init js coverage test
