@@ -235,8 +235,10 @@ timeout
 Wechat
 ------
 
-Isso可以在有新评论时通过微信通知您（依靠 `Server酱 <http://sc.ftqq.com>`_ 的服务）。在微信通知中，您还可以审核（=激活或删除）
-评论。不要忘记在服务端INI文件的 ``general`` 中配置 ``notify = wechat`` 。
+Isso可以在有新评论时通过微信通知您（依靠 `Server酱 <http://sc.ftqq.com>`_ 的
+服务，英文名「ServerChan」，是一款「程序员」和「服务器」之间的通信软件）。
+在微信通知中，您还可以审核（=激活或删除）评论。不要忘记在服务端INI文件
+的 ``general`` 中配置 ``notify = wechat`` 。
 
 .. note::
 
@@ -261,10 +263,7 @@ Isso可以在有新评论时通过微信通知您（依靠 `Server酱 <http://sc
     takey = Server酱TalkAdmin服务提供的WebHook回调地址的Key
 
 sckey
-    「Server酱」，英文名「ServerChan」，是一款「程序员」和「服务器」之间的
-    通信软件。
-
-    要使用Server酱发送消息，您需要有一个密钥。申请方法为：
+    使用Server酱发送消息的基本服务，您需要有一个密钥，即SCKEY。申请方法为：
         1. 打开：使用浏览器打开 `Server酱官网 <http://sc.ftqq.com>`_
         2. 登入：使用GitHub登入，在「发送消息」页面，就能看到您的 **SCKEY**
         3. 绑定：在「微信推送」页面，扫码关注公众号「方糖」的同时即可完成绑定。后面新消息就会推送到此公众号，当然只有您自己才能收到。

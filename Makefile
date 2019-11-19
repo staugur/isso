@@ -94,11 +94,9 @@ dev: $(ISSO_JS_DST)
 	pip install .
 
 publish-test: $(ISSO_JS_DST)
-	python setup.py sdist bdist_wheel && twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-	rm -rf build/ dist/ *.egg-info/
+	python setup.py sdist bdist_wheel && twine upload --repository-url https://test.pypi.org/legacy/ dist/* && rm -rf build/ dist/ *.egg-info/
 
 publish-release: $(ISSO_JS_DST)
-	python setup.py sdist bdist_wheel && twine upload dist/*
-	rm -rf build/ dist/ *.egg-info/
+	python setup.py sdist bdist_wheel && twine upload dist/* && rm -rf build/ dist/ *.egg-info/
 
 .PHONY: clean site man init js coverage test

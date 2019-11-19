@@ -29,7 +29,7 @@ def test_suite():
 
 setup(
     name='isso-cn',
-    version='0.13.0-rc1',
+    version='0.12.3.rc1',
     author='Martin Zimmermann',
     author_email='info@posativ.org',
     packages=find_packages(),

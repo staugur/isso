@@ -95,7 +95,7 @@ Similar for Fedora (and derivates):
 .. code-block:: sh
 
     ~> sudo yum install python-devel sqlite
-    ~> sudo yum groupinstall “Development Tools”
+    ~> sudo yum groupinstall "Development Tools"
 
 Installation
 ^^^^^^^^^^^^
