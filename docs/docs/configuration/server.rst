@@ -88,6 +88,9 @@ notify
         Send notifications via SMTP on new comments with activation (if
         moderated) and deletion links.
 
+    wechat
+        有新评论时通过微信发送提醒（支持审核）
+
 reply-notifications
     Allow users to request E-mail notifications for replies to their post.
 
