@@ -50,9 +50,13 @@ dbpath
     file location to the SQLite3 database, highly recommended to change this
     location to a non-temporary location!
 
+.. _pac-name:
+
 name
     required to dispatch :ref:`multiple websites <configure-multiple-sites>`,
     not used otherwise.
+
+.. _pac-host:
 
 host
     Your website(s). If Isso is unable to connect to at least one site, you'll
@@ -76,6 +80,8 @@ max-age
     time range that allows users to edit/remove their own comments. See
     :ref:`Appendum: Timedelta <appendum-timedelta>` for valid values.
 
+.. _pac-notify:
+
 notify
     Select notification backend(s) for new comments, separated by comma.
     Available backends:
@@ -90,6 +96,8 @@ notify
 
     wechat
         有新评论时通过微信发送提醒（支持审核）
+
+.. _pac-reply-notifications:
 
 reply-notifications
     Allow users to request E-mail notifications for replies to their post.
@@ -117,6 +125,8 @@ gravatar-url
 
 .. _CORS: https://developer.mozilla.org/en/docs/HTTP/Access_control_CORS
 
+.. _pac-moderation:
+
 .. _configure-moderation:
 
 Moderation
@@ -129,6 +139,7 @@ Enable moderation queue and handling of comments still in moderation queue
     [moderation]
     enabled = false
     purge-after = 30d
+
 
 enabled
     enable comment moderation queue. This option only affects new comments.
@@ -223,8 +234,12 @@ security
     Man-in-the-Middle attacks. You should definitely use a dedicated SMTP
     account for Isso in that case.
 
+.. _pac-smtp-to:
+
 to
     recipient address, e.g. your email address
+
+.. _pac-smtp-from:
 
 from
     sender address, e.g. `"Foo Bar" <isso@example.tld>`
@@ -265,11 +280,15 @@ Isso可以在有新评论时通过微信通知您（依靠 `Server酱 <http://sc
     sckey = Server酱发送消息的SCKEY
     takey = Server酱TalkAdmin服务提供的WebHook回调地址的Key
 
+.. _pac-sckey:
+
 sckey
     使用Server酱发送消息的基本服务，您需要有一个密钥，即SCKEY。申请方法为：
         1. 打开：使用浏览器打开 `Server酱官网 <http://sc.ftqq.com>`_
         2. 登入：使用GitHub登入，在「发送消息」页面，就能看到您的 **SCKEY**
         3. 绑定：在「微信推送」页面，扫码关注公众号「方糖」的同时即可完成绑定。后面新消息就会推送到此公众号，当然只有您自己才能收到。
+
+.. _pac-takey:
 
 takey
     同样是由Server酱提供的另一款服务：TalkAdmin，它提供两个类型的命令，其
@@ -313,6 +332,8 @@ takey
 
 .. |talkadmin_new| image:: /_static/talkadmin.png
 
+.. _pac-guard:
+
 Guard
 -----
 
@@ -333,12 +354,18 @@ enabled
     enable guard, recommended in production. Not useful for debugging
     purposes.
 
+.. _pac-ratelimit:
+
 ratelimit
     limit to N new comments per minute.
+
+.. _pac-direct-reply:
 
 direct-reply
     how many comments directly to the thread (prevent a simple
     `while true; do curl ...; done`.
+
+.. _pac-reply-to-self:
 
 reply-to-self
     allow commenters to reply to their own comments when they could still edit
@@ -347,17 +374,23 @@ reply-to-self
 
     Do not forget to configure the `client <client>`_ accordingly
 
+.. _pac-require-author:
+
 require-author
     force commenters to enter a value into the author field. No validation is
     performed on the provided value.
 
     Do not forget to configure the `client <client>`_ accordingly.
 
+.. _pac-require-email:
+
 require-email
     force commenters to enter a value into the email field. No validation is
     performed on the provided value.
 
     Do not forget to configure the `client <client>`_ accordingly.
+
+.. _pac-markup:
 
 Markup
 ------
@@ -376,11 +409,15 @@ options
     `Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, all
     flags starting with `EXT_` can be used there, separated by comma.
 
+.. _pac-allowed-elements:
+
 allowed-elements
     Additional HTML tags to allow in the generated output, comma-separated. By
     default, only *a*, *blockquote*, *br*, *code*, *del*, *em*, *h1*, *h2*,
     *h3*, *h4*, *h5*, *h6*, *hr*, *ins*, *li*, *ol*, *p*, *pre*, *strong*,
     *table*, *tbody*, *td*, *th*, *thead* and *ul* are allowed.
+
+.. _pac-allowed-attributes:
 
 allowed-attributes
     Additional HTML attributes (independent from elements) to allow in the
@@ -438,6 +475,8 @@ base
 limit
     number of most recent comments to return for a thread
 
+.. _pac-admin:
+
 Admin
 -----
 
@@ -446,15 +485,17 @@ comments. The interface is available under ``/admin`` on your isso URL.
 
 .. code-block:: ini
 
-   [admin]
-   enabled = true
-   password = secret
+    [admin]
+    enabled = true
+    password = secret
 
 enabled
-   whether to enable the admin interface
+    whether to enable the admin interface
+
+.. _pac-password:
 
 password
-   the plain text password to use for logging into the administration interface
+    the plain text password to use for logging into the administration interface
 
 Appendum
 --------
