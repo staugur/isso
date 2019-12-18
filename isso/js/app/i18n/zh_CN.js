@@ -1,5 +1,5 @@
 define({
-    "postbox-text": "在此输入评论 (最少 3 个字符)",
+    "postbox-text": "在此输入评论 (最少 3 个字符，支持Markdown)",
     "postbox-author": "名字 (可选)",
     "postbox-email": "电子邮箱 (可选)",
     "postbox-website": "网站 (可选)",

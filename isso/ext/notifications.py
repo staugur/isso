@@ -307,7 +307,8 @@ class Wechat(object):
             TA_activate = body["a"]
             body = body["rv"]
         if PY2K:
-            title = title.encode("utf-8")
+            if title:
+                title = title.encode("utf-8")
             body = body.encode("utf-8")
         if self.moderated:
             # Need to review comments, use the TalkAdmin interface.
