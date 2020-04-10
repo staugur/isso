@@ -121,6 +121,10 @@ gravatar-url
     Url for gravatar images. The "{}" is where the email hash will be placed.
     Defaults to "https://www.gravatar.com/avatar/{}?d=identicon"
 
+latest-enabled
+    If True it will enable the ``/latest`` endpoint. Optional, defaults 
+    to False.
+
 
 
 .. _CORS: https://developer.mozilla.org/en/docs/HTTP/Access_control_CORS
@@ -410,12 +414,20 @@ supported, but new languages are relatively easy to add.
 
     [markup]
     options = strikethrough, superscript, autolink
+    flags = skip-html, escape, hard-wrap
     allowed-elements =
     allowed-attributes =
 
 options
-    `Misaka-specific Markdown extensions <http://misaka.61924.nl/#api>`_, all
-    flags starting with `EXT_` can be used there, separated by comma.
+    `Misaka-specific Markdown extensions <https://misaka.61924.nl/#api>`_, all
+    extension flags can be used there, separated by comma, either by their name
+    or as `EXT_`_.
+
+flags
+    `Misaka-specific HTML rendering flags
+    <https://misaka.61924.nl/#html-render-flags>`_, all html rendering flags
+    can be used here, separated by comma, either by their name or as `HTML_`_.
+    Per Misaka's defaults, no flags are set.
 
 .. _pac-allowed-elements:
 

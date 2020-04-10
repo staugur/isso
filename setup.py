@@ -8,7 +8,7 @@ import unittest
 from setuptools import setup, find_packages
 
 requires = ['itsdangerous', 'Jinja2', 'misaka>=2.0,<3.0', 'html5lib',
-            'werkzeug>=0.9', 'bleach']
+            'werkzeug>=1.0', 'bleach', 'flask-caching']
 
 if sys.version_info < (2, 7):
     raise SystemExit("Python 2 versions < 2.7 are not supported.")
@@ -48,9 +48,10 @@ setup(
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.4",
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6"
+        "Programming Language :: Python :: 3.7"
+        "Programming Language :: Python :: 3.8"
     ],
     install_requires=requires,
     extras_require={

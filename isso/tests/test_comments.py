@@ -33,6 +33,7 @@ class TestComments(unittest.TestCase):
         conf.set("general", "dbpath", self.path)
         conf.set("guard", "enabled", "off")
         conf.set("hash", "algorithm", "none")
+        conf.set("general", "latest-enabled", "true")
         self.conf = conf
 
         class App(Isso, core.Mixin):
@@ -369,8 +370,11 @@ class TestComments(unittest.TestCase):
         data = rv.data.decode('utf-8')
         data = re.sub('[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\\.[0-9]+Z',
                       '2018-04-01T10:00:00Z', data)
-        self.assertEqual(data, """<?xml version=\'1.0\' encoding=\'utf-8\'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0"><updated>2018-04-01T10:00:00Z</updated><id>tag:example.org,2018:/isso/thread/path/</id><title>Comments for example.org/path/</title><entry><id>tag:example.org,2018:/isso/1/2</id><title>Comment #2</title><updated>2018-04-01T10:00:00Z</updated><author><name /></author><link href="https://example.org/path/#isso-2" /><content type="html">&lt;p&gt;&lt;em&gt;Second&lt;/em&gt;&lt;/p&gt;</content><thr:in-reply-to href="https://example.org/path/#isso-1" ref="tag:example.org,2018:/isso/1/1" /></entry><entry><id>tag:example.org,2018:/isso/1/1</id><title>Comment #1</title><updated>2018-04-01T10:00:00Z</updated><author><name /></author><link href="https://example.org/path/#isso-1" /><content type="html">&lt;p&gt;First&lt;/p&gt;</content></entry></feed>""")
+        self.maxDiff = None
+        # Two accepted outputs, since different versions of Python sort attributes in different order.
+        self.assertIn(data, ["""<?xml version=\'1.0\' encoding=\'utf-8\'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0"><updated>2018-04-01T10:00:00Z</updated><id>tag:example.org,2018:/isso/thread/path/</id><title>Comments for example.org/path/</title><entry><id>tag:example.org,2018:/isso/1/2</id><title>Comment #2</title><updated>2018-04-01T10:00:00Z</updated><author><name /></author><link href="https://example.org/path/#isso-2" /><content type="html">&lt;p&gt;&lt;em&gt;Second&lt;/em&gt;&lt;/p&gt;</content><thr:in-reply-to href="https://example.org/path/#isso-1" ref="tag:example.org,2018:/isso/1/1" /></entry><entry><id>tag:example.org,2018:/isso/1/1</id><title>Comment #1</title><updated>2018-04-01T10:00:00Z</updated><author><name /></author><link href="https://example.org/path/#isso-1" /><content type="html">&lt;p&gt;First&lt;/p&gt;</content></entry></feed>""", """<?xml version=\'1.0\' encoding=\'utf-8\'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0"><updated>2018-04-01T10:00:00Z</updated><id>tag:example.org,2018:/isso/thread/path/</id><title>Comments for example.org/path/</title><entry><id>tag:example.org,2018:/isso/1/2</id><title>Comment #2</title><updated>2018-04-01T10:00:00Z</updated><author><name /></author><link href="https://example.org/path/#isso-2" /><content type="html">&lt;p&gt;&lt;em&gt;Second&lt;/em&gt;&lt;/p&gt;</content><thr:in-reply-to ref="tag:example.org,2018:/isso/1/1" href="https://example.org/path/#isso-1" /></entry><entry><id>tag:example.org,2018:/isso/1/1</id><title>Comment #1</title><updated>2018-04-01T10:00:00Z</updated><author><name /></author><link href="https://example.org/path/#isso-1" /><content type="html">&lt;p&gt;First&lt;/p&gt;</content></entry></feed>"""])
 
     def testCounts(self):
 
@@ -450,6 +454,48 @@ class TestComments(unittest.TestCase):
         rv = loads(response.data)
         self.assertEqual(
             rv["text"], '<p>This is <strong>mark</strong><em>down</em></p>')
+
+    def testLatestOk(self):
+        # load some comments in a mix of posts
+        saved = []
+        for idx, post_id in enumerate([1, 2, 2, 1, 2, 1, 3, 1, 4, 2, 3, 4, 1, 2]):
+            text = 'text-{}'.format(idx)
+            post_uri = 'test-{}'.format(post_id)
+            self.post('/new?uri=' + post_uri, data=json.dumps({'text': text}))
+            saved.append((post_uri, text))
+
+        response = self.get('/latest?limit=5')
+        self.assertEqual(response.status_code, 200)
+
+        body = loads(response.data)
+        expected_items = saved[-5:]  # latest 5
+        for reply, expected in zip(body, expected_items):
+            expected_uri, expected_text = expected
+            self.assertIn(expected_text, reply['text'])
+            self.assertEqual(expected_uri, reply['uri'])
+
+    def testLatestWithoutLimit(self):
+        response = self.get('/latest')
+        self.assertEqual(response.status_code, 400)
+
+    def testLatestBadLimitNaN(self):
+        response = self.get('/latest?limit=WAT')
+        self.assertEqual(response.status_code, 400)
+
+    def testLatestBadLimitNegative(self):
+        response = self.get('/latest?limit=-12')
+        self.assertEqual(response.status_code, 400)
+
+    def testLatestBadLimitZero(self):
+        response = self.get('/latest?limit=0')
+        self.assertEqual(response.status_code, 400)
+
+    def testLatestNotEnabled(self):
+        # disable the endpoint
+        self.conf.set("general", "latest-enabled", "false")
+
+        response = self.get('/latest?limit=5')
+        self.assertEqual(response.status_code, 404)
 
 
 class TestModeratedComments(unittest.TestCase):
